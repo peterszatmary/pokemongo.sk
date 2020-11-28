@@ -12,3 +12,7 @@ mkdir nazov
 rmdir nazov
 
 git pull --rebase origin master
+
+
+css reset
+http://html5doctor.com/html-5-reset-stylesheet/
