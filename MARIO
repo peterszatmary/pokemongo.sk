@@ -4,3 +4,9 @@ git commit -m "message"
 git checkout -b nazov_branche
 git branch
 git push origin nazov_branche
+
+pwd
+cd ..
+ls -lah
+mkdir nazov
+rmdir nazov
