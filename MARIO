@@ -10,3 +10,5 @@ cd ..
 ls -lah
 mkdir nazov
 rmdir nazov
+
+git pull --rebase origin master
