@@ -9,3 +9,4 @@ pwd
 cd ..
 ls -lah
 mkdir nazov
+rmdir nazov
