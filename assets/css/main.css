@@ -9,3 +9,15 @@
 p.nazov {
     color: red;
 }
+
+/* div {
+  border: 1px solid green;
+} */
+
+button.emotion {
+  width: 100px;
+  height: 40px;
+  background-color: yellow;
+  border: 1px solid black;
+  color: black;
+}
