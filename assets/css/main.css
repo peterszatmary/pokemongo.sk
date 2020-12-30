@@ -10,9 +10,9 @@ p.nazov {
     color: red;
 }
 
-/* div {
+ div {
   border: 1px solid green;
-} */
+}
 
 button.emotion {
   width: 50px;
@@ -20,4 +20,20 @@ button.emotion {
   background-color: #fc2b2b;
   border: 1px solid black;
   color: black;
+}
+button.grass {
+  width: 60px;
+  height: 25px;
+  background-color: #1efa38;
+  border: 1px solid #1efa38;;
+  color: white;
+  font-family: Trebuchet MS;
+}
+button.poison  {
+  width: 70px;
+  height: 25px;
+  background-color: #91029c;
+  border: 1px solid #91029c;
+  color: white;
+  font-family: Trebuchet MS;
 }
