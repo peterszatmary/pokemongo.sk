@@ -17,7 +17,7 @@ p.nazov {
 button.emotion {
   width: 50px;
   height: 30px;
-  background-color: gray;
+  background-color: #fc2b2b;
   border: 1px solid black;
   color: black;
 }
