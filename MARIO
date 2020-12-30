@@ -1,4 +1,6 @@
+git clone adresa
 git status
+
 git add .
 git commit -m "message"
 git checkout -b nazov_branche
@@ -11,8 +13,16 @@ ls -lah
 mkdir nazov
 rmdir nazov
 
+git checkout master
 git pull --rebase origin master
 
+-----
+add,commit,checkout NEW, push NEW, checkout master, pull master ->
+add,commit,checkout NEW, push NEW, checkout master, pull master ->
+add,commit,checkout NEW, push NEW, checkout master, pull master  ->
+add,commit,checkout NEW, push NEW, checkout master, pull master ->
+add,commit,checkout NEW, push, checkout master, pull ->
+-----
 
 css reset
 http://html5doctor.com/html-5-reset-stylesheet/
