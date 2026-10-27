@@ -3,15 +3,20 @@ interface Props {
   title: string;
   description?: string;
   image?: string;
+  type?: "website" | "article" | "product";
+  jsonLd?: Record<string, any> | Array<Record<string, any>>;
 }
 
 const {
   title,
   description = "Prémiová doména pokemongo.sk je na predaj. Ideálna adresa pre slovenský e-shop s Pokémon kartičkami, komunitný portál alebo sprievodcu hrou.",
-  image = "/favicon.svg",
+  image = "/og-image.png",
+  type = "website",
+  jsonLd,
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site || "https://pokemongo.sk");
+const ogImageURL = new URL(image, Astro.site || "https://pokemongo.sk");
 ---
 
 <!doctype html>
@@ -19,29 +24,49 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site || "https://pokemong
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Canonical URL -->
     <link rel="canonical" href={canonicalURL} />
 
-    <!-- Primary Meta Tags -->
+    <!-- Primary SEO Meta Tags -->
     <title>{title}</title>
     <meta name="title" content={title} />
     <meta name="description" content={description} />
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="keywords" content="pokemongo.sk, predaj domeny, pokemon go slovensko, pokemon karty sk, pokemon tcg, charizard, bulbasaur, pokemon e-shop, sk-nic prevod" />
+    <meta name="author" content="pokemongo.sk" />
+    <meta name="geo.region" content="SK" />
+    <meta name="geo.placename" content="Slovensko" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="apple-mobile-web-app-title" content="pokemongo.sk" />
+
+    <!-- Favicons & Icons -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
 
     <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={type} />
     <meta property="og:url" content={canonicalURL} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content={new URL(image, canonicalURL)} />
+    <meta property="og:image" content={ogImageURL} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:alt" content="pokemongo.sk - Prémiová slovenská doména na predaj" />
+    <meta property="og:locale" content="sk_SK" />
     <meta property="og:site_name" content="Pokemongo.sk" />
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content={canonicalURL} />
-    <meta property="twitter:title" content={title} />
-    <meta property="twitter:description" content={description} />
-    <meta property="twitter:image" content={new URL(image, canonicalURL)} />
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={canonicalURL} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImageURL} />
+    <meta name="twitter:image:alt" content="pokemongo.sk - Prémiová slovenská doména na predaj" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -50,6 +75,13 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site || "https://pokemong
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Structured Data (JSON-LD) -->
+    {
+      jsonLd && (
+        <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+      )
+    }
 
     <style is:global>
       body {

@@ -2,11 +2,55 @@
 import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
+
+const structuredData = [
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Domov",
+        "item": "https://pokemongo.sk/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "TCG Kartičky",
+        "item": "https://pokemongo.sk/tcg-karty/"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Fenomén Pokémon kariet: Prečo je to miliardový biznis na Slovensku?",
+    "description": "Analýza rastu zberateľského trhu s Pokémon kartičkami a prečo je doména pokemongo.sk ideálnou platformou pre slovenský e-shop.",
+    "image": "https://pokemongo.sk/og-image.png",
+    "author": {
+      "@type": "Organization",
+      "name": "pokemongo.sk"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "pokemongo.sk",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://pokemongo.sk/favicon.svg"
+      }
+    },
+    "datePublished": "2026-10-27",
+    "inLanguage": "sk-SK"
+  }
+];
 ---
 
 <Layout
   title="Pokémon TCG Kartičky: Zberateľstvo & E-shop Potenciál | pokemongo.sk"
   description="Pokémon TCG zažíva na Slovensku obrovský boom. Zistite, prečo je doména pokemongo.sk ideálnou platformou pre úspešný e-shop s kartičkami, boxami a merchom."
+  type="article"
+  jsonLd={structuredData}
 >
   <Navbar slot="navbar" />
 

@@ -3,11 +3,65 @@ import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
 import ContactForm from "../components/ContactForm.astro";
+
+const structuredData = [
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Domov",
+        "item": "https://pokemongo.sk/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Ako kúpiť doménu",
+        "item": "https://pokemongo.sk/ako-kupit/"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "Ako kúpiť a bezpečne previesť doménu pokemongo.sk",
+    "description": "Postup krok za krokom pri kúpe a prevode národnej domény cez SK-NIC.",
+    "step": [
+      {
+        "@type": "HowToStep",
+        "position": 1,
+        "name": "Predloženie nezáväznej ponuky",
+        "text": "Vyplníte krátky formulár s vašou cenovou ponukou a kontaktnými údajmi."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 2,
+        "name": "Zmluva a faktúra",
+        "text": "Pripravíme oficiálnu Zmluvu o prevode domény a vystavíme riadnu faktúru."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 3,
+        "name": "Autorizačný kód (Auth-Info)",
+        "text": "Ihneď po prijatí platby vygenerujeme v systéme SK-NIC autorizačný kód."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 4,
+        "name": "Okamžitý prevod pod váš účet",
+        "text": "Auth-Info kód zadáte u svojho registrátora a doména je plne vaša."
+      }
+    ]
+  }
+];
 ---
 
 <Layout
   title="Ako kúpiť doménu pokemongo.sk: Proces prevodu a bezpečnosť"
   description="Podrobný a transparentný postup prevodu národnej domény pokemongo.sk cez SK-NIC. Kúpna zmluva, faktúra, možnosti bezpečnej úschovy a okamžitý transfer."
+  jsonLd={structuredData}
 >
   <Navbar slot="navbar" />
 

@@ -3,11 +3,75 @@ import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
 import ContactForm from "../components/ContactForm.astro";
+
+const structuredData = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "pokemongo.sk",
+    "url": "https://pokemongo.sk/",
+    "description": "Prémiová slovenská národná doména pokemongo.sk je na predaj. Ideálna adresa pre Pokémon e-shop s kartičkami, komunitný portál alebo sprievodcu.",
+    "inLanguage": "sk-SK"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Internetová doména pokemongo.sk",
+    "image": "https://pokemongo.sk/og-image.png",
+    "description": "Exkluzívna národná doména pokemongo.sk najvyššej úrovne (.sk) pre e-shop s Pokémon kartičkami, herný portál a komunitu na Slovensku.",
+    "brand": {
+      "@type": "Brand",
+      "name": "pokemongo.sk"
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": "https://pokemongo.sk/#ponuka",
+      "priceCurrency": "EUR",
+      "price": "1000",
+      "availability": "https://schema.org/InStock",
+      "seller": {
+        "@type": "Organization",
+        "name": "pokemongo.sk"
+      }
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Ako prebieha prevod domény?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Prevod prebieha podľa štandardných pravidiel SK-NIC. Po dohode o cene a úhrade vám vygenerujeme autorizačný kód (Auth-Info kód), pomocou ktorého si doménu okamžite prenesiete k svojmu registrátorovi (Websupport, Forpsi, atď.)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Je možné vystaviť faktúru alebo kúpnu zmluvu?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Áno, samozrejmosťou je vystavenie oficiálnej kúpno-predajnej zmluvy a riadnej faktúry pre právnické aj fyzické osoby. Pre maximálnu bezpečnosť je možné využiť aj notársku či advokátsku úschovu."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Ako dlho celý proces trvá?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Akonáhle sa dohodneme a prebehne platba, prevod v systéme SK-NIC trvá zvyčajne menej ako 1 hodinu (maximálne 24 hodín). Doména je následne plne vo vašom vlastníctve."
+        }
+      }
+    ]
+  }
+];
 ---
 
 <Layout
   title="pokemongo.sk - Prémiová slovenská doména na predaj"
   description="Exkluzívna národná doména pokemongo.sk je na predaj. Ideálna adresa pre slovenský e-shop s kartičkami, komunitný portál alebo sprievodcu hrou. Pošlite svoju ponuku."
+  jsonLd={structuredData}
 >
   <Navbar slot="navbar" />
 

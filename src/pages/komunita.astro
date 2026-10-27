@@ -2,11 +2,41 @@
 import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
+
+const structuredData = [
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Domov",
+        "item": "https://pokemongo.sk/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Komunita",
+        "item": "https://pokemongo.sk/komunita/"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Slovenská Pokémon GO Komunita: Skupiny, Raidy a Zrazy",
+    "description": "Prehľad komunity Pokémon GO na Slovensku, raidové lokality v Bratislave, Košiciach a ďalších mestách.",
+    "url": "https://pokemongo.sk/komunita/",
+    "inLanguage": "sk-SK"
+  }
+];
 ---
 
 <Layout
   title="Slovenská Pokémon GO Komunita: Raidy, Discord a Zrazy | pokemongo.sk"
   description="Prehľad slovenskej komunity Pokémon GO. Kde sa stretávajú tréneri v Bratislave, Košiciach a ďalších mestách, raidové hotspoty a komunitné skupiny."
+  jsonLd={structuredData}
 >
   <Navbar slot="navbar" />
 
