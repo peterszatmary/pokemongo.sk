@@ -1,0 +1,105 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout
+  title="Slovenská Pokémon GO Komunita: Raidy, Discord a Zrazy | pokemongo.sk"
+  description="Prehľad slovenskej komunity Pokémon GO. Kde sa stretávajú tréneri v Bratislave, Košiciach a ďalších mestách, raidové hotspoty a komunitné skupiny."
+>
+  <Navbar slot="navbar" />
+
+  <article class="py-16 sm:py-24 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Header -->
+    <header class="mb-14 text-center">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-blue-500/10 text-poke-blue border border-blue-500/20 mb-4">
+        👥 Tréneri & Lokálne Stretnutia
+      </div>
+      <h1 class="font-display text-3xl sm:text-5xl font-extrabold text-white tracking-tight mb-4">
+        Slovenská Pokémon GO Komunita
+      </h1>
+      <p class="text-base sm:text-xl text-slate-300 max-w-2xl mx-auto">
+        Kde sa na Slovensku hrajú najväčšie Raidy, ktoré parky sú plné PokéStopov a ako nájsť spoluhráčov vo vašom meste.
+      </p>
+    </header>
+
+    <!-- Content Sections -->
+    <div class="space-y-10 text-slate-300 leading-relaxed text-base">
+
+      <!-- Cities & Hotspots -->
+      <section class="bg-slate-900/60 border border-slate-800 rounded-3xl p-6 sm:p-8">
+        <h2 class="font-display text-2xl font-bold text-white mb-6">Tradičné raidové hotspoty na Slovensku</h2>
+        
+        <div class="space-y-6">
+          <div class="border-l-2 border-poke-red pl-4">
+            <h3 class="text-lg font-bold text-white">Bratislava</h3>
+            <p class="text-sm text-slate-400 mt-1">
+              Najaktívnejšie lokality sú <strong>Sad Janka Kráľa</strong> (obrovská hustota PokéStopov a hniezd), <strong>Eurovea a nábrežie Dunaja</strong>, ako aj <strong>Medická záhrada a Prezidentská záhrada</strong>. Počas Community Days tu stretnete stovky hráčov s powerbankami v rukách.
+            </p>
+          </div>
+
+          <div class="border-l-2 border-poke-yellow pl-4">
+            <h3 class="text-lg font-bold text-white">Košice</h3>
+            <p class="text-sm text-slate-400 mt-1">
+              Srdcom košickej komunity je <strong>Hlavná ulica a Dóm sv. Alžbety</strong> spolu s <strong>Mestským parkom</strong>. Vďaka koncentrácii gymov je tu organizovanie Raid Hours mimoriadne efektívne.
+            </p>
+          </div>
+
+          <div class="border-l-2 border-poke-blue pl-4">
+            <h3 class="text-lg font-bold text-white">Ostatné mestá (Žilina, Trnava, Nitra, Banská Bystrica)</h3>
+            <p class="text-sm text-slate-400 mt-1">
+              Vo väčšine krajských a okresných miest sa hráči združujú okolo historických centier a zámockých parkov, kde býva najväčší počet pamätihodností a gymov.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Communication Platforms -->
+      <section class="bg-slate-900/60 border border-slate-800 rounded-3xl p-6 sm:p-8">
+        <h2 class="font-display text-2xl font-bold text-white mb-4">Ako a kde sa hráči organizujú?</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
+          <div class="p-4 rounded-xl bg-slate-950/70 border border-slate-800">
+            <div class="text-white font-bold mb-1">Campfire (Niantic)</div>
+            <p class="text-xs text-slate-400">Oficiálna mapa a chat od tvorcov hry. Umožňuje vidieť aktívne raidy v meste a pripojiť sa k lokálnym skupinám.</p>
+          </div>
+          <div class="p-4 rounded-xl bg-slate-950/70 border border-slate-800">
+            <div class="text-white font-bold mb-1">Discord Servery</div>
+            <p class="text-xs text-slate-400">Prehľadne členené kanály podľa miest a mestských častí na výmenu Friend kódov, koordináciu raidov a PvP turnaje.</p>
+          </div>
+          <div class="p-4 rounded-xl bg-slate-950/70 border border-slate-800">
+            <div class="text-white font-bold mb-1">Facebook & Telegram</div>
+            <p class="text-xs text-slate-400">Klasické skupiny fungujúce od roku 2016 na zdieľanie noviniek, screenshotov vzácnych úlovkov a organizáciu zrazov.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Community Portal Potential -->
+      <section class="bg-slate-900/60 border border-slate-800 rounded-3xl p-6 sm:p-8">
+        <h2 class="font-display text-2xl font-bold text-white mb-3">Prečo Slovensku chýba jednotný portál?</h2>
+        <p class="text-sm text-slate-300 leading-relaxed mb-3">
+          Väčšina komunikácie je dnes roztrúsená v desiatkach uzatvorených chatov a skupín. Doména <strong>pokemongo.sk</strong> má jedinečný potenciál stať sa <strong>centrálnym slovenským portálom</strong> — miestom, kde noví hráči nájdu sprievodcu, zberatelia burzu kartičiek a aktívni hráči mapu plánovaných podujatí a raidov.
+        </p>
+      </section>
+
+    </div>
+
+    <!-- CTA Box -->
+    <div class="mt-16 p-8 rounded-3xl bg-slate-900 border border-slate-800 text-center space-y-4">
+      <h3 class="font-display text-2xl font-bold text-white">Chcete zjednotiť slovenskú Pokémon komunitu?</h3>
+      <p class="text-sm text-slate-300 max-w-xl mx-auto">
+        Získajte túto ikonickú doménu a vytvorte na nej oficiálny komunitný hub.
+      </p>
+      <div class="pt-2">
+        <a
+          href="/#ponuka"
+          class="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-sm text-slate-950 bg-gradient-to-r from-poke-yellow to-amber-400 hover:from-amber-300 hover:to-poke-yellow transition-all shadow-lg shadow-amber-500/20"
+        >
+          Predložiť ponuku na doménu →
+        </a>
+      </div>
+    </div>
+  </article>
+
+  <Footer slot="footer" />
+</Layout>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <radialGradient id="btnGrad" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="70%" stop-color="#e2e8f0"/>
+      <stop offset="100%" stop-color="#94a3b8"/>
+    </radialGradient>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff3b30"/>
+      <stop offset="100%" stop-color="#c51313"/>
+    </linearGradient>
+  </defs>
+  <!-- Outer Ring Shadow -->
+  <circle cx="50" cy="50" r="48" fill="#1e293b"/>
+  <!-- Top Half (Red) -->
+  <path d="M 50 6 A 44 44 0 0 1 94 50 L 68 50 A 18 18 0 0 0 32 50 L 6 50 A 44 44 0 0 1 50 6 Z" fill="url(#redGrad)"/>
+  <!-- Bottom Half (White) -->
+  <path d="M 6 50 L 32 50 A 18 18 0 0 0 68 50 L 94 50 A 44 44 0 0 1 6 50 Z" fill="#f8fafc"/>
+  <!-- Center Dark Band -->
+  <rect x="6" y="46" width="88" height="8" fill="#1e293b"/>
+  <!-- Center Ring -->
+  <circle cx="50" cy="50" r="16" fill="#1e293b"/>
+  <!-- Inner Button -->
+  <circle cx="50" cy="50" r="10" fill="url(#btnGrad)"/>
+  <!-- Center Dot -->
+  <circle cx="50" cy="50" r="5" fill="#f8fafc" stroke="#94a3b8" stroke-width="1"/>
+</svg>

@@ -1,0 +1,18 @@
+{
+  "name": "pokemongo.sk",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Oficiálna predajná a informačná stránka pre prémiovú doménu Pokemongo.sk",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/tailwind": "^6.0.2",
+    "astro": "^5.18.2",
+    "tailwindcss": "^3.4.17"
+  }
+}

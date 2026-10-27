@@ -1,0 +1,119 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import ContactForm from "../components/ContactForm.astro";
+---
+
+<Layout
+  title="Ako kúpiť doménu pokemongo.sk: Proces prevodu a bezpečnosť"
+  description="Podrobný a transparentný postup prevodu národnej domény pokemongo.sk cez SK-NIC. Kúpna zmluva, faktúra, možnosti bezpečnej úschovy a okamžitý transfer."
+>
+  <Navbar slot="navbar" />
+
+  <article class="py-16 sm:py-24 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Header -->
+    <header class="mb-14 text-center">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 mb-4">
+        🛡️ Bezpečný & Transparentný Prevod
+      </div>
+      <h1 class="font-display text-3xl sm:text-5xl font-extrabold text-white tracking-tight mb-4">
+        Ako prebieha kúpa a prevod domény
+      </h1>
+      <p class="text-base sm:text-xl text-slate-300 max-w-2xl mx-auto">
+        Celý proces predaja domény pokemongo.sk sa riadi oficiálnymi pravidlami centrálneho správcu národnej domény SK-NIC.
+      </p>
+    </header>
+
+    <!-- 4 Step Timeline -->
+    <div class="space-y-6 mb-16">
+
+      <div class="flex flex-col sm:flex-row gap-5 p-6 rounded-3xl bg-slate-900/60 border border-slate-800">
+        <div class="w-12 h-12 rounded-2xl bg-poke-yellow/10 border border-poke-yellow/20 text-poke-yellow font-display font-bold text-xl flex items-center justify-center shrink-0">
+          01
+        </div>
+        <div>
+          <h2 class="font-display text-xl font-bold text-white mb-2">Predloženie nezáväznej ponuky</h2>
+          <p class="text-sm text-slate-300 leading-relaxed">
+            Vyplníte krátky formulár nižšie s vašou cenovou ponukou a kontaktnými údajmi. Do 24 hodín sa vám ozveme s vyjadrením alebo protinávrhom.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex flex-col sm:flex-row gap-5 p-6 rounded-3xl bg-slate-900/60 border border-slate-800">
+        <div class="w-12 h-12 rounded-2xl bg-poke-blue/10 border border-poke-blue/20 text-poke-blue font-display font-bold text-xl flex items-center justify-center shrink-0">
+          02
+        </div>
+        <div>
+          <h2 class="font-display text-xl font-bold text-white mb-2">Zmluva a faktúra</h2>
+          <p class="text-sm text-slate-300 leading-relaxed">
+            Po odsúhlasení podmienok pripravíme oficiálnu <strong>Zmluvu o prevode domény</strong> a vystavíme faktúru (vhodnú do firemného účtovníctva). Pre vyššie sumy je možné využiť aj notársku alebo advokátsku úschovu (Escrow).
+          </p>
+        </div>
+      </div>
+
+      <div class="flex flex-col sm:flex-row gap-5 p-6 rounded-3xl bg-slate-900/60 border border-slate-800">
+        <div class="w-12 h-12 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 font-display font-bold text-xl flex items-center justify-center shrink-0">
+          03
+        </div>
+        <div>
+          <h2 class="font-display text-xl font-bold text-white mb-2">Autorizačný kód (Auth-Info)</h2>
+          <p class="text-sm text-slate-300 leading-relaxed">
+            Ihneď po prijatí platby vygenerujeme v systéme SK-NIC jedinečný autorizačný <strong>Auth-Info kód</strong> pre doménu pokemongo.sk a pošleme vám ho.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex flex-col sm:flex-row gap-5 p-6 rounded-3xl bg-slate-900/60 border border-slate-800">
+        <div class="w-12 h-12 rounded-2xl bg-poke-red/10 border border-poke-red/20 text-poke-red font-display font-bold text-xl flex items-center justify-center shrink-0">
+          04
+        </div>
+        <div>
+          <h2 class="font-display text-xl font-bold text-white mb-2">Okamžitý prevod pod váš účet</h2>
+          <p class="text-sm text-slate-300 leading-relaxed">
+            Auth-Info kód zadáte vo svojom účte u ľubovoľného registrátora (napr. Websupport, Forpsi, Subreg). Prevod prebehne v priebehu niekoľkých minút a doména je 100% vo vašom vlastníctve.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Security Guarantees -->
+    <div class="p-8 rounded-3xl bg-gradient-to-br from-slate-900 to-slate-950 border border-slate-800 mb-16">
+      <h2 class="font-display text-2xl font-bold text-white mb-4">Záruky bezpečnosti transakcie</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-slate-300">
+        <div class="flex items-center gap-3">
+          <svg class="w-5 h-5 text-emerald-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+          </svg>
+          <span>Čistá doménová história bez sankcií</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <svg class="w-5 h-5 text-emerald-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+          </svg>
+          <span>Možnosť osobného stretnutia v SR</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <svg class="w-5 h-5 text-emerald-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+          </svg>
+          <span>Platná registrácia v SK-NIC</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <svg class="w-5 h-5 text-emerald-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+          </svg>
+          <span>Rýchla komunikácia e-mailom a telefonicky</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Form embedded -->
+    <div id="ponuka">
+      <ContactForm />
+    </div>
+  </article>
+
+  <Footer slot="footer" />
+</Layout>
