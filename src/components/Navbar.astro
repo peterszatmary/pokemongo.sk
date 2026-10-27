@@ -31,14 +31,14 @@ const navItems = [
       </a>
 
       <!-- Desktop Nav Links -->
-      <nav class="hidden md:flex items-center gap-1">
+      <nav class="hidden lg:flex items-center gap-1 xl:gap-1.5">
         {
           navItems.map((item) => {
             const isActive = currentPath === item.href || (item.href !== "/" && currentPath.startsWith(item.href));
             return (
               <a
                 href={item.href}
-                class={`px-3.5 py-2 rounded-xl text-sm font-medium transition-all ${
+                class={`px-3 py-2 rounded-xl text-sm font-medium transition-all ${
                   isActive
                     ? "bg-slate-100 text-slate-900 font-semibold"
                     : "text-slate-600 hover:text-slate-900 hover:bg-slate-50"
@@ -68,7 +68,7 @@ const navItems = [
       <button
         id="mobile-menu-btn"
         type="button"
-        class="md:hidden p-2 rounded-xl text-slate-600 hover:text-slate-900 hover:bg-slate-100 focus:outline-none"
+        class="lg:hidden p-2 rounded-xl text-slate-600 hover:text-slate-900 hover:bg-slate-100 focus:outline-none"
         aria-label="Otvoriť menu"
       >
         <svg id="hamburger-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -82,7 +82,7 @@ const navItems = [
   </div>
 
   <!-- Mobile Dropdown Menu -->
-  <div id="mobile-menu" class="hidden md:hidden border-b border-slate-200 bg-white/95 px-4 pt-3 pb-6 space-y-2">
+  <div id="mobile-menu" class="hidden lg:hidden border-b border-slate-200 bg-white/95 px-4 pt-3 pb-6 space-y-2">
     {
       navItems.map((item) => (
         <a
