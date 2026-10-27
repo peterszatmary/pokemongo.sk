@@ -8,9 +8,18 @@
     "address": "Vajnorská 100 (VIVO! Bratislava), 831 04 Bratislava",
     "web": "https://www.ihrysko.sk",
     "type": "Kamenná predajňa a herňa",
-    "tags": ["Kamenná predajňa", "Herňa / Turnaje", "E-shop"],
+    "tags": [
+      "Kamenná predajňa",
+      "Herňa / Turnaje",
+      "E-shop"
+    ],
     "description": "Najväčšia a najznámejšia predajňa spoločenských a zberateľských hier na Slovensku. Pravidelné Pokémon herné dni, ligy, turnaje a obrovský výber TCG balíčkov a príslušenstva.",
-    "features": ["Oficiálna herňa", "Booster boxy & ETB", "Príslušenstvo Ultra Pro", "E-shop s odberom"]
+    "features": [
+      "Oficiálna herňa",
+      "Booster boxy & ETB",
+      "Príslušenstvo Ultra Pro",
+      "E-shop s odberom"
+    ]
   },
   {
     "id": "funtastic-bratislava",
@@ -21,9 +30,17 @@
     "address": "Heydukova 14, 811 08 Bratislava",
     "web": "https://www.funtastic.sk",
     "type": "Kamenná predajňa",
-    "tags": ["Kamenná predajňa", "E-shop", "Komiksy & Merch"],
+    "tags": [
+      "Kamenná predajňa",
+      "E-shop",
+      "Komiksy & Merch"
+    ],
     "description": "Kultové bratislavské centrum pre zberateľov, fanúšikov komiksov a fantasy. Bohatý výber originálnych Pokémon kariet, plechoviek (tiniek), figúrok a licencovaného merchu.",
-    "features": ["Kamenná predajňa v centre", "Plechovky a darčekové boxy", "Figúrky a merch"]
+    "features": [
+      "Kamenná predajňa v centre",
+      "Plechovky a darčekové boxy",
+      "Figúrky a merch"
+    ]
   },
   {
     "id": "cloud9-tcg",
@@ -34,9 +51,18 @@
     "address": "Bratislava / Celé Slovensko (Online)",
     "web": "https://cloud9tcg.sk",
     "type": "Špecializovaný TCG E-shop",
-    "tags": ["E-shop", "Kusové karty", "Zberateľské edície"],
+    "tags": [
+      "E-shop",
+      "Kusové karty",
+      "Zberateľské edície"
+    ],
     "description": "Slovenský špecialista zameraný čisto na TCG zberateľov. Ponúka nielen bežné boostre, ale aj kusové karty (singles), japonské edície a prémiové zberateľské boxy.",
-    "features": ["Kusové karty (singles)", "Japonské Pokémon edície", "Garantovaná originalita", "Rýchla expedícia"]
+    "features": [
+      "Kusové karty (singles)",
+      "Japonské Pokémon edície",
+      "Garantovaná originalita",
+      "Rýchla expedícia"
+    ]
   },
   {
     "id": "nekonecno-bratislava",
@@ -47,9 +73,17 @@
     "address": "Zlaté Piesky / OC Shopping Palace, Cesta na Senec 2/A, 821 04 Bratislava",
     "web": "https://www.nekonecno.sk",
     "type": "Kamenná predajňa a e-shop",
-    "tags": ["Kamenná predajňa", "E-shop", "Merch & Plyšáky"],
+    "tags": [
+      "Kamenná predajňa",
+      "E-shop",
+      "Merch & Plyšáky"
+    ],
     "description": "Raj pre fanúšikov popkultúry a anime. Okrem Pokémon kariet ponúka obrovské množstvo originálnych Pokémon plyšákov, batohov, kľúčeniek a darčekových predmetov.",
-    "features": ["Originálne plyšové hračky", "Pokémon oblečenie", "Balíčky a zberateľské kufríky"]
+    "features": [
+      "Originálne plyšové hračky",
+      "Pokémon oblečenie",
+      "Balíčky a zberateľské kufríky"
+    ]
   },
   {
     "id": "brloh-slovensko",
@@ -60,9 +94,17 @@
     "address": "Bratislava (Avion, Aupark, Eurovea, Bory), Košice (Aupark, Optima), Žilina, Trnava, Nitra, Banská Bystrica",
     "web": "https://www.brloh.sk",
     "type": "Sieť kamenných predajní",
-    "tags": ["Sieť predajní", "Kamenná predajňa", "E-shop"],
+    "tags": [
+      "Sieť predajní",
+      "Kamenná predajňa",
+      "E-shop"
+    ],
     "description": "Najväčšia herná sieť na Slovensku s predajňami vo všetkých významných obchodných centrách. Pravidelne naskladňujú najnovšie Pokémon TCG edície a herné doplnky.",
-    "features": ["V každom krajskom meste", "Osobný odber zadarmo", "Všetky najnovšie edície"]
+    "features": [
+      "V každom krajskom meste",
+      "Osobný odber zadarmo",
+      "Všetky najnovšie edície"
+    ]
   },
   {
     "id": "pgs-slovensko",
@@ -73,9 +115,17 @@
     "address": "Viac ako 20 predajní po celom Slovensku (Bratislava, Košice, Prešov, Poprad, Martin, Trenčín...)",
     "web": "https://www.pgs.sk",
     "type": "Sieť kamenných predajní",
-    "tags": ["Sieť predajní", "Kamenná predajňa", "E-shop"],
+    "tags": [
+      "Sieť predajní",
+      "Kamenná predajňa",
+      "E-shop"
+    ],
     "description": "Dlhoročný predajca hier a zberateľstva. Široký sortiment Pokémon kariet, zberateľských albumov, obalov na karty a tematického herného hardvéru.",
-    "features": ["Rýchle doručenie", "Osobný odber v predajniach", "Bohatý výber albumov a obalov"]
+    "features": [
+      "Rýchle doručenie",
+      "Osobný odber v predajniach",
+      "Bohatý výber albumov a obalov"
+    ]
   },
   {
     "id": "fenix-games-kosice",
@@ -86,9 +136,17 @@
     "address": "Hlavná 85, 040 01 Košice",
     "web": "https://www.fenixgames.sk",
     "type": "Kamenná predajňa a herňa",
-    "tags": ["Kamenná predajňa", "Herňa / Turnaje", "E-shop"],
+    "tags": [
+      "Kamenná predajňa",
+      "Herňa / Turnaje",
+      "E-shop"
+    ],
     "description": "Centrum pre komunitu na východnom Slovensku. Ponúka priestor na hranie, turnaje, predaj Pokémon kariet, obalov, kociek a herných podložiek.",
-    "features": ["Lokálna herňa", "Pravidelné turnaje", "Príslušenstvo Dragon Shield"]
+    "features": [
+      "Lokálna herňa",
+      "Pravidelné turnaje",
+      "Príslušenstvo Dragon Shield"
+    ]
   },
   {
     "id": "najada-games-praha",
@@ -99,9 +157,19 @@
     "address": "Spálená 31, 110 00 Praha 1",
     "web": "https://www.najada.games",
     "type": "Veľká kamenná predajňa a herňa",
-    "tags": ["Kamenná predajňa", "Herňa / Turnaje", "Kusové karty", "E-shop"],
+    "tags": [
+      "Kamenná predajňa",
+      "Herňa / Turnaje",
+      "Kusové karty",
+      "E-shop"
+    ],
     "description": "Jedno z najväčších TCG centier v strednej Európe. Masívna ponuka kusových kariet (singles), oficiálne sanctioned turnaje, výkup kariet a profesionálne zázemie pre hráčov.",
-    "features": ["Najväčší výber kusových kariet", "Veľká herňa v centre Prahy", "Výkup Pokémon kariet", "Oficiálna Pokémon Liga"]
+    "features": [
+      "Najväčší výber kusových kariet",
+      "Veľká herňa v centre Prahy",
+      "Výkup Pokémon kariet",
+      "Oficiálna Pokémon Liga"
+    ]
   },
   {
     "id": "cerny-rytir-praha",
@@ -112,9 +180,19 @@
     "address": "Za Poříčskou bránou 7, 186 00 Praha 8 - Karlín",
     "web": "https://www.cernyrytir.cz",
     "type": "Kamenná predajňa a herňa",
-    "tags": ["Kamenná predajňa", "Herňa / Turnaje", "E-shop", "Kusové karty"],
+    "tags": [
+      "Kamenná predajňa",
+      "Herňa / Turnaje",
+      "E-shop",
+      "Kusové karty"
+    ],
     "description": "Legendárna pražská herňa a predajňa fungujúca už od 90. rokov. Pravidelné Pokémon pre-release turnaje, výkup a predaj kusových kariet a prémiového príslušenstva.",
-    "features": ["Kultová herňa Karlín", "Pre-release eventy", "Výkup a predaj kusoviek", "Obrovská komunita"]
+    "features": [
+      "Kultová herňa Karlín",
+      "Pre-release eventy",
+      "Výkup a predaj kusoviek",
+      "Obrovská komunita"
+    ]
   },
   {
     "id": "vesely-drak",
@@ -125,9 +203,18 @@
     "address": "Špecializovaný e-shop pre ČR a Slovensko",
     "web": "https://www.vesely-drak.cz",
     "type": "Najväčší špecializovaný TCG e-shop",
-    "tags": ["E-shop", "Zberateľské edície", "Komunita"],
+    "tags": [
+      "E-shop",
+      "Zberateľské edície",
+      "Komunita"
+    ],
     "description": "Dlhodobo najväčší a najpopulárnejší e-shop pre Pokémon TCG v ČR aj na Slovensku. Prevádzkuje aj informačný portál Pokemon-guru.cz s recenziami a návodmi.",
-    "features": ["100% zameranie na Pokémon", "Predpredaje najnovších edícií", "Doručenie do SR za 1-2 dni", "Vernostný program"]
+    "features": [
+      "100% zameranie na Pokémon",
+      "Predpredaje najnovších edícií",
+      "Doručenie do SR za 1-2 dni",
+      "Vernostný program"
+    ]
   },
   {
     "id": "rishada-games-brno",
@@ -138,9 +225,18 @@
     "address": "Pekařská 40, 602 00 Brno",
     "web": "https://www.rishada.cz",
     "type": "Kamenná predajňa a herňa",
-    "tags": ["Kamenná predajňa", "Herňa / Turnaje", "E-shop"],
+    "tags": [
+      "Kamenná predajňa",
+      "Herňa / Turnaje",
+      "E-shop"
+    ],
     "description": "Najdôležitejšie centrum pre kartových hráčov a zberateľov na južnej Morave. Veľká herňa s priateľskou atmosférou, organizované turnaje a pestrá ponuka TCG tovaru.",
-    "features": ["Moravské centrum TCG", "Pravidelné Pokémon turnaje", "Skvelé herné zázemie", "Obaly a deckboxy"]
+    "features": [
+      "Moravské centrum TCG",
+      "Pravidelné Pokémon turnaje",
+      "Skvelé herné zázemie",
+      "Obaly a deckboxy"
+    ]
   },
   {
     "id": "fyft-praha",
@@ -151,9 +247,18 @@
     "address": "Osadní 35, 170 00 Praha 7 - Holešovice",
     "web": "https://fyft.cz",
     "type": "Kamenná predajňa a komunitný priestor",
-    "tags": ["Kamenná predajňa", "Komunita & Hry", "E-shop"],
+    "tags": [
+      "Kamenná predajňa",
+      "Komunita & Hry",
+      "E-shop"
+    ],
     "description": "Moderný komunitný priestor v pražských Holešoviciach. Predaj Pokémon kariet, zberateľských doplnkov a organizácia stretnutí pre nadšencov voľnočasových aktivít.",
-    "features": ["Krásny moderný priestor", "Predajňa v Holešoviciach", "Komunitné akcie", "Prémiové príslušenstvo"]
+    "features": [
+      "Krásny moderný priestor",
+      "Predajňa v Holešoviciach",
+      "Komunitné akcie",
+      "Prémiové príslušenstvo"
+    ]
   },
   {
     "id": "xzone-cr",
@@ -164,9 +269,17 @@
     "address": "Viacero pobočiek v najväčších českých mestách",
     "web": "https://www.xzone.cz",
     "type": "Sieť kamenných predajní",
-    "tags": ["Sieť predajní", "Kamenná predajňa", "E-shop"],
+    "tags": [
+      "Sieť predajní",
+      "Kamenná predajňa",
+      "E-shop"
+    ],
     "description": "Známa česká sieť predajní hier a zberateľstva. Pravidelne naskladňuje nové Pokémon edície, ETB boxy, zberateľské tiníka a oficiálny Nintendo merch.",
-    "features": ["Pobočky v centrách miest", "Bohatý herný merch", "Overený dlhoročný predajca"]
+    "features": [
+      "Pobočky v centrách miest",
+      "Bohatý herný merch",
+      "Overený dlhoročný predajca"
+    ]
   },
   {
     "id": "tolarie-pardubice",
@@ -177,8 +290,167 @@
     "address": "Jiráskova 29, 530 02 Pardubice",
     "web": "https://www.tolarie.cz",
     "type": "Kamenná predajňa a e-shop",
-    "tags": ["Kamenná predajňa", "Kusové karty", "E-shop"],
+    "tags": [
+      "Kamenná predajňa",
+      "Kusové karty",
+      "E-shop"
+    ],
     "description": "Známy špecializovaný obchod zameraný na zberateľské kartové hry. Široká ponuka kusových kariet, albumov, herných podložiek a booster balíčkov.",
-    "features": ["Kusovky a booster balíčky", "Herné podložky (playmaty)", "Rýchly e-shop"]
+    "features": [
+      "Kusovky a booster balíčky",
+      "Herné podložky (playmaty)",
+      "Rýchly e-shop"
+    ]
+  },
+  {
+    "id": "kartovo-sk",
+    "name": "Kartovo.sk",
+    "country": "SK",
+    "countryName": "Slovensko",
+    "city": "Celé Slovensko (Online)",
+    "address": "Špecializovaný slovenský TCG obchod so zberateľskými kartami",
+    "web": "https://www.kartovo.sk",
+    "type": "Špecializovaný TCG e-shop",
+    "tags": [
+      "E-shop",
+      "Kusové karty",
+      "Zberateľské edície"
+    ],
+    "description": "Rýchlo rastúci slovenský špecialista na zberateľské kartové hry so širokou ponukou Pokémon TCG boosterov, Elite Trainer Boxov, kusových kariet a zberateľského príslušenstva.",
+    "features": [
+      "Slovenský TCG špecialista",
+      "Kusové karty (singles)",
+      "Garantovaná originalita",
+      "Rýchle doručenie"
+    ]
+  },
+  {
+    "id": "smarty-sk",
+    "name": "Smarty.sk",
+    "country": "SK",
+    "countryName": "Slovensko",
+    "city": "Celé Slovensko",
+    "address": "Sieť predajní Smarty / JRC / Brloh po celom Slovensku a e-shop",
+    "web": "https://www.smarty.sk",
+    "type": "Herná sieť a e-shop",
+    "tags": [
+      "Sieť predajní",
+      "Kamenná predajňa",
+      "E-shop"
+    ],
+    "description": "Významný herný predajca spájajúci Smarty, JRC a Brloh. Pravidelné naskladňovanie najnovších Pokémon TCG edícií, herného príslušenstva a konzolových hier.",
+    "features": [
+      "Desiatky predajní v SR",
+      "Osobný odber zadarmo",
+      "Všetky nové edície"
+    ]
+  },
+  {
+    "id": "cardverse-cz",
+    "name": "Cardverse.cz",
+    "country": "CZ",
+    "countryName": "Česká republika",
+    "city": "Praha / Celá ČR & SR (Online)",
+    "address": "Špecializovaný zberateľský TCG e-shop s kartami",
+    "web": "https://cardverse.cz",
+    "type": "Prémiový TCG e-shop",
+    "tags": [
+      "E-shop",
+      "Zberateľské edície",
+      "Japonské karty"
+    ],
+    "description": "Moderný český e-shop zameraný na zberateľské kartové hry, booster boxy, vzácne zberateľské edície, graded karty a japonské Pokémon karty.",
+    "features": [
+      "Japonské aj anglické edície",
+      "Zberateľské rarity",
+      "Obaly a deckboxy",
+      "Expedícia do ČR aj SR"
+    ]
+  },
+  {
+    "id": "zardo-cards",
+    "name": "Zardo Cards",
+    "country": "CZ",
+    "countryName": "Česká republika",
+    "city": "Praha / Celá ČR & SR (Online)",
+    "address": "Špecialista na Pokémon karty a zberateľstvo",
+    "web": "https://zardo.cards",
+    "type": "Špecializovaný Pokémon e-shop",
+    "tags": [
+      "E-shop",
+      "Kusové karty",
+      "Grading"
+    ],
+    "description": "Známy zberateľský špecialista s ponukou originálnych Pokémon kariet, booster boxov, kufríkov a príslušenstva pre zberateľov a investorov.",
+    "features": [
+      "Špecialista na Pokémon",
+      "Kusovky a boostre",
+      "Prémiové balenie",
+      "Doručenie do SR"
+    ]
+  },
+  {
+    "id": "gengar-cz",
+    "name": "Gengar.cz",
+    "country": "CZ",
+    "countryName": "Česká republika",
+    "city": "Česká republika / Online",
+    "address": "Špecializovaný Pokémon e-shop pre trénerov a zberateľov",
+    "web": "https://gengar.cz",
+    "type": "Špecializovaný Pokémon e-shop",
+    "tags": [
+      "E-shop",
+      "Pokémon špecialista",
+      "Novinky"
+    ],
+    "description": "Tematický e-shop pomenovaný po obľúbenom duchovnom Pokémonovi. Široký výber originálnych Pokémon kariet, balíčkov, tiniek a zberateľských doplnkov.",
+    "features": [
+      "100% originálne produkty",
+      "Predpredaje nových sérií",
+      "Rýchle odoslanie",
+      "Doplnky na ochranu kariet"
+    ]
+  },
+  {
+    "id": "pokelandia-cz",
+    "name": "Pokélandia.cz",
+    "country": "CZ",
+    "countryName": "Česká republika",
+    "city": "Česká republika / Online",
+    "address": "Svet Pokémonov – e-shop pre zberateľov a hráčov",
+    "web": "https://pokelandia.cz",
+    "type": "Špecializovaný Pokémon e-shop",
+    "tags": [
+      "E-shop",
+      "Zberateľské boxy",
+      "Merch"
+    ],
+    "description": "Špecializovaný český svet Pokémonov s ponukou najnovších edícií Pokémon TCG, Elite Trainer Boxov, špeciálnych kolekcií a darčekových setov.",
+    "features": [
+      "Pestrý výber boosterov",
+      "Darčekové plechovky & kolekcie",
+      "Bezpečné doručenie"
+    ]
+  },
+  {
+    "id": "smarty-cz",
+    "name": "Smarty.cz",
+    "country": "CZ",
+    "countryName": "Česká republika",
+    "city": "Praha & Celá ČR",
+    "address": "Sieť predajní Smarty.cz / JRC po celej Českej republike a e-shop",
+    "web": "https://www.smarty.cz",
+    "type": "Veľká herná sieť a e-shop",
+    "tags": [
+      "Sieť predajní",
+      "Kamenná predajňa",
+      "E-shop"
+    ],
+    "description": "Jeden z najväčších predajcov elektroniky a hier v ČR, ktorý prevádzkuje sieť herných predajní Smarty a JRC s rozsiahlou ponukou Pokémon TCG tovaru.",
+    "features": [
+      "Desiatky predajní v ČR",
+      "Okamžitý odber v predajni",
+      "Veľké skladové zásoby"
+    ]
   }
 ]
