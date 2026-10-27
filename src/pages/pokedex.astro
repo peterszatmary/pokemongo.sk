@@ -1,0 +1,387 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import pokemonList from "../data/pokedex151.json";
+
+// Type color helper for badges
+const getTypeBadgeClasses = (type: string) => {
+  switch (type.toLowerCase()) {
+    case "fire":
+    case "ohnivý":
+      return "bg-rose-50 text-rose-700 border-rose-200";
+    case "water":
+    case "vodný":
+      return "bg-sky-50 text-sky-700 border-sky-200";
+    case "grass":
+    case "trávový":
+      return "bg-emerald-50 text-emerald-700 border-emerald-200";
+    case "electric":
+    case "elektrický":
+      return "bg-amber-50 text-amber-700 border-amber-200";
+    case "poison":
+    case "jedovatý":
+      return "bg-purple-50 text-purple-700 border-purple-200";
+    case "psychic":
+    case "psychický":
+      return "bg-pink-50 text-pink-700 border-pink-200";
+    case "bug":
+    case "hmyzí":
+      return "bg-lime-50 text-lime-700 border-lime-200";
+    case "ground":
+    case "zemný":
+      return "bg-amber-100/70 text-amber-800 border-amber-300";
+    case "rock":
+    case "kamenný":
+      return "bg-stone-100 text-stone-700 border-stone-300";
+    case "fighting":
+    case "bojový":
+      return "bg-orange-50 text-orange-800 border-orange-200";
+    case "ghost":
+    case "duchovný":
+      return "bg-indigo-50 text-indigo-700 border-indigo-200";
+    case "ice":
+    case "ľadový":
+      return "bg-cyan-50 text-cyan-700 border-cyan-200";
+    case "dragon":
+    case "dračí":
+      return "bg-violet-50 text-violet-800 border-violet-200";
+    case "fairy":
+    case "vílí":
+      return "bg-rose-50 text-rose-700 border-rose-200";
+    default:
+      return "bg-slate-100 text-slate-700 border-slate-200";
+  }
+};
+
+const allTypes = [
+  "Všetky",
+  "Trávový",
+  "Ohnivý",
+  "Vodný",
+  "Elektrický",
+  "Jedovatý",
+  "Psychický",
+  "Bojový",
+  "Zemný",
+  "Kamenný",
+  "Lietajúci",
+  "Hmyzí",
+  "Duchovný",
+  "Ľadový",
+  "Dračí"
+];
+
+const structuredData = [
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Domov",
+        "item": "https://pokemongo.sk/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Pokédex (151 Pokémonov)",
+        "item": "https://pokemongo.sk/pokedex/"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Pokédex: Prvých 151 Pokémonov (Kanto región)",
+    "description": "Zoznam všetkých 151 pôvodných Pokémonov prvej generácie s obrázkami, popismi a štatistikami.",
+    "numberOfItems": 151,
+    "itemListElement": pokemonList.map((p, idx) => ({
+      "@type": "ListItem",
+      "position": idx + 1,
+      "name": `${p.name} (${p.number})`,
+      "image": p.image,
+      "description": p.description
+    }))
+  }
+];
+---
+
+<Layout
+  title="Pokédex: Prvých 151 Pokémonov (Kanto región) | pokemongo.sk"
+  description="Oficiálny Pokédex prvých 151 Pokémonov prvej generácie. Obrázky, popisy, slovenské typy a štatistiky od Bulbasaura (#001) po Mewa (#151)."
+  jsonLd={structuredData}
+>
+  <Navbar slot="navbar" />
+
+  <section class="py-12 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <!-- Hero Header -->
+    <header class="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-rose-50 text-rose-700 border border-rose-200 mb-4 shadow-sm">
+        <span>📖</span>
+        <span>Kanto Región • Generácia I</span>
+      </div>
+      <h1 class="font-display text-4xl sm:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight">
+        Pokédex: Prvých 151 Pokémonov
+      </h1>
+      <p class="text-base sm:text-xl text-slate-600 mt-4 leading-relaxed">
+        Kompletný zoznam legendárnej prvej generácie. Prehľadávajte podľa mena, čísla alebo filtrujte podľa typu.
+      </p>
+    </header>
+
+    <!-- Controls: Search & Filter -->
+    <div class="mb-10 bg-white border border-slate-200/90 rounded-3xl p-6 sm:p-8 shadow-sm space-y-6">
+      
+      <!-- Search Input -->
+      <div class="relative max-w-2xl mx-auto">
+        <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-slate-400">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+        </div>
+        <input
+          type="text"
+          id="pokedex-search"
+          placeholder="Hľadať Pokémona podľa mena alebo čísla (napr. Pikachu, Charizard, #025)..."
+          class="w-full pl-12 pr-4 py-3.5 bg-slate-50 border border-slate-200 rounded-2xl text-slate-900 placeholder-slate-400 focus:bg-white focus:outline-none focus:border-rose-500 focus:ring-1 focus:ring-rose-500 transition text-sm sm:text-base"
+        />
+      </div>
+
+      <!-- Type Filters -->
+      <div>
+        <div class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3 text-center sm:text-left">
+          Filtrovať podľa typu:
+        </div>
+        <div class="flex flex-wrap gap-2 justify-center sm:justify-start" id="type-filters">
+          {
+            allTypes.map((type) => (
+              <button
+                type="button"
+                data-type={type}
+                class={`filter-btn px-3.5 py-1.5 rounded-xl text-xs font-semibold transition-all border ${
+                  type === "Všetky"
+                    ? "bg-slate-900 text-white border-slate-900 shadow-sm"
+                    : "bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100 hover:text-slate-900"
+                }`}
+              >
+                {type}
+              </button>
+            ))
+          }
+        </div>
+      </div>
+
+      <!-- Counter & Status -->
+      <div class="flex items-center justify-between text-xs sm:text-sm font-semibold text-slate-500 border-t border-slate-100 pt-4">
+        <span id="counter-text">Zobrazuje sa 151 zo 151 Pokémonov</span>
+        <button
+          type="button"
+          id="reset-filter-btn"
+          class="text-rose-600 hover:text-rose-700 hover:underline hidden"
+        >
+          Resetovať filter
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Pokémon Grid -->
+    <div
+      id="pokemon-grid"
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+    >
+      {
+        pokemonList.map((pokemon) => {
+          const typesSkJoined = pokemon.typesSk.join(" ");
+          const searchData = `${pokemon.name.toLowerCase()} ${pokemon.number.toLowerCase()} ${pokemon.id} ${typesSkJoined.toLowerCase()}`;
+
+          return (
+            <div
+              class="pokemon-card group bg-white border border-slate-200/90 rounded-3xl p-5 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between"
+              data-search={searchData}
+              data-types={typesSkJoined}
+            >
+              <div>
+                <!-- Card Header: Number & Types -->
+                <div class="flex items-center justify-between mb-3">
+                  <span class="font-display font-bold text-xs text-slate-400 group-hover:text-slate-600 transition">
+                    {pokemon.number}
+                  </span>
+                  <div class="flex gap-1.5">
+                    {pokemon.typesSk.map((typeSk) => (
+                      <span
+                        class={`px-2.5 py-0.5 rounded-lg text-[10px] font-bold uppercase tracking-wider border ${getTypeBadgeClasses(typeSk)}`}
+                      >
+                        {typeSk}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                <!-- Pokémon Artwork -->
+                <div class="relative w-full aspect-square flex items-center justify-center p-3 bg-slate-50/70 rounded-2xl mb-4 group-hover:bg-slate-50 transition">
+                  <img
+                    src={pokemon.image}
+                    alt={pokemon.name}
+                    loading="lazy"
+                    decoding="async"
+                    class="w-40 h-40 object-contain drop-shadow-md group-hover:scale-110 transition-transform duration-500 select-none"
+                  />
+                </div>
+
+                <!-- Pokémon Name -->
+                <h3 class="font-display text-xl font-bold text-slate-900 mb-2 group-hover:text-rose-600 transition">
+                  {pokemon.name}
+                </h3>
+
+                <!-- Description -->
+                <p class="text-xs text-slate-500 leading-relaxed line-clamp-3 mb-4">
+                  {pokemon.description}
+                </p>
+              </div>
+
+              <!-- Base Stats Bar Preview -->
+              <div class="pt-3 border-t border-slate-100 text-[11px] text-slate-500 space-y-1.5">
+                <div class="flex justify-between items-center">
+                  <span>HP: <strong class="text-slate-800">{pokemon.stats.HP}</strong></span>
+                  <span>Útok: <strong class="text-slate-800">{pokemon.stats.Attack}</strong></span>
+                  <span>Obrana: <strong class="text-slate-800">{pokemon.stats.Defense}</strong></span>
+                  <span>Rýchlosť: <strong class="text-slate-800">{pokemon.stats.Speed}</strong></span>
+                </div>
+              </div>
+
+            </div>
+          );
+        })
+      }
+    </div>
+
+    <!-- Empty State -->
+    <div id="no-results" class="hidden text-center py-16 bg-white border border-slate-200/90 rounded-3xl p-8 mt-6">
+      <div class="text-4xl mb-3">🔍</div>
+      <h3 class="font-display text-xl font-bold text-slate-900 mb-2">Žiaden Pokémon sa nenašiel</h3>
+      <p class="text-sm text-slate-500 max-w-md mx-auto mb-4">
+        Skúste upraviť hľadaný výraz alebo kliknite na resetovanie filtra.
+      </p>
+      <button
+        type="button"
+        id="empty-reset-btn"
+        class="px-5 py-2.5 rounded-xl font-semibold text-xs text-white bg-slate-900 hover:bg-slate-800 transition"
+      >
+        Zobraziť všetkých 151 Pokémonov
+      </button>
+    </div>
+
+    <!-- Domain Sale CTA -->
+    <div class="mt-20 p-8 sm:p-12 rounded-3xl bg-gradient-to-r from-rose-50 via-amber-50 to-emerald-50 border border-slate-200 text-center space-y-4">
+      <h3 class="font-display text-2xl sm:text-3xl font-bold text-slate-900">
+        Chcete vybudovať najväčšiu Pokémon databázu a komunitu v SR?
+      </h3>
+      <p class="text-sm sm:text-base text-slate-600 max-w-2xl mx-auto leading-relaxed">
+        Tento Pokédex je len ukážkou možností. Doména <strong>pokemongo.sk</strong> je na predaj a môže byť vaším centrom pre e-shop s kartami, sprievodcu a najnavštevovanejší portál na Slovensku.
+      </p>
+      <div class="pt-2">
+        <a
+          href="/#ponuka"
+          class="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl font-bold text-sm text-white bg-slate-900 hover:bg-slate-800 transition shadow-sm"
+        >
+          Predložiť cenovú ponuku na doménu →
+        </a>
+      </div>
+    </div>
+
+  </section>
+
+  <Footer slot="footer" />
+</Layout>
+
+<script>
+  const searchInput = document.getElementById("pokedex-search") as HTMLInputElement;
+  const cards = document.querySelectorAll(".pokemon-card") as NodeListOf<HTMLElement>;
+  const counterText = document.getElementById("counter-text");
+  const noResults = document.getElementById("no-results");
+  const filterBtns = document.querySelectorAll(".filter-btn") as NodeListOf<HTMLButtonElement>;
+  const resetBtn = document.getElementById("reset-filter-btn");
+  const emptyResetBtn = document.getElementById("empty-reset-btn");
+
+  let activeType = "Všetky";
+  let searchQuery = "";
+
+  function applyFilters() {
+    let visibleCount = 0;
+
+    cards.forEach((card) => {
+      const searchData = card.getAttribute("data-search") || "";
+      const typesData = card.getAttribute("data-types") || "";
+
+      const matchesSearch = !searchQuery || searchData.includes(searchQuery);
+      const matchesType = activeType === "Všetky" || typesData.includes(activeType);
+
+      if (matchesSearch && matchesType) {
+        card.style.display = "flex";
+        visibleCount++;
+      } else {
+        card.style.display = "none";
+      }
+    });
+
+    if (counterText) {
+      counterText.textContent = `Zobrazuje sa ${visibleCount} zo 151 Pokémonov`;
+    }
+
+    if (noResults) {
+      noResults.classList.toggle("hidden", visibleCount > 0);
+    }
+
+    const isFiltered = activeType !== "Všetky" || searchQuery !== "";
+    if (resetBtn) {
+      resetBtn.classList.toggle("hidden", !isFiltered);
+    }
+  }
+
+  function resetAll() {
+    activeType = "Všetky";
+    searchQuery = "";
+    if (searchInput) searchInput.value = "";
+
+    filterBtns.forEach((btn) => {
+      const isDefault = btn.getAttribute("data-type") === "Všetky";
+      btn.className = `filter-btn px-3.5 py-1.5 rounded-xl text-xs font-semibold transition-all border ${
+        isDefault
+          ? "bg-slate-900 text-white border-slate-900 shadow-sm"
+          : "bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100 hover:text-slate-900"
+      }`;
+    });
+
+    applyFilters();
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", (e) => {
+      searchQuery = (e.target as HTMLInputElement).value.toLowerCase().trim();
+      applyFilters();
+    });
+  }
+
+  filterBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      activeType = btn.getAttribute("data-type") || "Všetky";
+
+      filterBtns.forEach((b) => {
+        const isSelected = b === btn;
+        b.className = `filter-btn px-3.5 py-1.5 rounded-xl text-xs font-semibold transition-all border ${
+          isSelected
+            ? "bg-slate-900 text-white border-slate-900 shadow-sm"
+            : "bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100 hover:text-slate-900"
+        }`;
+      });
+
+      applyFilters();
+    });
+  });
+
+  if (resetBtn) resetBtn.addEventListener("click", resetAll);
+  if (emptyResetBtn) emptyResetBtn.addEventListener("click", resetAll);
+</script>

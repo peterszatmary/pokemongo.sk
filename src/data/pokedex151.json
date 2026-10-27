@@ -1,0 +1,3307 @@
+[
+  {
+    "id": 1,
+    "number": "#001",
+    "name": "Bulbasaur",
+    "types": [
+      "Grass",
+      "Poison"
+    ],
+    "typesSk": [
+      "Trávový",
+      "Jedovatý"
+    ],
+    "stats": {
+      "HP": 45,
+      "Attack": 49,
+      "Defense": 49,
+      "Sp. Attack": 65,
+      "Sp. Defense": 65,
+      "Speed": 45
+    },
+    "description": "A strange seed was planted on its back at birth. The plant sprouts and grows with this POKéMON.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
+  },
+  {
+    "id": 2,
+    "number": "#002",
+    "name": "Ivysaur",
+    "types": [
+      "Grass",
+      "Poison"
+    ],
+    "typesSk": [
+      "Trávový",
+      "Jedovatý"
+    ],
+    "stats": {
+      "HP": 60,
+      "Attack": 62,
+      "Defense": 63,
+      "Sp. Attack": 80,
+      "Sp. Defense": 80,
+      "Speed": 60
+    },
+    "description": "When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png"
+  },
+  {
+    "id": 3,
+    "number": "#003",
+    "name": "Venusaur",
+    "types": [
+      "Grass",
+      "Poison"
+    ],
+    "typesSk": [
+      "Trávový",
+      "Jedovatý"
+    ],
+    "stats": {
+      "HP": 80,
+      "Attack": 82,
+      "Defense": 83,
+      "Sp. Attack": 100,
+      "Sp. Defense": 100,
+      "Speed": 80
+    },
+    "description": "The plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png"
+  },
+  {
+    "id": 4,
+    "number": "#004",
+    "name": "Charmander",
+    "types": [
+      "Fire"
+    ],
+    "typesSk": [
+      "Ohnivý"
+    ],
+    "stats": {
+      "HP": 39,
+      "Attack": 52,
+      "Defense": 43,
+      "Sp. Attack": 60,
+      "Sp. Defense": 50,
+      "Speed": 65
+    },
+    "description": "Obviously prefers hot places. When it rains, steam is said to spout from the tip of its tail.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png"
+  },
+  {
+    "id": 5,
+    "number": "#005",
+    "name": "Charmeleon",
+    "types": [
+      "Fire"
+    ],
+    "typesSk": [
+      "Ohnivý"
+    ],
+    "stats": {
+      "HP": 58,
+      "Attack": 64,
+      "Defense": 58,
+      "Sp. Attack": 80,
+      "Sp. Defense": 65,
+      "Speed": 80
+    },
+    "description": "When it swings its burning tail, it elevates the temperature to unbearably high levels.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/5.png"
+  },
+  {
+    "id": 6,
+    "number": "#006",
+    "name": "Charizard",
+    "types": [
+      "Fire",
+      "Flying"
+    ],
+    "typesSk": [
+      "Ohnivý",
+      "Lietajúci"
+    ],
+    "stats": {
+      "HP": 78,
+      "Attack": 84,
+      "Defense": 78,
+      "Sp. Attack": 109,
+      "Sp. Defense": 85,
+      "Speed": 100
+    },
+    "description": "Spits fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png"
+  },
+  {
+    "id": 7,
+    "number": "#007",
+    "name": "Squirtle",
+    "types": [
+      "Water"
+    ],
+    "typesSk": [
+      "Vodný"
+    ],
+    "stats": {
+      "HP": 44,
+      "Attack": 48,
+      "Defense": 65,
+      "Sp. Attack": 50,
+      "Sp. Defense": 64,
+      "Speed": 43
+    },
+    "description": "After birth, its back swells and hardens into a shell. Powerfully sprays foam from its mouth.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png"
+  },
+  {
+    "id": 8,
+    "number": "#008",
+    "name": "Wartortle",
+    "types": [
+      "Water"
+    ],
+    "typesSk": [
+      "Vodný"
+    ],
+    "stats": {
+      "HP": 59,
+      "Attack": 63,
+      "Defense": 80,
+      "Sp. Attack": 65,
+      "Sp. Defense": 80,
+      "Speed": 58
+    },
+    "description": "Often hides in water to stalk unwary prey. For swimming fast, it moves its ears to maintain balance.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/8.png"
+  },
+  {
+    "id": 9,
+    "number": "#009",
+    "name": "Blastoise",
+    "types": [
+      "Water"
+    ],
+    "typesSk": [
+      "Vodný"
+    ],
+    "stats": {
+      "HP": 79,
+      "Attack": 83,
+      "Defense": 100,
+      "Sp. Attack": 85,
+      "Sp. Defense": 105,
+      "Speed": 78
+    },
+    "description": "A brutal POKéMON with pressurized water jets on its shell. They are used for high speed tackles.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/9.png"
+  },
+  {
+    "id": 10,
+    "number": "#010",
+    "name": "Caterpie",
+    "types": [
+      "Bug"
+    ],
+    "typesSk": [
+      "Hmyzí"
+    ],
+    "stats": {
+      "HP": 45,
+      "Attack": 30,
+      "Defense": 35,
+      "Sp. Attack": 20,
+      "Sp. Defense": 20,
+      "Speed": 45
+    },
+    "description": "Its short feet are tipped with suction pads that enable it to tirelessly climb slopes and walls.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10.png"
+  },
+  {
+    "id": 11,
+    "number": "#011",
+    "name": "Metapod",
+    "types": [
+      "Bug"
+    ],
+    "typesSk": [
+      "Hmyzí"
+    ],
+    "stats": {
+      "HP": 50,
+      "Attack": 20,
+      "Defense": 55,
+      "Sp. Attack": 25,
+      "Sp. Defense": 25,
+      "Speed": 30
+    },
+    "description": "This POKéMON is vulnerable to attack while its shell is soft, exposing its weak and tender body.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/11.png"
+  },
+  {
+    "id": 12,
+    "number": "#012",
+    "name": "Butterfree",
+    "types": [
+      "Bug",
+      "Flying"
+    ],
+    "typesSk": [
+      "Hmyzí",
+      "Lietajúci"
+    ],
+    "stats": {
+      "HP": 60,
+      "Attack": 45,
+      "Defense": 50,
+      "Sp. Attack": 90,
+      "Sp. Defense": 80,
+      "Speed": 70
+    },
+    "description": "In battle, it flaps its wings at high speed to release highly toxic dust into the air.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/12.png"
+  },
+  {
+    "id": 13,
+    "number": "#013",
+    "name": "Weedle",
+    "types": [
+      "Bug",
+      "Poison"
+    ],
+    "typesSk": [
+      "Hmyzí",
+      "Jedovatý"
+    ],
+    "stats": {
+      "HP": 40,
+      "Attack": 35,
+      "Defense": 30,
+      "Sp. Attack": 20,
+      "Sp. Defense": 20,
+      "Speed": 50
+    },
+    "description": "Often found in forests, eating leaves. It has a sharp venomous stinger on its head.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/13.png"
+  },
+  {
+    "id": 14,
+    "number": "#014",
+    "name": "Kakuna",
+    "types": [
+      "Bug",
+      "Poison"
+    ],
+    "typesSk": [
+      "Hmyzí",
+      "Jedovatý"
+    ],
+    "stats": {
+      "HP": 45,
+      "Attack": 25,
+      "Defense": 50,
+      "Sp. Attack": 25,
+      "Sp. Defense": 25,
+      "Speed": 35
+    },
+    "description": "Almost incapable of moving, this POKéMON can only harden its shell to protect itself from predators.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/14.png"
+  },
+  {
+    "id": 15,
+    "number": "#015",
+    "name": "Beedrill",
+    "types": [
+      "Bug",
+      "Poison"
+    ],
+    "typesSk": [
+      "Hmyzí",
+      "Jedovatý"
+    ],
+    "stats": {
+      "HP": 65,
+      "Attack": 90,
+      "Defense": 40,
+      "Sp. Attack": 45,
+      "Sp. Defense": 80,
+      "Speed": 75
+    },
+    "description": "Flies at high speed and attacks using its large venomous stingers on its forelegs and tail.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/15.png"
+  },
+  {
+    "id": 16,
+    "number": "#016",
+    "name": "Pidgey",
+    "types": [
+      "Normal",
+      "Flying"
+    ],
+    "typesSk": [
+      "Normálny",
+      "Lietajúci"
+    ],
+    "stats": {
+      "HP": 40,
+      "Attack": 45,
+      "Defense": 40,
+      "Sp. Attack": 35,
+      "Sp. Defense": 35,
+      "Speed": 56
+    },
+    "description": "A common sight in forests and woods. It flaps its wings at ground level to kick up blinding sand.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/16.png"
+  },
+  {
+    "id": 17,
+    "number": "#017",
+    "name": "Pidgeotto",
+    "types": [
+      "Normal",
+      "Flying"
+    ],
+    "typesSk": [
+      "Normálny",
+      "Lietajúci"
+    ],
+    "stats": {
+      "HP": 63,
+      "Attack": 60,
+      "Defense": 55,
+      "Sp. Attack": 50,
+      "Sp. Defense": 50,
+      "Speed": 71
+    },
+    "description": "Very protective of its sprawling territorial area, this POKéMON will fiercely peck at any intruder.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/17.png"
+  },
+  {
+    "id": 18,
+    "number": "#018",
+    "name": "Pidgeot",
+    "types": [
+      "Normal",
+      "Flying"
+    ],
+    "typesSk": [
+      "Normálny",
+      "Lietajúci"
+    ],
+    "stats": {
+      "HP": 83,
+      "Attack": 80,
+      "Defense": 75,
+      "Sp. Attack": 70,
+      "Sp. Defense": 70,
+      "Speed": 101
+    },
+    "description": "When hunting, it skims the surface of water at high speed to pick off unwary prey such as MAGIKARP.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/18.png"
+  },
+  {
+    "id": 19,
+    "number": "#019",
+    "name": "Rattata",
+    "types": [
+      "Normal"
+    ],
+    "typesSk": [
+      "Normálny"
+    ],
+    "stats": {
+      "HP": 30,
+      "Attack": 56,
+      "Defense": 35,
+      "Sp. Attack": 25,
+      "Sp. Defense": 35,
+      "Speed": 72
+    },
+    "description": "Bites anything when it attacks. Small and very quick, it is a common sight in many places.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/19.png"
+  },
+  {
+    "id": 20,
+    "number": "#020",
+    "name": "Raticate",
+    "types": [
+      "Normal"
+    ],
+    "typesSk": [
+      "Normálny"
+    ],
+    "stats": {
+      "HP": 55,
+      "Attack": 81,
+      "Defense": 60,
+      "Sp. Attack": 50,
+      "Sp. Defense": 70,
+      "Speed": 97
+    },
+    "description": "It uses its whis­ kers to maintain its balance. It apparently slows down if they are cut off.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/20.png"
+  },
+  {
+    "id": 21,
+    "number": "#021",
+    "name": "Spearow",
+    "types": [
+      "Normal",
+      "Flying"
+    ],
+    "typesSk": [
+      "Normálny",
+      "Lietajúci"
+    ],
+    "stats": {
+      "HP": 40,
+      "Attack": 60,
+      "Defense": 30,
+      "Sp. Attack": 31,
+      "Sp. Defense": 31,
+      "Speed": 70
+    },
+    "description": "Eats bugs in grassy areas. It has to flap its short wings at high speed to stay airborne.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/21.png"
+  },
+  {
+    "id": 22,
+    "number": "#022",
+    "name": "Fearow",
+    "types": [
+      "Normal",
+      "Flying"
+    ],
+    "typesSk": [
+      "Normálny",
+      "Lietajúci"
+    ],
+    "stats": {
+      "HP": 65,
+      "Attack": 90,
+      "Defense": 65,
+      "Sp. Attack": 61,
+      "Sp. Defense": 61,
+      "Speed": 100
+    },
+    "description": "With its huge and magnificent wings, it can keep aloft without ever having to land for rest.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/22.png"
+  },
+  {
+    "id": 23,
+    "number": "#023",
+    "name": "Ekans",
+    "types": [
+      "Poison"
+    ],
+    "typesSk": [
+      "Jedovatý"
+    ],
+    "stats": {
+      "HP": 35,
+      "Attack": 60,
+      "Defense": 44,
+      "Sp. Attack": 40,
+      "Sp. Defense": 54,
+      "Speed": 55
+    },
+    "description": "Moves silently and stealthily. Eats the eggs of birds, such as PIDGEY and SPEAROW, whole.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/23.png"
+  },
+  {
+    "id": 24,
+    "number": "#024",
+    "name": "Arbok",
+    "types": [
+      "Poison"
+    ],
+    "typesSk": [
+      "Jedovatý"
+    ],
+    "stats": {
+      "HP": 60,
+      "Attack": 95,
+      "Defense": 69,
+      "Sp. Attack": 65,
+      "Sp. Defense": 79,
+      "Speed": 80
+    },
+    "description": "It is rumored that the ferocious warning markings on its belly differ from area to area.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/24.png"
+  },
+  {
+    "id": 25,
+    "number": "#025",
+    "name": "Pikachu",
+    "types": [
+      "Electric"
+    ],
+    "typesSk": [
+      "Elektrický"
+    ],
+    "stats": {
+      "HP": 35,
+      "Attack": 55,
+      "Defense": 40,
+      "Sp. Attack": 50,
+      "Sp. Defense": 50,
+      "Speed": 90
+    },
+    "description": "When several of these POKéMON gather, their electricity could build and cause lightning storms.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png"
+  },
+  {
+    "id": 26,
+    "number": "#026",
+    "name": "Raichu",
+    "types": [
+      "Electric"
+    ],
+    "typesSk": [
+      "Elektrický"
+    ],
+    "stats": {
+      "HP": 60,
+      "Attack": 90,
+      "Defense": 55,
+      "Sp. Attack": 90,
+      "Sp. Defense": 80,
+      "Speed": 110
+    },
+    "description": "Its long tail serves as a ground to protect itself from its own high voltage power.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/26.png"
+  },
+  {
+    "id": 27,
+    "number": "#027",
+    "name": "Sandshrew",
+    "types": [
+      "Ground"
+    ],
+    "typesSk": [
+      "Zemný"
+    ],
+    "stats": {
+      "HP": 50,
+      "Attack": 75,
+      "Defense": 85,
+      "Sp. Attack": 20,
+      "Sp. Defense": 30,
+      "Speed": 40
+    },
+    "description": "Burrows deep underground in arid locations far from water. It only emerges to hunt for food.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/27.png"
+  },
+  {
+    "id": 28,
+    "number": "#028",
+    "name": "Sandslash",
+    "types": [
+      "Ground"
+    ],
+    "typesSk": [
+      "Zemný"
+    ],
+    "stats": {
+      "HP": 75,
+      "Attack": 100,
+      "Defense": 110,
+      "Sp. Attack": 45,
+      "Sp. Defense": 55,
+      "Speed": 65
+    },
+    "description": "Curls up into a spiny ball when threatened. It can roll while curled up to attack or escape.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/28.png"
+  },
+  {
+    "id": 29,
+    "number": "#029",
+    "name": "Nidoran♀",
+    "types": [
+      "Poison"
+    ],
+    "typesSk": [
+      "Jedovatý"
+    ],
+    "stats": {
+      "HP": 55,
+      "Attack": 47,
+      "Defense": 52,
+      "Sp. Attack": 40,
+      "Sp. Defense": 40,
+      "Speed": 41
+    },
+    "description": "Although small, its venomous barbs render this POKéMON dangerous. The female has smaller horns.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/29.png"
+  },
+  {
+    "id": 30,
+    "number": "#030",
+    "name": "Nidorina",
+    "types": [
+      "Poison"
+    ],
+    "typesSk": [
+      "Jedovatý"
+    ],
+    "stats": {
+      "HP": 70,
+      "Attack": 62,
+      "Defense": 67,
+      "Sp. Attack": 55,
+      "Sp. Defense": 55,
+      "Speed": 56
+    },
+    "description": "The female's horn develops slowly. Prefers physical attacks such as clawing and biting.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/30.png"
+  },
+  {
+    "id": 31,
+    "number": "#031",
+    "name": "Nidoqueen",
+    "types": [
+      "Poison",
+      "Ground"
+    ],
+    "typesSk": [
+      "Jedovatý",
+      "Zemný"
+    ],
+    "stats": {
+      "HP": 90,
+      "Attack": 92,
+      "Defense": 87,
+      "Sp. Attack": 75,
+      "Sp. Defense": 85,
+      "Speed": 76
+    },
+    "description": "Its hard scales provide strong protection. It uses its hefty bulk to execute powerful moves.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/31.png"
+  },
+  {
+    "id": 32,
+    "number": "#032",
+    "name": "Nidoran♂",
+    "types": [
+      "Poison"
+    ],
+    "typesSk": [
+      "Jedovatý"
+    ],
+    "stats": {
+      "HP": 46,
+      "Attack": 57,
+      "Defense": 40,
+      "Sp. Attack": 40,
+      "Sp. Defense": 40,
+      "Speed": 50
+    },
+    "description": "Stiffens its ears to sense danger. The larger its horns, the more powerful its secreted venom.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/32.png"
+  },
+  {
+    "id": 33,
+    "number": "#033",
+    "name": "Nidorino",
+    "types": [
+      "Poison"
+    ],
+    "typesSk": [
+      "Jedovatý"
+    ],
+    "stats": {
+      "HP": 61,
+      "Attack": 72,
+      "Defense": 57,
+      "Sp. Attack": 55,
+      "Sp. Defense": 55,
+      "Speed": 65
+    },
+    "description": "An aggressive POKéMON that is quick to attack. The horn on its head secretes a powerful venom.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/33.png"
+  },
+  {
+    "id": 34,
+    "number": "#034",
+    "name": "Nidoking",
+    "types": [
+      "Poison",
+      "Ground"
+    ],
+    "typesSk": [
+      "Jedovatý",
+      "Zemný"
+    ],
+    "stats": {
+      "HP": 81,
+      "Attack": 102,
+      "Defense": 77,
+      "Sp. Attack": 85,
+      "Sp. Defense": 75,
+      "Speed": 85
+    },
+    "description": "It uses its powerful tail in battle to smash, constrict, then break the prey's bones.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/34.png"
+  },
+  {
+    "id": 35,
+    "number": "#035",
+    "name": "Clefairy",
+    "types": [
+      "Fairy"
+    ],
+    "typesSk": [
+      "Vílí"
+    ],
+    "stats": {
+      "HP": 70,
+      "Attack": 45,
+      "Defense": 48,
+      "Sp. Attack": 60,
+      "Sp. Defense": 65,
+      "Speed": 35
+    },
+    "description": "Its magical and cute appeal has many admirers. It is rare and found only in certain areas.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/35.png"
+  },
+  {
+    "id": 36,
+    "number": "#036",
+    "name": "Clefable",
+    "types": [
+      "Fairy"
+    ],
+    "typesSk": [
+      "Vílí"
+    ],
+    "stats": {
+      "HP": 95,
+      "Attack": 70,
+      "Defense": 73,
+      "Sp. Attack": 95,
+      "Sp. Defense": 90,
+      "Speed": 60
+    },
+    "description": "A timid fairy POKéMON that is rarely seen. It will run and hide the moment it senses people.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/36.png"
+  },
+  {
+    "id": 37,
+    "number": "#037",
+    "name": "Vulpix",
+    "types": [
+      "Fire"
+    ],
+    "typesSk": [
+      "Ohnivý"
+    ],
+    "stats": {
+      "HP": 38,
+      "Attack": 41,
+      "Defense": 40,
+      "Sp. Attack": 50,
+      "Sp. Defense": 65,
+      "Speed": 65
+    },
+    "description": "At the time of birth, it has just one tail. The tail splits from its tip as it grows older.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/37.png"
+  },
+  {
+    "id": 38,
+    "number": "#038",
+    "name": "Ninetales",
+    "types": [
+      "Fire"
+    ],
+    "typesSk": [
+      "Ohnivý"
+    ],
+    "stats": {
+      "HP": 73,
+      "Attack": 76,
+      "Defense": 75,
+      "Sp. Attack": 81,
+      "Sp. Defense": 100,
+      "Speed": 100
+    },
+    "description": "Very smart and very vengeful. Grabbing one of its many tails could result in a 1000-year curse.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/38.png"
+  },
+  {
+    "id": 39,
+    "number": "#039",
+    "name": "Jigglypuff",
+    "types": [
+      "Normal",
+      "Fairy"
+    ],
+    "typesSk": [
+      "Normálny",
+      "Vílí"
+    ],
+    "stats": {
+      "HP": 115,
+      "Attack": 45,
+      "Defense": 20,
+      "Sp. Attack": 45,
+      "Sp. Defense": 25,
+      "Speed": 20
+    },
+    "description": "When its huge eyes light up, it sings a mysteriously soothing melody that lulls its enemies to sleep.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/39.png"
+  },
+  {
+    "id": 40,
+    "number": "#040",
+    "name": "Wigglytuff",
+    "types": [
+      "Normal",
+      "Fairy"
+    ],
+    "typesSk": [
+      "Normálny",
+      "Vílí"
+    ],
+    "stats": {
+      "HP": 140,
+      "Attack": 70,
+      "Defense": 45,
+      "Sp. Attack": 85,
+      "Sp. Defense": 50,
+      "Speed": 45
+    },
+    "description": "The body is soft and rubbery. When angered, it will suck in air and inflate itself to an enormous size.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/40.png"
+  },
+  {
+    "id": 41,
+    "number": "#041",
+    "name": "Zubat",
+    "types": [
+      "Poison",
+      "Flying"
+    ],
+    "typesSk": [
+      "Jedovatý",
+      "Lietajúci"
+    ],
+    "stats": {
+      "HP": 40,
+      "Attack": 45,
+      "Defense": 35,
+      "Sp. Attack": 30,
+      "Sp. Defense": 40,
+      "Speed": 55
+    },
+    "description": "Forms colonies in perpetually dark places. Uses ultrasonic waves to identify and approach targets.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/41.png"
+  },
+  {
+    "id": 42,
+    "number": "#042",
+    "name": "Golbat",
+    "types": [
+      "Poison",
+      "Flying"
+    ],
+    "typesSk": [
+      "Jedovatý",
+      "Lietajúci"
+    ],
+    "stats": {
+      "HP": 75,
+      "Attack": 80,
+      "Defense": 70,
+      "Sp. Attack": 65,
+      "Sp. Defense": 75,
+      "Speed": 90
+    },
+    "description": "Once it strikes, it will not stop draining energy from the victim even if it gets too heavy to fly.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/42.png"
+  },
+  {
+    "id": 43,
+    "number": "#043",
+    "name": "Oddish",
+    "types": [
+      "Grass",
+      "Poison"
+    ],
+    "typesSk": [
+      "Trávový",
+      "Jedovatý"
+    ],
+    "stats": {
+      "HP": 45,
+      "Attack": 50,
+      "Defense": 55,
+      "Sp. Attack": 75,
+      "Sp. Defense": 65,
+      "Speed": 30
+    },
+    "description": "During the day, it keeps its face buried in the ground. At night, it wanders around sowing its seeds.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/43.png"
+  },
+  {
+    "id": 44,
+    "number": "#044",
+    "name": "Gloom",
+    "types": [
+      "Grass",
+      "Poison"
+    ],
+    "typesSk": [
+      "Trávový",
+      "Jedovatý"
+    ],
+    "stats": {
+      "HP": 60,
+      "Attack": 65,
+      "Defense": 70,
+      "Sp. Attack": 85,
+      "Sp. Defense": 75,
+      "Speed": 40
+    },
+    "description": "The fluid that oozes from its mouth isn't drool. It is a nectar that is used to attract prey.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/44.png"
+  },
+  {
+    "id": 45,
+    "number": "#045",
+    "name": "Vileplume",
+    "types": [
+      "Grass",
+      "Poison"
+    ],
+    "typesSk": [
+      "Trávový",
+      "Jedovatý"
+    ],
+    "stats": {
+      "HP": 75,
+      "Attack": 80,
+      "Defense": 85,
+      "Sp. Attack": 110,
+      "Sp. Defense": 90,
+      "Speed": 50
+    },
+    "description": "The larger its petals, the more toxic pollen it contains. Its big head is heavy and hard to hold up.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/45.png"
+  },
+  {
+    "id": 46,
+    "number": "#046",
+    "name": "Paras",
+    "types": [
+      "Bug",
+      "Grass"
+    ],
+    "typesSk": [
+      "Hmyzí",
+      "Trávový"
+    ],
+    "stats": {
+      "HP": 35,
+      "Attack": 70,
+      "Defense": 55,
+      "Sp. Attack": 45,
+      "Sp. Defense": 55,
+      "Speed": 25
+    },
+    "description": "Burrows to suck tree roots. The mushrooms on its back grow by draw­ ing nutrients from the bug host.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/46.png"
+  },
+  {
+    "id": 47,
+    "number": "#047",
+    "name": "Parasect",
+    "types": [
+      "Bug",
+      "Grass"
+    ],
+    "typesSk": [
+      "Hmyzí",
+      "Trávový"
+    ],
+    "stats": {
+      "HP": 60,
+      "Attack": 95,
+      "Defense": 80,
+      "Sp. Attack": 60,
+      "Sp. Defense": 80,
+      "Speed": 30
+    },
+    "description": "A host-parasite pair in which the parasite mushroom has taken over the host bug. Prefers damp places.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/47.png"
+  },
+  {
+    "id": 48,
+    "number": "#048",
+    "name": "Venonat",
+    "types": [
+      "Bug",
+      "Poison"
+    ],
+    "typesSk": [
+      "Hmyzí",
+      "Jedovatý"
+    ],
+    "stats": {
+      "HP": 60,
+      "Attack": 55,
+      "Defense": 50,
+      "Sp. Attack": 40,
+      "Sp. Defense": 55,
+      "Speed": 45
+    },
+    "description": "Lives in the shadows of tall trees where it eats insects. It is attracted by light at night.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/48.png"
+  },
+  {
+    "id": 49,
+    "number": "#049",
+    "name": "Venomoth",
+    "types": [
+      "Bug",
+      "Poison"
+    ],
+    "typesSk": [
+      "Hmyzí",
+      "Jedovatý"
+    ],
+    "stats": {
+      "HP": 70,
+      "Attack": 65,
+      "Defense": 60,
+      "Sp. Attack": 90,
+      "Sp. Defense": 75,
+      "Speed": 90
+    },
+    "description": "The dust-like scales covering its wings are color coded to indicate the kinds of poison it has.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/49.png"
+  },
+  {
+    "id": 50,
+    "number": "#050",
+    "name": "Diglett",
+    "types": [
+      "Ground"
+    ],
+    "typesSk": [
+      "Zemný"
+    ],
+    "stats": {
+      "HP": 10,
+      "Attack": 55,
+      "Defense": 25,
+      "Sp. Attack": 35,
+      "Sp. Defense": 45,
+      "Speed": 95
+    },
+    "description": "Lives about one yard underground where it feeds on plant roots. It sometimes appears above ground.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/50.png"
+  },
+  {
+    "id": 51,
+    "number": "#051",
+    "name": "Dugtrio",
+    "types": [
+      "Ground"
+    ],
+    "typesSk": [
+      "Zemný"
+    ],
+    "stats": {
+      "HP": 35,
+      "Attack": 100,
+      "Defense": 50,
+      "Sp. Attack": 50,
+      "Sp. Defense": 70,
+      "Speed": 120
+    },
+    "description": "A team of DIGLETT triplets. It triggers huge earthquakes by burrowing 60 miles underground.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/51.png"
+  },
+  {
+    "id": 52,
+    "number": "#052",
+    "name": "Meowth",
+    "types": [
+      "Normal"
+    ],
+    "typesSk": [
+      "Normálny"
+    ],
+    "stats": {
+      "HP": 40,
+      "Attack": 45,
+      "Defense": 35,
+      "Sp. Attack": 40,
+      "Sp. Defense": 40,
+      "Speed": 90
+    },
+    "description": "Adores circular objects. Wanders the streets on a nightly basis to look for dropped loose change.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/52.png"
+  },
+  {
+    "id": 53,
+    "number": "#053",
+    "name": "Persian",
+    "types": [
+      "Normal"
+    ],
+    "typesSk": [
+      "Normálny"
+    ],
+    "stats": {
+      "HP": 65,
+      "Attack": 70,
+      "Defense": 60,
+      "Sp. Attack": 65,
+      "Sp. Defense": 65,
+      "Speed": 115
+    },
+    "description": "Although its fur has many admirers, it is tough to raise as a pet because of its fickle meanness.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/53.png"
+  },
+  {
+    "id": 54,
+    "number": "#054",
+    "name": "Psyduck",
+    "types": [
+      "Water"
+    ],
+    "typesSk": [
+      "Vodný"
+    ],
+    "stats": {
+      "HP": 50,
+      "Attack": 52,
+      "Defense": 48,
+      "Sp. Attack": 65,
+      "Sp. Defense": 50,
+      "Speed": 55
+    },
+    "description": "While lulling its enemies with its vacant look, this wily POKéMON will use psychokinetic powers.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/54.png"
+  },
+  {
+    "id": 55,
+    "number": "#055",
+    "name": "Golduck",
+    "types": [
+      "Water"
+    ],
+    "typesSk": [
+      "Vodný"
+    ],
+    "stats": {
+      "HP": 80,
+      "Attack": 82,
+      "Defense": 78,
+      "Sp. Attack": 95,
+      "Sp. Defense": 80,
+      "Speed": 85
+    },
+    "description": "Often seen swim­ ming elegantly by lake shores. It is often mistaken for the Japanese monster, Kappa.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/55.png"
+  },
+  {
+    "id": 56,
+    "number": "#056",
+    "name": "Mankey",
+    "types": [
+      "Fighting"
+    ],
+    "typesSk": [
+      "Bojový"
+    ],
+    "stats": {
+      "HP": 40,
+      "Attack": 80,
+      "Defense": 35,
+      "Sp. Attack": 35,
+      "Sp. Defense": 45,
+      "Speed": 70
+    },
+    "description": "Extremely quick to anger. It could be docile one moment then thrashing away the next instant.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/56.png"
+  },
+  {
+    "id": 57,
+    "number": "#057",
+    "name": "Primeape",
+    "types": [
+      "Fighting"
+    ],
+    "typesSk": [
+      "Bojový"
+    ],
+    "stats": {
+      "HP": 65,
+      "Attack": 105,
+      "Defense": 60,
+      "Sp. Attack": 60,
+      "Sp. Defense": 70,
+      "Speed": 95
+    },
+    "description": "Always furious and tenacious to boot. It will not abandon chasing its quarry until it is caught.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/57.png"
+  },
+  {
+    "id": 58,
+    "number": "#058",
+    "name": "Growlithe",
+    "types": [
+      "Fire"
+    ],
+    "typesSk": [
+      "Ohnivý"
+    ],
+    "stats": {
+      "HP": 55,
+      "Attack": 70,
+      "Defense": 45,
+      "Sp. Attack": 70,
+      "Sp. Defense": 50,
+      "Speed": 60
+    },
+    "description": "Very protective of its territory. It will bark and bite to repel intruders from its space.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/58.png"
+  },
+  {
+    "id": 59,
+    "number": "#059",
+    "name": "Arcanine",
+    "types": [
+      "Fire"
+    ],
+    "typesSk": [
+      "Ohnivý"
+    ],
+    "stats": {
+      "HP": 90,
+      "Attack": 110,
+      "Defense": 80,
+      "Sp. Attack": 100,
+      "Sp. Defense": 80,
+      "Speed": 95
+    },
+    "description": "A POKéMON that has been admired since the past for its beauty. It runs agilely as if on wings.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/59.png"
+  },
+  {
+    "id": 60,
+    "number": "#060",
+    "name": "Poliwag",
+    "types": [
+      "Water"
+    ],
+    "typesSk": [
+      "Vodný"
+    ],
+    "stats": {
+      "HP": 40,
+      "Attack": 50,
+      "Defense": 40,
+      "Sp. Attack": 40,
+      "Sp. Defense": 40,
+      "Speed": 90
+    },
+    "description": "Its newly grown legs prevent it from running. It appears to prefer swimming than trying to stand.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/60.png"
+  },
+  {
+    "id": 61,
+    "number": "#061",
+    "name": "Poliwhirl",
+    "types": [
+      "Water"
+    ],
+    "typesSk": [
+      "Vodný"
+    ],
+    "stats": {
+      "HP": 65,
+      "Attack": 65,
+      "Defense": 65,
+      "Sp. Attack": 50,
+      "Sp. Defense": 50,
+      "Speed": 90
+    },
+    "description": "Capable of living in or out of water. When out of water, it sweats to keep its body slimy.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/61.png"
+  },
+  {
+    "id": 62,
+    "number": "#062",
+    "name": "Poliwrath",
+    "types": [
+      "Water",
+      "Fighting"
+    ],
+    "typesSk": [
+      "Vodný",
+      "Bojový"
+    ],
+    "stats": {
+      "HP": 90,
+      "Attack": 95,
+      "Defense": 95,
+      "Sp. Attack": 70,
+      "Sp. Defense": 90,
+      "Speed": 70
+    },
+    "description": "An adept swimmer at both the front crawl and breast stroke. Easily overtakes the best human swimmers.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/62.png"
+  },
+  {
+    "id": 63,
+    "number": "#063",
+    "name": "Abra",
+    "types": [
+      "Psychic"
+    ],
+    "typesSk": [
+      "Psychický"
+    ],
+    "stats": {
+      "HP": 25,
+      "Attack": 20,
+      "Defense": 15,
+      "Sp. Attack": 105,
+      "Sp. Defense": 55,
+      "Speed": 90
+    },
+    "description": "Using its ability to read minds, it will identify impending danger and TELEPORT to safety.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/63.png"
+  },
+  {
+    "id": 64,
+    "number": "#064",
+    "name": "Kadabra",
+    "types": [
+      "Psychic"
+    ],
+    "typesSk": [
+      "Psychický"
+    ],
+    "stats": {
+      "HP": 40,
+      "Attack": 35,
+      "Defense": 30,
+      "Sp. Attack": 120,
+      "Sp. Defense": 70,
+      "Speed": 105
+    },
+    "description": "It emits special alpha waves from its body that induce headaches just by being close by.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/64.png"
+  },
+  {
+    "id": 65,
+    "number": "#065",
+    "name": "Alakazam",
+    "types": [
+      "Psychic"
+    ],
+    "typesSk": [
+      "Psychický"
+    ],
+    "stats": {
+      "HP": 55,
+      "Attack": 50,
+      "Defense": 45,
+      "Sp. Attack": 135,
+      "Sp. Defense": 95,
+      "Speed": 120
+    },
+    "description": "Its brain can out­ perform a super­ computer. Its intelligence quotient is said to be 5,000.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/65.png"
+  },
+  {
+    "id": 66,
+    "number": "#066",
+    "name": "Machop",
+    "types": [
+      "Fighting"
+    ],
+    "typesSk": [
+      "Bojový"
+    ],
+    "stats": {
+      "HP": 70,
+      "Attack": 80,
+      "Defense": 50,
+      "Sp. Attack": 35,
+      "Sp. Defense": 35,
+      "Speed": 35
+    },
+    "description": "Loves to build its muscles. It trains in all styles of martial arts to become even stronger.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/66.png"
+  },
+  {
+    "id": 67,
+    "number": "#067",
+    "name": "Machoke",
+    "types": [
+      "Fighting"
+    ],
+    "typesSk": [
+      "Bojový"
+    ],
+    "stats": {
+      "HP": 80,
+      "Attack": 100,
+      "Defense": 70,
+      "Sp. Attack": 50,
+      "Sp. Defense": 60,
+      "Speed": 45
+    },
+    "description": "Its muscular body is so powerful, it must wear a power save belt to be able to regulate its motions.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/67.png"
+  },
+  {
+    "id": 68,
+    "number": "#068",
+    "name": "Machamp",
+    "types": [
+      "Fighting"
+    ],
+    "typesSk": [
+      "Bojový"
+    ],
+    "stats": {
+      "HP": 90,
+      "Attack": 130,
+      "Defense": 80,
+      "Sp. Attack": 65,
+      "Sp. Defense": 85,
+      "Speed": 55
+    },
+    "description": "Using its heavy muscles, it throws powerful punches that can send the victim clear over the horizon.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/68.png"
+  },
+  {
+    "id": 69,
+    "number": "#069",
+    "name": "Bellsprout",
+    "types": [
+      "Grass",
+      "Poison"
+    ],
+    "typesSk": [
+      "Trávový",
+      "Jedovatý"
+    ],
+    "stats": {
+      "HP": 50,
+      "Attack": 75,
+      "Defense": 35,
+      "Sp. Attack": 70,
+      "Sp. Defense": 30,
+      "Speed": 40
+    },
+    "description": "A carnivorous POKéMON that traps and eats bugs. It uses its root feet to soak up needed moisture.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/69.png"
+  },
+  {
+    "id": 70,
+    "number": "#070",
+    "name": "Weepinbell",
+    "types": [
+      "Grass",
+      "Poison"
+    ],
+    "typesSk": [
+      "Trávový",
+      "Jedovatý"
+    ],
+    "stats": {
+      "HP": 65,
+      "Attack": 90,
+      "Defense": 50,
+      "Sp. Attack": 85,
+      "Sp. Defense": 45,
+      "Speed": 55
+    },
+    "description": "It spits out POISONPOWDER to immobilize the enemy and then finishes it with a spray of ACID.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/70.png"
+  },
+  {
+    "id": 71,
+    "number": "#071",
+    "name": "Victreebel",
+    "types": [
+      "Grass",
+      "Poison"
+    ],
+    "typesSk": [
+      "Trávový",
+      "Jedovatý"
+    ],
+    "stats": {
+      "HP": 80,
+      "Attack": 105,
+      "Defense": 65,
+      "Sp. Attack": 100,
+      "Sp. Defense": 70,
+      "Speed": 70
+    },
+    "description": "Said to live in huge colonies deep in jungles, although no one has ever returned from there.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/71.png"
+  },
+  {
+    "id": 72,
+    "number": "#072",
+    "name": "Tentacool",
+    "types": [
+      "Water",
+      "Poison"
+    ],
+    "typesSk": [
+      "Vodný",
+      "Jedovatý"
+    ],
+    "stats": {
+      "HP": 40,
+      "Attack": 40,
+      "Defense": 35,
+      "Sp. Attack": 50,
+      "Sp. Defense": 100,
+      "Speed": 70
+    },
+    "description": "Drifts in shallow seas. Anglers who hook them by accident are often punished by its stinging acid.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/72.png"
+  },
+  {
+    "id": 73,
+    "number": "#073",
+    "name": "Tentacruel",
+    "types": [
+      "Water",
+      "Poison"
+    ],
+    "typesSk": [
+      "Vodný",
+      "Jedovatý"
+    ],
+    "stats": {
+      "HP": 80,
+      "Attack": 70,
+      "Defense": 65,
+      "Sp. Attack": 80,
+      "Sp. Defense": 120,
+      "Speed": 100
+    },
+    "description": "The tentacles are normally kept short. On hunts, they are extended to ensnare and immobilize prey.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/73.png"
+  },
+  {
+    "id": 74,
+    "number": "#074",
+    "name": "Geodude",
+    "types": [
+      "Rock",
+      "Ground"
+    ],
+    "typesSk": [
+      "Kamenný",
+      "Zemný"
+    ],
+    "stats": {
+      "HP": 40,
+      "Attack": 80,
+      "Defense": 100,
+      "Sp. Attack": 30,
+      "Sp. Defense": 30,
+      "Speed": 20
+    },
+    "description": "Found in fields and mountains. Mistaking them for boulders, people often step or trip on them.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/74.png"
+  },
+  {
+    "id": 75,
+    "number": "#075",
+    "name": "Graveler",
+    "types": [
+      "Rock",
+      "Ground"
+    ],
+    "typesSk": [
+      "Kamenný",
+      "Zemný"
+    ],
+    "stats": {
+      "HP": 55,
+      "Attack": 95,
+      "Defense": 115,
+      "Sp. Attack": 45,
+      "Sp. Defense": 45,
+      "Speed": 35
+    },
+    "description": "Rolls down slopes to move. It rolls over any obstacle without slowing or changing its direction.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/75.png"
+  },
+  {
+    "id": 76,
+    "number": "#076",
+    "name": "Golem",
+    "types": [
+      "Rock",
+      "Ground"
+    ],
+    "typesSk": [
+      "Kamenný",
+      "Zemný"
+    ],
+    "stats": {
+      "HP": 80,
+      "Attack": 120,
+      "Defense": 130,
+      "Sp. Attack": 55,
+      "Sp. Defense": 65,
+      "Speed": 45
+    },
+    "description": "Its boulder-like body is extremely hard. It can easily withstand dynamite blasts without damage.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/76.png"
+  },
+  {
+    "id": 77,
+    "number": "#077",
+    "name": "Ponyta",
+    "types": [
+      "Fire"
+    ],
+    "typesSk": [
+      "Ohnivý"
+    ],
+    "stats": {
+      "HP": 50,
+      "Attack": 85,
+      "Defense": 55,
+      "Sp. Attack": 65,
+      "Sp. Defense": 65,
+      "Speed": 90
+    },
+    "description": "Its hooves are 10 times harder than diamonds. It can trample anything completely flat in little time.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/77.png"
+  },
+  {
+    "id": 78,
+    "number": "#078",
+    "name": "Rapidash",
+    "types": [
+      "Fire"
+    ],
+    "typesSk": [
+      "Ohnivý"
+    ],
+    "stats": {
+      "HP": 65,
+      "Attack": 100,
+      "Defense": 70,
+      "Sp. Attack": 80,
+      "Sp. Defense": 80,
+      "Speed": 105
+    },
+    "description": "Very competitive, this POKéMON will chase anything that moves fast in the hopes of racing it.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/78.png"
+  },
+  {
+    "id": 79,
+    "number": "#079",
+    "name": "Slowpoke",
+    "types": [
+      "Water",
+      "Psychic"
+    ],
+    "typesSk": [
+      "Vodný",
+      "Psychický"
+    ],
+    "stats": {
+      "HP": 90,
+      "Attack": 65,
+      "Defense": 65,
+      "Sp. Attack": 40,
+      "Sp. Defense": 40,
+      "Speed": 15
+    },
+    "description": "Incredibly slow and dopey. It takes 5 seconds for it to feel pain when under attack.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/79.png"
+  },
+  {
+    "id": 80,
+    "number": "#080",
+    "name": "Slowbro",
+    "types": [
+      "Water",
+      "Psychic"
+    ],
+    "typesSk": [
+      "Vodný",
+      "Psychický"
+    ],
+    "stats": {
+      "HP": 95,
+      "Attack": 75,
+      "Defense": 110,
+      "Sp. Attack": 100,
+      "Sp. Defense": 80,
+      "Speed": 30
+    },
+    "description": "The SHELLDER that is latched onto SLOWPOKE's tail is said to feed on the host's left over scraps.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/80.png"
+  },
+  {
+    "id": 81,
+    "number": "#081",
+    "name": "Magnemite",
+    "types": [
+      "Electric",
+      "Steel"
+    ],
+    "typesSk": [
+      "Elektrický",
+      "Oceľový"
+    ],
+    "stats": {
+      "HP": 25,
+      "Attack": 35,
+      "Defense": 70,
+      "Sp. Attack": 95,
+      "Sp. Defense": 55,
+      "Speed": 45
+    },
+    "description": "Uses anti-gravity to stay suspended. Appears without warning and uses THUNDER WAVE and similar moves.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/81.png"
+  },
+  {
+    "id": 82,
+    "number": "#082",
+    "name": "Magneton",
+    "types": [
+      "Electric",
+      "Steel"
+    ],
+    "typesSk": [
+      "Elektrický",
+      "Oceľový"
+    ],
+    "stats": {
+      "HP": 50,
+      "Attack": 60,
+      "Defense": 95,
+      "Sp. Attack": 120,
+      "Sp. Defense": 70,
+      "Speed": 70
+    },
+    "description": "Formed by several MAGNEMITEs linked together. They frequently appear when sunspots flare up.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/82.png"
+  },
+  {
+    "id": 83,
+    "number": "#083",
+    "name": "Farfetch'd",
+    "types": [
+      "Normal",
+      "Flying"
+    ],
+    "typesSk": [
+      "Normálny",
+      "Lietajúci"
+    ],
+    "stats": {
+      "HP": 52,
+      "Attack": 90,
+      "Defense": 55,
+      "Sp. Attack": 58,
+      "Sp. Defense": 62,
+      "Speed": 60
+    },
+    "description": "The sprig of green onions it holds is its weapon. It is used much like a metal sword.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/83.png"
+  },
+  {
+    "id": 84,
+    "number": "#084",
+    "name": "Doduo",
+    "types": [
+      "Normal",
+      "Flying"
+    ],
+    "typesSk": [
+      "Normálny",
+      "Lietajúci"
+    ],
+    "stats": {
+      "HP": 35,
+      "Attack": 85,
+      "Defense": 45,
+      "Sp. Attack": 35,
+      "Sp. Defense": 35,
+      "Speed": 75
+    },
+    "description": "A bird that makes up for its poor flying with its fast foot speed. Leaves giant footprints.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/84.png"
+  },
+  {
+    "id": 85,
+    "number": "#085",
+    "name": "Dodrio",
+    "types": [
+      "Normal",
+      "Flying"
+    ],
+    "typesSk": [
+      "Normálny",
+      "Lietajúci"
+    ],
+    "stats": {
+      "HP": 60,
+      "Attack": 110,
+      "Defense": 70,
+      "Sp. Attack": 60,
+      "Sp. Defense": 60,
+      "Speed": 110
+    },
+    "description": "Uses its three brains to execute complex plans. While two heads sleep, one head stays awake.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/85.png"
+  },
+  {
+    "id": 86,
+    "number": "#086",
+    "name": "Seel",
+    "types": [
+      "Water"
+    ],
+    "typesSk": [
+      "Vodný"
+    ],
+    "stats": {
+      "HP": 65,
+      "Attack": 45,
+      "Defense": 55,
+      "Sp. Attack": 45,
+      "Sp. Defense": 70,
+      "Speed": 45
+    },
+    "description": "The protruding horn on its head is very hard. It is used for bashing through thick ice.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/86.png"
+  },
+  {
+    "id": 87,
+    "number": "#087",
+    "name": "Dewgong",
+    "types": [
+      "Water",
+      "Ice"
+    ],
+    "typesSk": [
+      "Vodný",
+      "Ľadový"
+    ],
+    "stats": {
+      "HP": 90,
+      "Attack": 70,
+      "Defense": 80,
+      "Sp. Attack": 70,
+      "Sp. Defense": 95,
+      "Speed": 70
+    },
+    "description": "Stores thermal energy in its body. Swims at a steady 8 knots even in intensely cold waters.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/87.png"
+  },
+  {
+    "id": 88,
+    "number": "#088",
+    "name": "Grimer",
+    "types": [
+      "Poison"
+    ],
+    "typesSk": [
+      "Jedovatý"
+    ],
+    "stats": {
+      "HP": 80,
+      "Attack": 80,
+      "Defense": 50,
+      "Sp. Attack": 40,
+      "Sp. Defense": 50,
+      "Speed": 25
+    },
+    "description": "Appears in filthy areas. Thrives by sucking up polluted sludge that is pumped out of factories.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/88.png"
+  },
+  {
+    "id": 89,
+    "number": "#089",
+    "name": "Muk",
+    "types": [
+      "Poison"
+    ],
+    "typesSk": [
+      "Jedovatý"
+    ],
+    "stats": {
+      "HP": 105,
+      "Attack": 105,
+      "Defense": 75,
+      "Sp. Attack": 65,
+      "Sp. Defense": 100,
+      "Speed": 50
+    },
+    "description": "Thickly covered with a filthy, vile sludge. It is so toxic, even its footprints contain poison.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/89.png"
+  },
+  {
+    "id": 90,
+    "number": "#090",
+    "name": "Shellder",
+    "types": [
+      "Water"
+    ],
+    "typesSk": [
+      "Vodný"
+    ],
+    "stats": {
+      "HP": 30,
+      "Attack": 65,
+      "Defense": 100,
+      "Sp. Attack": 45,
+      "Sp. Defense": 25,
+      "Speed": 40
+    },
+    "description": "Its hard shell repels any kind of attack. It is vulnerable only when its shell is open.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/90.png"
+  },
+  {
+    "id": 91,
+    "number": "#091",
+    "name": "Cloyster",
+    "types": [
+      "Water",
+      "Ice"
+    ],
+    "typesSk": [
+      "Vodný",
+      "Ľadový"
+    ],
+    "stats": {
+      "HP": 50,
+      "Attack": 95,
+      "Defense": 180,
+      "Sp. Attack": 85,
+      "Sp. Defense": 45,
+      "Speed": 70
+    },
+    "description": "When attacked, it launches its horns in quick volleys. Its innards have never been seen.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/91.png"
+  },
+  {
+    "id": 92,
+    "number": "#092",
+    "name": "Gastly",
+    "types": [
+      "Ghost",
+      "Poison"
+    ],
+    "typesSk": [
+      "Duchovný",
+      "Jedovatý"
+    ],
+    "stats": {
+      "HP": 30,
+      "Attack": 35,
+      "Defense": 30,
+      "Sp. Attack": 100,
+      "Sp. Defense": 35,
+      "Speed": 80
+    },
+    "description": "Almost invisible, this gaseous POKéMON cloaks the target and puts it to sleep without notice.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/92.png"
+  },
+  {
+    "id": 93,
+    "number": "#093",
+    "name": "Haunter",
+    "types": [
+      "Ghost",
+      "Poison"
+    ],
+    "typesSk": [
+      "Duchovný",
+      "Jedovatý"
+    ],
+    "stats": {
+      "HP": 45,
+      "Attack": 50,
+      "Defense": 45,
+      "Sp. Attack": 115,
+      "Sp. Defense": 55,
+      "Speed": 95
+    },
+    "description": "Because of its ability to slip through block walls, it is said to be from an­ other dimension.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/93.png"
+  },
+  {
+    "id": 94,
+    "number": "#094",
+    "name": "Gengar",
+    "types": [
+      "Ghost",
+      "Poison"
+    ],
+    "typesSk": [
+      "Duchovný",
+      "Jedovatý"
+    ],
+    "stats": {
+      "HP": 60,
+      "Attack": 65,
+      "Defense": 60,
+      "Sp. Attack": 130,
+      "Sp. Defense": 75,
+      "Speed": 110
+    },
+    "description": "Under a full moon, this POKéMON likes to mimic the shadows of people and laugh at their fright.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/94.png"
+  },
+  {
+    "id": 95,
+    "number": "#095",
+    "name": "Onix",
+    "types": [
+      "Rock",
+      "Ground"
+    ],
+    "typesSk": [
+      "Kamenný",
+      "Zemný"
+    ],
+    "stats": {
+      "HP": 35,
+      "Attack": 45,
+      "Defense": 160,
+      "Sp. Attack": 30,
+      "Sp. Defense": 45,
+      "Speed": 70
+    },
+    "description": "As it grows, the stone portions of its body harden to become similar to a diamond, but colored black.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/95.png"
+  },
+  {
+    "id": 96,
+    "number": "#096",
+    "name": "Drowzee",
+    "types": [
+      "Psychic"
+    ],
+    "typesSk": [
+      "Psychický"
+    ],
+    "stats": {
+      "HP": 60,
+      "Attack": 48,
+      "Defense": 45,
+      "Sp. Attack": 43,
+      "Sp. Defense": 90,
+      "Speed": 42
+    },
+    "description": "Puts enemies to sleep then eats their dreams. Occasionally gets sick from eating bad dreams.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/96.png"
+  },
+  {
+    "id": 97,
+    "number": "#097",
+    "name": "Hypno",
+    "types": [
+      "Psychic"
+    ],
+    "typesSk": [
+      "Psychický"
+    ],
+    "stats": {
+      "HP": 85,
+      "Attack": 73,
+      "Defense": 70,
+      "Sp. Attack": 73,
+      "Sp. Defense": 115,
+      "Speed": 67
+    },
+    "description": "When it locks eyes with an enemy, it will use a mix of PSI moves such as HYPNOSIS and CONFUSION.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/97.png"
+  },
+  {
+    "id": 98,
+    "number": "#098",
+    "name": "Krabby",
+    "types": [
+      "Water"
+    ],
+    "typesSk": [
+      "Vodný"
+    ],
+    "stats": {
+      "HP": 30,
+      "Attack": 105,
+      "Defense": 90,
+      "Sp. Attack": 25,
+      "Sp. Defense": 25,
+      "Speed": 50
+    },
+    "description": "Its pincers are not only powerful weapons, they are used for balance when walking sideways.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/98.png"
+  },
+  {
+    "id": 99,
+    "number": "#099",
+    "name": "Kingler",
+    "types": [
+      "Water"
+    ],
+    "typesSk": [
+      "Vodný"
+    ],
+    "stats": {
+      "HP": 55,
+      "Attack": 130,
+      "Defense": 115,
+      "Sp. Attack": 50,
+      "Sp. Defense": 50,
+      "Speed": 75
+    },
+    "description": "The large pincer has 10000 hp of crushing power. However, its huge size makes it unwieldy to use.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/99.png"
+  },
+  {
+    "id": 100,
+    "number": "#100",
+    "name": "Voltorb",
+    "types": [
+      "Electric"
+    ],
+    "typesSk": [
+      "Elektrický"
+    ],
+    "stats": {
+      "HP": 40,
+      "Attack": 30,
+      "Defense": 50,
+      "Sp. Attack": 55,
+      "Sp. Defense": 55,
+      "Speed": 100
+    },
+    "description": "Usually found in power plants. Easily mistaken for a POKé BALL, they have zapped many people.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/100.png"
+  },
+  {
+    "id": 101,
+    "number": "#101",
+    "name": "Electrode",
+    "types": [
+      "Electric"
+    ],
+    "typesSk": [
+      "Elektrický"
+    ],
+    "stats": {
+      "HP": 60,
+      "Attack": 50,
+      "Defense": 70,
+      "Sp. Attack": 80,
+      "Sp. Defense": 80,
+      "Speed": 150
+    },
+    "description": "It stores electric energy under very high pressure. It often explodes with little or no provocation.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/101.png"
+  },
+  {
+    "id": 102,
+    "number": "#102",
+    "name": "Exeggcute",
+    "types": [
+      "Grass",
+      "Psychic"
+    ],
+    "typesSk": [
+      "Trávový",
+      "Psychický"
+    ],
+    "stats": {
+      "HP": 60,
+      "Attack": 40,
+      "Defense": 80,
+      "Sp. Attack": 60,
+      "Sp. Defense": 45,
+      "Speed": 40
+    },
+    "description": "Often mistaken for eggs. When disturbed, they quickly gather and attack in swarms.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/102.png"
+  },
+  {
+    "id": 103,
+    "number": "#103",
+    "name": "Exeggutor",
+    "types": [
+      "Grass",
+      "Psychic"
+    ],
+    "typesSk": [
+      "Trávový",
+      "Psychický"
+    ],
+    "stats": {
+      "HP": 95,
+      "Attack": 95,
+      "Defense": 85,
+      "Sp. Attack": 125,
+      "Sp. Defense": 75,
+      "Speed": 55
+    },
+    "description": "Legend has it that on rare occasions, one of its heads will drop off and continue on as an EXEGGCUTE.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/103.png"
+  },
+  {
+    "id": 104,
+    "number": "#104",
+    "name": "Cubone",
+    "types": [
+      "Ground"
+    ],
+    "typesSk": [
+      "Zemný"
+    ],
+    "stats": {
+      "HP": 50,
+      "Attack": 50,
+      "Defense": 95,
+      "Sp. Attack": 40,
+      "Sp. Defense": 50,
+      "Speed": 35
+    },
+    "description": "Because it never removes its skull helmet, no one has ever seen this POKéMON's real face.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/104.png"
+  },
+  {
+    "id": 105,
+    "number": "#105",
+    "name": "Marowak",
+    "types": [
+      "Ground"
+    ],
+    "typesSk": [
+      "Zemný"
+    ],
+    "stats": {
+      "HP": 60,
+      "Attack": 80,
+      "Defense": 110,
+      "Sp. Attack": 50,
+      "Sp. Defense": 80,
+      "Speed": 45
+    },
+    "description": "The bone it holds is its key weapon. It throws the bone skillfully like a boomerang to KO targets.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/105.png"
+  },
+  {
+    "id": 106,
+    "number": "#106",
+    "name": "Hitmonlee",
+    "types": [
+      "Fighting"
+    ],
+    "typesSk": [
+      "Bojový"
+    ],
+    "stats": {
+      "HP": 50,
+      "Attack": 120,
+      "Defense": 53,
+      "Sp. Attack": 35,
+      "Sp. Defense": 110,
+      "Speed": 87
+    },
+    "description": "When in a hurry, its legs lengthen progressively. It runs smoothly with extra long, loping strides.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/106.png"
+  },
+  {
+    "id": 107,
+    "number": "#107",
+    "name": "Hitmonchan",
+    "types": [
+      "Fighting"
+    ],
+    "typesSk": [
+      "Bojový"
+    ],
+    "stats": {
+      "HP": 50,
+      "Attack": 105,
+      "Defense": 79,
+      "Sp. Attack": 35,
+      "Sp. Defense": 110,
+      "Speed": 76
+    },
+    "description": "While apparently doing nothing, it fires punches in lightning fast volleys that are impossible to see.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/107.png"
+  },
+  {
+    "id": 108,
+    "number": "#108",
+    "name": "Lickitung",
+    "types": [
+      "Normal"
+    ],
+    "typesSk": [
+      "Normálny"
+    ],
+    "stats": {
+      "HP": 90,
+      "Attack": 55,
+      "Defense": 75,
+      "Sp. Attack": 60,
+      "Sp. Defense": 75,
+      "Speed": 30
+    },
+    "description": "Its tongue can be extended like a chameleon's. It leaves a tingling sensation when it licks enemies.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/108.png"
+  },
+  {
+    "id": 109,
+    "number": "#109",
+    "name": "Koffing",
+    "types": [
+      "Poison"
+    ],
+    "typesSk": [
+      "Jedovatý"
+    ],
+    "stats": {
+      "HP": 40,
+      "Attack": 65,
+      "Defense": 95,
+      "Sp. Attack": 60,
+      "Sp. Defense": 45,
+      "Speed": 35
+    },
+    "description": "Because it stores several kinds of toxic gases in its body, it is prone to exploding without warning.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/109.png"
+  },
+  {
+    "id": 110,
+    "number": "#110",
+    "name": "Weezing",
+    "types": [
+      "Poison"
+    ],
+    "typesSk": [
+      "Jedovatý"
+    ],
+    "stats": {
+      "HP": 65,
+      "Attack": 90,
+      "Defense": 120,
+      "Sp. Attack": 85,
+      "Sp. Defense": 70,
+      "Speed": 60
+    },
+    "description": "Where two kinds of poison gases meet, 2 KOFFINGs can fuse into a WEEZING over many years.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/110.png"
+  },
+  {
+    "id": 111,
+    "number": "#111",
+    "name": "Rhyhorn",
+    "types": [
+      "Ground",
+      "Rock"
+    ],
+    "typesSk": [
+      "Zemný",
+      "Kamenný"
+    ],
+    "stats": {
+      "HP": 80,
+      "Attack": 85,
+      "Defense": 95,
+      "Sp. Attack": 30,
+      "Sp. Defense": 30,
+      "Speed": 25
+    },
+    "description": "Its massive bones are 1000 times harder than human bones. It can easily knock a trailer flying.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/111.png"
+  },
+  {
+    "id": 112,
+    "number": "#112",
+    "name": "Rhydon",
+    "types": [
+      "Ground",
+      "Rock"
+    ],
+    "typesSk": [
+      "Zemný",
+      "Kamenný"
+    ],
+    "stats": {
+      "HP": 105,
+      "Attack": 130,
+      "Defense": 120,
+      "Sp. Attack": 45,
+      "Sp. Defense": 45,
+      "Speed": 40
+    },
+    "description": "Protected by an armor-like hide, it is capable of living in molten lava of 3,600 degrees.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/112.png"
+  },
+  {
+    "id": 113,
+    "number": "#113",
+    "name": "Chansey",
+    "types": [
+      "Normal"
+    ],
+    "typesSk": [
+      "Normálny"
+    ],
+    "stats": {
+      "HP": 250,
+      "Attack": 5,
+      "Defense": 5,
+      "Sp. Attack": 35,
+      "Sp. Defense": 105,
+      "Speed": 50
+    },
+    "description": "A rare and elusive POKéMON that is said to bring happiness to those who manage to get it.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/113.png"
+  },
+  {
+    "id": 114,
+    "number": "#114",
+    "name": "Tangela",
+    "types": [
+      "Grass"
+    ],
+    "typesSk": [
+      "Trávový"
+    ],
+    "stats": {
+      "HP": 65,
+      "Attack": 55,
+      "Defense": 115,
+      "Sp. Attack": 100,
+      "Sp. Defense": 40,
+      "Speed": 60
+    },
+    "description": "The whole body is swathed with wide vines that are similar to sea­ weed. Its vines shake as it walks.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/114.png"
+  },
+  {
+    "id": 115,
+    "number": "#115",
+    "name": "Kangaskhan",
+    "types": [
+      "Normal"
+    ],
+    "typesSk": [
+      "Normálny"
+    ],
+    "stats": {
+      "HP": 105,
+      "Attack": 95,
+      "Defense": 80,
+      "Sp. Attack": 40,
+      "Sp. Defense": 80,
+      "Speed": 90
+    },
+    "description": "The infant rarely ventures out of its mother's protective pouch until it is 3 years old.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/115.png"
+  },
+  {
+    "id": 116,
+    "number": "#116",
+    "name": "Horsea",
+    "types": [
+      "Water"
+    ],
+    "typesSk": [
+      "Vodný"
+    ],
+    "stats": {
+      "HP": 30,
+      "Attack": 40,
+      "Defense": 70,
+      "Sp. Attack": 70,
+      "Sp. Defense": 25,
+      "Speed": 60
+    },
+    "description": "Known to shoot down flying bugs with precision blasts of ink from the surface of the water.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/116.png"
+  },
+  {
+    "id": 117,
+    "number": "#117",
+    "name": "Seadra",
+    "types": [
+      "Water"
+    ],
+    "typesSk": [
+      "Vodný"
+    ],
+    "stats": {
+      "HP": 55,
+      "Attack": 65,
+      "Defense": 95,
+      "Sp. Attack": 95,
+      "Sp. Defense": 45,
+      "Speed": 85
+    },
+    "description": "Capable of swim­ ming backwards by rapidly flapping its wing-like pectoral fins and stout tail.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/117.png"
+  },
+  {
+    "id": 118,
+    "number": "#118",
+    "name": "Goldeen",
+    "types": [
+      "Water"
+    ],
+    "typesSk": [
+      "Vodný"
+    ],
+    "stats": {
+      "HP": 45,
+      "Attack": 67,
+      "Defense": 60,
+      "Sp. Attack": 35,
+      "Sp. Defense": 50,
+      "Speed": 63
+    },
+    "description": "Its tail fin billows like an elegant ballroom dress, giving it the nickname of the Water Queen.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/118.png"
+  },
+  {
+    "id": 119,
+    "number": "#119",
+    "name": "Seaking",
+    "types": [
+      "Water"
+    ],
+    "typesSk": [
+      "Vodný"
+    ],
+    "stats": {
+      "HP": 80,
+      "Attack": 92,
+      "Defense": 65,
+      "Sp. Attack": 65,
+      "Sp. Defense": 80,
+      "Speed": 68
+    },
+    "description": "In the autumn spawning season, they can be seen swimming power­ fully up rivers and creeks.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/119.png"
+  },
+  {
+    "id": 120,
+    "number": "#120",
+    "name": "Staryu",
+    "types": [
+      "Water"
+    ],
+    "typesSk": [
+      "Vodný"
+    ],
+    "stats": {
+      "HP": 30,
+      "Attack": 45,
+      "Defense": 55,
+      "Sp. Attack": 70,
+      "Sp. Defense": 55,
+      "Speed": 85
+    },
+    "description": "An enigmatic POKéMON that can effortlessly regenerate any appendage it loses in battle.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/120.png"
+  },
+  {
+    "id": 121,
+    "number": "#121",
+    "name": "Starmie",
+    "types": [
+      "Water",
+      "Psychic"
+    ],
+    "typesSk": [
+      "Vodný",
+      "Psychický"
+    ],
+    "stats": {
+      "HP": 60,
+      "Attack": 75,
+      "Defense": 85,
+      "Sp. Attack": 100,
+      "Sp. Defense": 85,
+      "Speed": 115
+    },
+    "description": "Its central core glows with the seven colors of the rainbow. Some people value the core as a gem.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/121.png"
+  },
+  {
+    "id": 122,
+    "number": "#122",
+    "name": "Mr. Mime",
+    "types": [
+      "Psychic",
+      "Fairy"
+    ],
+    "typesSk": [
+      "Psychický",
+      "Vílí"
+    ],
+    "stats": {
+      "HP": 40,
+      "Attack": 45,
+      "Defense": 65,
+      "Sp. Attack": 100,
+      "Sp. Defense": 120,
+      "Speed": 90
+    },
+    "description": "If interrupted while it is miming, it will slap around the offender with its broad hands.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/122.png"
+  },
+  {
+    "id": 123,
+    "number": "#123",
+    "name": "Scyther",
+    "types": [
+      "Bug",
+      "Flying"
+    ],
+    "typesSk": [
+      "Hmyzí",
+      "Lietajúci"
+    ],
+    "stats": {
+      "HP": 70,
+      "Attack": 110,
+      "Defense": 80,
+      "Sp. Attack": 55,
+      "Sp. Defense": 80,
+      "Speed": 105
+    },
+    "description": "With ninja-like agility and speed, it can create the illusion that there is more than one.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/123.png"
+  },
+  {
+    "id": 124,
+    "number": "#124",
+    "name": "Jynx",
+    "types": [
+      "Ice",
+      "Psychic"
+    ],
+    "typesSk": [
+      "Ľadový",
+      "Psychický"
+    ],
+    "stats": {
+      "HP": 65,
+      "Attack": 50,
+      "Defense": 35,
+      "Sp. Attack": 115,
+      "Sp. Defense": 95,
+      "Speed": 95
+    },
+    "description": "It seductively wiggles its hips as it walks. It can cause people to dance in unison with it.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/124.png"
+  },
+  {
+    "id": 125,
+    "number": "#125",
+    "name": "Electabuzz",
+    "types": [
+      "Electric"
+    ],
+    "typesSk": [
+      "Elektrický"
+    ],
+    "stats": {
+      "HP": 65,
+      "Attack": 83,
+      "Defense": 57,
+      "Sp. Attack": 95,
+      "Sp. Defense": 85,
+      "Speed": 105
+    },
+    "description": "Normally found near power plants, they can wander away and cause major blackouts in cities.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/125.png"
+  },
+  {
+    "id": 126,
+    "number": "#126",
+    "name": "Magmar",
+    "types": [
+      "Fire"
+    ],
+    "typesSk": [
+      "Ohnivý"
+    ],
+    "stats": {
+      "HP": 65,
+      "Attack": 95,
+      "Defense": 57,
+      "Sp. Attack": 100,
+      "Sp. Defense": 85,
+      "Speed": 93
+    },
+    "description": "Its body always burns with an orange glow that enables it to hide perfectly among flames.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/126.png"
+  },
+  {
+    "id": 127,
+    "number": "#127",
+    "name": "Pinsir",
+    "types": [
+      "Bug"
+    ],
+    "typesSk": [
+      "Hmyzí"
+    ],
+    "stats": {
+      "HP": 65,
+      "Attack": 125,
+      "Defense": 100,
+      "Sp. Attack": 55,
+      "Sp. Defense": 70,
+      "Speed": 85
+    },
+    "description": "If it fails to crush the victim in its pincers, it will swing it around and toss it hard.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/127.png"
+  },
+  {
+    "id": 128,
+    "number": "#128",
+    "name": "Tauros",
+    "types": [
+      "Normal"
+    ],
+    "typesSk": [
+      "Normálny"
+    ],
+    "stats": {
+      "HP": 75,
+      "Attack": 100,
+      "Defense": 95,
+      "Sp. Attack": 40,
+      "Sp. Defense": 70,
+      "Speed": 110
+    },
+    "description": "When it targets an enemy, it charges furiously while whipping its body with its long tails.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/128.png"
+  },
+  {
+    "id": 129,
+    "number": "#129",
+    "name": "Magikarp",
+    "types": [
+      "Water"
+    ],
+    "typesSk": [
+      "Vodný"
+    ],
+    "stats": {
+      "HP": 20,
+      "Attack": 10,
+      "Defense": 55,
+      "Sp. Attack": 15,
+      "Sp. Defense": 20,
+      "Speed": 80
+    },
+    "description": "In the distant past, it was somewhat stronger than the horribly weak descendants that exist today.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/129.png"
+  },
+  {
+    "id": 130,
+    "number": "#130",
+    "name": "Gyarados",
+    "types": [
+      "Water",
+      "Flying"
+    ],
+    "typesSk": [
+      "Vodný",
+      "Lietajúci"
+    ],
+    "stats": {
+      "HP": 95,
+      "Attack": 125,
+      "Defense": 79,
+      "Sp. Attack": 60,
+      "Sp. Defense": 100,
+      "Speed": 81
+    },
+    "description": "Rarely seen in the wild. Huge and vicious, it is capable of destroying entire cities in a rage.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/130.png"
+  },
+  {
+    "id": 131,
+    "number": "#131",
+    "name": "Lapras",
+    "types": [
+      "Water",
+      "Ice"
+    ],
+    "typesSk": [
+      "Vodný",
+      "Ľadový"
+    ],
+    "stats": {
+      "HP": 130,
+      "Attack": 85,
+      "Defense": 80,
+      "Sp. Attack": 85,
+      "Sp. Defense": 95,
+      "Speed": 60
+    },
+    "description": "A POKéMON that has been over­ hunted almost to extinction. It can ferry people across the water.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/131.png"
+  },
+  {
+    "id": 132,
+    "number": "#132",
+    "name": "Ditto",
+    "types": [
+      "Normal"
+    ],
+    "typesSk": [
+      "Normálny"
+    ],
+    "stats": {
+      "HP": 48,
+      "Attack": 48,
+      "Defense": 48,
+      "Sp. Attack": 48,
+      "Sp. Defense": 48,
+      "Speed": 48
+    },
+    "description": "Capable of copying an enemy's genetic code to instantly transform itself into a duplicate of the enemy.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/132.png"
+  },
+  {
+    "id": 133,
+    "number": "#133",
+    "name": "Eevee",
+    "types": [
+      "Normal"
+    ],
+    "typesSk": [
+      "Normálny"
+    ],
+    "stats": {
+      "HP": 55,
+      "Attack": 55,
+      "Defense": 50,
+      "Sp. Attack": 45,
+      "Sp. Defense": 65,
+      "Speed": 55
+    },
+    "description": "Its genetic code is irregular. It may mutate if it is exposed to radiation from element STONEs.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/133.png"
+  },
+  {
+    "id": 134,
+    "number": "#134",
+    "name": "Vaporeon",
+    "types": [
+      "Water"
+    ],
+    "typesSk": [
+      "Vodný"
+    ],
+    "stats": {
+      "HP": 130,
+      "Attack": 65,
+      "Defense": 60,
+      "Sp. Attack": 110,
+      "Sp. Defense": 95,
+      "Speed": 65
+    },
+    "description": "Lives close to water. Its long tail is ridged with a fin which is often mistaken for a mermaid's.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/134.png"
+  },
+  {
+    "id": 135,
+    "number": "#135",
+    "name": "Jolteon",
+    "types": [
+      "Electric"
+    ],
+    "typesSk": [
+      "Elektrický"
+    ],
+    "stats": {
+      "HP": 65,
+      "Attack": 65,
+      "Defense": 60,
+      "Sp. Attack": 110,
+      "Sp. Defense": 95,
+      "Speed": 130
+    },
+    "description": "It accumulates negative ions in the atmosphere to blast out 10000- volt lightning bolts.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/135.png"
+  },
+  {
+    "id": 136,
+    "number": "#136",
+    "name": "Flareon",
+    "types": [
+      "Fire"
+    ],
+    "typesSk": [
+      "Ohnivý"
+    ],
+    "stats": {
+      "HP": 65,
+      "Attack": 130,
+      "Defense": 60,
+      "Sp. Attack": 95,
+      "Sp. Defense": 110,
+      "Speed": 65
+    },
+    "description": "When storing thermal energy in its body, its temperature could soar to over 1600 degrees.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/136.png"
+  },
+  {
+    "id": 137,
+    "number": "#137",
+    "name": "Porygon",
+    "types": [
+      "Normal"
+    ],
+    "typesSk": [
+      "Normálny"
+    ],
+    "stats": {
+      "HP": 65,
+      "Attack": 60,
+      "Defense": 70,
+      "Sp. Attack": 85,
+      "Sp. Defense": 75,
+      "Speed": 40
+    },
+    "description": "A POKéMON that consists entirely of programming code. Capable of moving freely in cyberspace.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/137.png"
+  },
+  {
+    "id": 138,
+    "number": "#138",
+    "name": "Omanyte",
+    "types": [
+      "Rock",
+      "Water"
+    ],
+    "typesSk": [
+      "Kamenný",
+      "Vodný"
+    ],
+    "stats": {
+      "HP": 35,
+      "Attack": 40,
+      "Defense": 100,
+      "Sp. Attack": 90,
+      "Sp. Defense": 55,
+      "Speed": 35
+    },
+    "description": "Although long extinct, in rare cases, it can be genetically resurrected from fossils.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/138.png"
+  },
+  {
+    "id": 139,
+    "number": "#139",
+    "name": "Omastar",
+    "types": [
+      "Rock",
+      "Water"
+    ],
+    "typesSk": [
+      "Kamenný",
+      "Vodný"
+    ],
+    "stats": {
+      "HP": 70,
+      "Attack": 60,
+      "Defense": 125,
+      "Sp. Attack": 115,
+      "Sp. Defense": 70,
+      "Speed": 55
+    },
+    "description": "A prehistoric POKéMON that died out when its heavy shell made it impossible to catch prey.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/139.png"
+  },
+  {
+    "id": 140,
+    "number": "#140",
+    "name": "Kabuto",
+    "types": [
+      "Rock",
+      "Water"
+    ],
+    "typesSk": [
+      "Kamenný",
+      "Vodný"
+    ],
+    "stats": {
+      "HP": 30,
+      "Attack": 80,
+      "Defense": 90,
+      "Sp. Attack": 55,
+      "Sp. Defense": 45,
+      "Speed": 55
+    },
+    "description": "A POKéMON that was resurrected from a fossil found in what was once the ocean floor eons ago.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/140.png"
+  },
+  {
+    "id": 141,
+    "number": "#141",
+    "name": "Kabutops",
+    "types": [
+      "Rock",
+      "Water"
+    ],
+    "typesSk": [
+      "Kamenný",
+      "Vodný"
+    ],
+    "stats": {
+      "HP": 60,
+      "Attack": 115,
+      "Defense": 105,
+      "Sp. Attack": 65,
+      "Sp. Defense": 70,
+      "Speed": 80
+    },
+    "description": "Its sleek shape is perfect for swim­ ming. It slashes prey with its claws and drains the body fluids.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/141.png"
+  },
+  {
+    "id": 142,
+    "number": "#142",
+    "name": "Aerodactyl",
+    "types": [
+      "Rock",
+      "Flying"
+    ],
+    "typesSk": [
+      "Kamenný",
+      "Lietajúci"
+    ],
+    "stats": {
+      "HP": 80,
+      "Attack": 105,
+      "Defense": 65,
+      "Sp. Attack": 60,
+      "Sp. Defense": 75,
+      "Speed": 130
+    },
+    "description": "A ferocious, pre­ historic POKéMON that goes for the enemy's throat with its serrated saw-like fangs.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/142.png"
+  },
+  {
+    "id": 143,
+    "number": "#143",
+    "name": "Snorlax",
+    "types": [
+      "Normal"
+    ],
+    "typesSk": [
+      "Normálny"
+    ],
+    "stats": {
+      "HP": 160,
+      "Attack": 110,
+      "Defense": 65,
+      "Sp. Attack": 65,
+      "Sp. Defense": 110,
+      "Speed": 30
+    },
+    "description": "Very lazy. Just eats and sleeps. As its rotund bulk builds, it becomes steadily more slothful.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/143.png"
+  },
+  {
+    "id": 144,
+    "number": "#144",
+    "name": "Articuno",
+    "types": [
+      "Ice",
+      "Flying"
+    ],
+    "typesSk": [
+      "Ľadový",
+      "Lietajúci"
+    ],
+    "stats": {
+      "HP": 90,
+      "Attack": 85,
+      "Defense": 100,
+      "Sp. Attack": 95,
+      "Sp. Defense": 125,
+      "Speed": 85
+    },
+    "description": "A legendary bird POKéMON that is said to appear to doomed people who are lost in icy mountains.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/144.png"
+  },
+  {
+    "id": 145,
+    "number": "#145",
+    "name": "Zapdos",
+    "types": [
+      "Electric",
+      "Flying"
+    ],
+    "typesSk": [
+      "Elektrický",
+      "Lietajúci"
+    ],
+    "stats": {
+      "HP": 90,
+      "Attack": 90,
+      "Defense": 85,
+      "Sp. Attack": 125,
+      "Sp. Defense": 90,
+      "Speed": 100
+    },
+    "description": "A legendary bird POKéMON that is said to appear from clouds while dropping enormous lightning bolts.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/145.png"
+  },
+  {
+    "id": 146,
+    "number": "#146",
+    "name": "Moltres",
+    "types": [
+      "Fire",
+      "Flying"
+    ],
+    "typesSk": [
+      "Ohnivý",
+      "Lietajúci"
+    ],
+    "stats": {
+      "HP": 90,
+      "Attack": 100,
+      "Defense": 90,
+      "Sp. Attack": 125,
+      "Sp. Defense": 85,
+      "Speed": 90
+    },
+    "description": "Known as the legendary bird of fire. Every flap of its wings creates a dazzling flash of flames.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/146.png"
+  },
+  {
+    "id": 147,
+    "number": "#147",
+    "name": "Dratini",
+    "types": [
+      "Dragon"
+    ],
+    "typesSk": [
+      "Dračí"
+    ],
+    "stats": {
+      "HP": 41,
+      "Attack": 64,
+      "Defense": 45,
+      "Sp. Attack": 50,
+      "Sp. Defense": 50,
+      "Speed": 50
+    },
+    "description": "Long considered a mythical POKéMON until recently when a small colony was found living underwater.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/147.png"
+  },
+  {
+    "id": 148,
+    "number": "#148",
+    "name": "Dragonair",
+    "types": [
+      "Dragon"
+    ],
+    "typesSk": [
+      "Dračí"
+    ],
+    "stats": {
+      "HP": 61,
+      "Attack": 84,
+      "Defense": 65,
+      "Sp. Attack": 70,
+      "Sp. Defense": 70,
+      "Speed": 70
+    },
+    "description": "A mystical POKéMON that exudes a gentle aura. Has the ability to change climate conditions.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/148.png"
+  },
+  {
+    "id": 149,
+    "number": "#149",
+    "name": "Dragonite",
+    "types": [
+      "Dragon",
+      "Flying"
+    ],
+    "typesSk": [
+      "Dračí",
+      "Lietajúci"
+    ],
+    "stats": {
+      "HP": 91,
+      "Attack": 134,
+      "Defense": 95,
+      "Sp. Attack": 100,
+      "Sp. Defense": 100,
+      "Speed": 80
+    },
+    "description": "An extremely rarely seen marine POKéMON. Its intelligence is said to match that of humans.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/149.png"
+  },
+  {
+    "id": 150,
+    "number": "#150",
+    "name": "Mewtwo",
+    "types": [
+      "Psychic"
+    ],
+    "typesSk": [
+      "Psychický"
+    ],
+    "stats": {
+      "HP": 106,
+      "Attack": 110,
+      "Defense": 90,
+      "Sp. Attack": 154,
+      "Sp. Defense": 90,
+      "Speed": 130
+    },
+    "description": "It was created by a scientist after years of horrific gene splicing and DNA engineering experiments.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/150.png"
+  },
+  {
+    "id": 151,
+    "number": "#151",
+    "name": "Mew",
+    "types": [
+      "Psychic"
+    ],
+    "typesSk": [
+      "Psychický"
+    ],
+    "stats": {
+      "HP": 100,
+      "Attack": 100,
+      "Defense": 100,
+      "Sp. Attack": 100,
+      "Sp. Defense": 100,
+      "Speed": 100
+    },
+    "description": "So rare that it is still said to be a mirage by many experts. Only a few people have seen it worldwide.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/151.png"
+  }
+]
