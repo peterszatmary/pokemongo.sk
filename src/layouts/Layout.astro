@@ -58,25 +58,41 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site || "https://pokemong
       .font-display {
         font-family: 'Space Grotesk', system-ui, sans-serif;
       }
-      .glow-red {
-        box-shadow: 0 0 50px -10px rgba(238, 21, 21, 0.25);
+      @keyframes floatSlow {
+        0%, 100% {
+          transform: translateY(0px) rotate(0deg);
+        }
+        50% {
+          transform: translateY(-12px) rotate(1deg);
+        }
       }
-      .glow-yellow {
-        box-shadow: 0 0 50px -10px rgba(255, 203, 5, 0.25);
+      @keyframes floatReverse {
+        0%, 100% {
+          transform: translateY(0px) rotate(0deg);
+        }
+        50% {
+          transform: translateY(-8px) rotate(-1deg);
+        }
       }
-      .glow-blue {
-        box-shadow: 0 0 50px -10px rgba(42, 117, 187, 0.25);
+      .animate-float {
+        animation: floatSlow 6s ease-in-out infinite;
+      }
+      .animate-float-delayed {
+        animation: floatReverse 7s ease-in-out infinite 1s;
       }
     </style>
   </head>
-  <body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col selection:bg-poke-red selection:text-white relative overflow-x-hidden">
-    <!-- Ambient Background Lighting -->
+  <body class="bg-[#fafbfc] text-slate-800 min-h-screen flex flex-col selection:bg-rose-500 selection:text-white relative overflow-x-hidden antialiased">
+    <!-- Soft Pastel Ambient Background -->
     <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
-      <div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-poke-red/10 rounded-full blur-3xl"></div>
-      <div class="absolute top-1/3 -left-40 w-[600px] h-[600px] bg-poke-blue/10 rounded-full blur-3xl"></div>
-      <div class="absolute bottom-10 right-0 w-[500px] h-[500px] bg-poke-yellow/10 rounded-full blur-3xl"></div>
-      <!-- Subtle Grid Pattern -->
-      <div class="absolute inset-0 bg-[linear-gradient(to_right,#1e293b12_1px,transparent_1px),linear-gradient(to_bottom,#1e293b12_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
+      <!-- Soft Orange/Coral glow for Charizard top-right -->
+      <div class="absolute -top-32 right-[-10%] w-[650px] h-[650px] bg-gradient-to-br from-amber-200/40 via-rose-200/30 to-transparent rounded-full blur-3xl"></div>
+      <!-- Soft Emerald glow for Bulbasaur bottom-left -->
+      <div class="absolute top-[35%] -left-32 w-[550px] h-[550px] bg-gradient-to-tr from-emerald-200/30 via-teal-100/30 to-transparent rounded-full blur-3xl"></div>
+      <!-- Soft Sky blue glow bottom-right -->
+      <div class="absolute bottom-10 right-[-5%] w-[500px] h-[500px] bg-gradient-to-tl from-sky-200/30 to-transparent rounded-full blur-3xl"></div>
+      <!-- Subtle dot grid pattern -->
+      <div class="absolute inset-0 bg-[radial-gradient(#e2e8f0_1px,transparent_1px)] [background-size:24px_24px] opacity-70"></div>
     </div>
 
     <div class="relative z-10 flex flex-col min-h-screen">

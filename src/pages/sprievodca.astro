@@ -13,88 +13,88 @@ import Footer from "../components/Footer.astro";
   <article class="py-16 sm:py-24 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
     <!-- Header -->
     <header class="mb-14 text-center">
-      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 mb-4">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200 mb-4">
         🎮 Herný Sprievodca & Návody
       </div>
-      <h1 class="font-display text-3xl sm:text-5xl font-extrabold text-white tracking-tight mb-4">
+      <h1 class="font-display text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight mb-4">
         Veľký sprievodca hrou Pokémon GO
       </h1>
-      <p class="text-base sm:text-xl text-slate-300 max-w-2xl mx-auto">
+      <p class="text-base sm:text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
         Všetko, čo potrebuje moderný tréner na Slovensku vedieť o IV hodnotách, Raidoch, Community Days a bojoch proti Team GO Rocket.
       </p>
     </header>
 
     <!-- Content Sections -->
-    <div class="space-y-12 text-slate-300 leading-relaxed text-base">
+    <div class="space-y-8 text-slate-600 leading-relaxed text-base">
 
       <!-- Section 1: IV and CP -->
-      <section class="bg-slate-900/60 border border-slate-800 rounded-3xl p-6 sm:p-8">
+      <section class="bg-white border border-slate-200/90 rounded-3xl p-6 sm:p-8 shadow-sm">
         <div class="flex items-center gap-3 mb-4">
-          <div class="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-poke-yellow font-bold text-lg">
+          <div class="w-10 h-10 rounded-xl bg-amber-50 border border-amber-200 flex items-center justify-center text-amber-700 font-bold text-lg">
             1
           </div>
-          <h2 class="font-display text-2xl font-bold text-white">IV (Individual Values) a CP: Prečo na nich záleží?</h2>
+          <h2 class="font-display text-2xl font-bold text-slate-900">IV (Individual Values) a CP: Prečo na nich záleží?</h2>
         </div>
         <p class="mb-4">
-          Mnohí začiatočníci robia chybu, že sledujú len výšku CP (Combat Power). CP však hovorí iba o aktuálnom leveli Pokémona, nie o jeho skutočnom potenciáli. Najdôležitejšie sú <strong>IV hodnoty (Útok, Obrana, Životy)</strong>, ktoré sú škálované od 0 do 15.
+          Mnohí začiatočníci robia chybu, že sledujú len výšku CP (Combat Power). CP však hovorí iba o aktuálnom leveli Pokémona, nie o jeho skutočnom potenciáli. Najdôležitejšie sú <strong class="text-slate-900">IV hodnoty (Útok, Obrana, Životy)</strong>, ktoré sú škálované od 0 do 15.
         </p>
-        <ul class="space-y-2 list-disc list-inside text-slate-300 bg-slate-950/60 p-4 rounded-xl border border-slate-800/80">
-          <li><strong>Hundo (100% IV - 15/15/15):</strong> Absolútny vrchol. Pokémon má 3 plné ružové hviezdy a červenú pečať. Týchto si vždy nechajte a investujte do nich Stardust.</li>
-          <li><strong>PvP IV:</strong> V Great League (max 1500 CP) a Ultra League (max 2500 CP) je ideálne mať nízky útok (často 0-1) a maximálnu obranu so životmi (15/15). Vďaka tomu Pokémon dosiahne vyšší level pri dodržaní CP limitu!</li>
+        <ul class="space-y-2 list-disc list-inside text-slate-700 bg-slate-50 p-4 rounded-2xl border border-slate-200/80">
+          <li><strong class="text-slate-900">Hundo (100% IV - 15/15/15):</strong> Absolútny vrchol. Pokémon má 3 plné ružové hviezdy a červenú pečať. Týchto si vždy nechajte a investujte do nich Stardust.</li>
+          <li><strong class="text-slate-900">PvP IV:</strong> V Great League (max 1500 CP) a Ultra League (max 2500 CP) je ideálne mať nízky útok (často 0-1) a maximálnu obranu so životmi (15/15). Vďaka tomu Pokémon dosiahne vyšší level pri dodržaní CP limitu!</li>
         </ul>
       </section>
 
       <!-- Section 2: Raids & Mega Evolutions -->
-      <section class="bg-slate-900/60 border border-slate-800 rounded-3xl p-6 sm:p-8">
+      <section class="bg-white border border-slate-200/90 rounded-3xl p-6 sm:p-8 shadow-sm">
         <div class="flex items-center gap-3 mb-4">
-          <div class="w-10 h-10 rounded-xl bg-red-500/10 border border-red-500/20 flex items-center justify-center text-poke-red font-bold text-lg">
+          <div class="w-10 h-10 rounded-xl bg-rose-50 border border-rose-200 flex items-center justify-center text-rose-600 font-bold text-lg">
             2
           </div>
-          <h2 class="font-display text-2xl font-bold text-white">Raidy a Legendárni Pokémoni</h2>
+          <h2 class="font-display text-2xl font-bold text-slate-900">Raidy a Legendárni Pokémoni</h2>
         </div>
         <p class="mb-4">
           Raidy na PokéGymax sú hlavným zdrojom najsilnejších legendárnych Pokémonov (Rayquaza, Mewtwo, Kyogre, Dialga atď.). Na 5-hviezdičkové raidy potrebujete tím aspoň 3 až 6 trénerov.
         </p>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
-          <div class="p-4 rounded-xl bg-slate-950/80 border border-slate-800">
-            <h4 class="font-bold text-white mb-1">Využívajte typové výhody</h4>
-            <p class="text-xs text-slate-400">Super-effective útoky spôsobujú až 1.6x (pri dvojitej slabine až 2.56x) viac poškodenia. Vždy skladajte tím podľa slabín Raid bossa.</p>
+          <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80">
+            <h4 class="font-bold text-slate-900 mb-1">Využívajte typové výhody</h4>
+            <p class="text-xs text-slate-600">Super-effective útoky spôsobujú až 1.6x (pri dvojitej slabine až 2.56x) viac poškodenia. Vždy skladajte tím podľa slabín Raid bossa.</p>
           </div>
-          <div class="p-4 rounded-xl bg-slate-950/80 border border-slate-800">
-            <h4 class="font-bold text-white mb-1">Mega Evolúcie</h4>
-            <p class="text-xs text-slate-400">Aktivujte Mega Pokémona rovnakej typovej triedy počas raidu. Zvýši útok všetkým spoluhráčom a prinesie vám extra Candy po chytení!</p>
+          <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80">
+            <h4 class="font-bold text-slate-900 mb-1">Mega Evolúcie</h4>
+            <p class="text-xs text-slate-600">Aktivujte Mega Pokémona rovnakej typovej triedy počas raidu. Zvýši útok všetkým spoluhráčom a prinesie vám extra Candy po chytení!</p>
           </div>
         </div>
       </section>
 
       <!-- Section 3: Community Days -->
-      <section class="bg-slate-900/60 border border-slate-800 rounded-3xl p-6 sm:p-8">
+      <section class="bg-white border border-slate-200/90 rounded-3xl p-6 sm:p-8 shadow-sm">
         <div class="flex items-center gap-3 mb-4">
-          <div class="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-poke-blue font-bold text-lg">
+          <div class="w-10 h-10 rounded-xl bg-sky-50 border border-sky-200 flex items-center justify-center text-sky-700 font-bold text-lg">
             3
           </div>
-          <h2 class="font-display text-2xl font-bold text-white">Community Days: Najlepšia šanca na Shiny</h2>
+          <h2 class="font-display text-2xl font-bold text-slate-900">Community Days: Najlepšia šanca na Shiny</h2>
         </div>
         <p class="mb-3">
-          Jeden víkend v mesiaci patrí vybranému Pokémonovi. Šanca na získanie <strong>Shiny verzie</strong> vtedy stúpa na približne 1 ku 25 (oproti bežnej šanci ~1 ku 500).
+          Jeden víkend v mesiaci patrí vybranému Pokémonovi. Šanca na získanie <strong class="text-slate-900">Shiny verzie</strong> vtedy stúpa na približne 1 ku 25 (oproti bežnej šanci ~1 ku 500).
         </p>
         <p>
-          <strong>Kľúčový tip:</strong> Vyviňte vybraného Pokémona do finálnej formy ešte počas podujatia (alebo do 2 hodín po ňom), aby získal exkluzívny <em>Legacy útok</em>, ktorý inak vyžaduje drahý Elite TM.
+          <strong class="text-slate-900">Kľúčový tip:</strong> Vyviňte vybraného Pokémona do finálnej formy ešte počas podujatia (alebo do 2 hodín po ňom), aby získal exkluzívny <em>Legacy útok</em>, ktorý inak vyžaduje drahý Elite TM.
         </p>
       </section>
 
       <!-- Section 4: Team GO Rocket -->
-      <section class="bg-slate-900/60 border border-slate-800 rounded-3xl p-6 sm:p-8">
+      <section class="bg-white border border-slate-200/90 rounded-3xl p-6 sm:p-8 shadow-sm">
         <div class="flex items-center gap-3 mb-4">
-          <div class="w-10 h-10 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 font-bold text-lg">
+          <div class="w-10 h-10 rounded-xl bg-purple-50 border border-purple-200 flex items-center justify-center text-purple-700 font-bold text-lg">
             4
           </div>
-          <h2 class="font-display text-2xl font-bold text-white">Boj s Team GO Rocket a Shadow Pokémoni</h2>
+          <h2 class="font-display text-2xl font-bold text-slate-900">Boj s Team GO Rocket a Shadow Pokémoni</h2>
         </div>
         <p class="mb-4">
-          Temní (Shadow) Pokémoni majú o <strong>20% vyšší útok</strong> (výmenou za o 20% nižšiu obranu). V Raidoch patria k najlepším útočníkom v hre.
+          Temní (Shadow) Pokémoni majú o <strong class="text-slate-900">20% vyšší útok</strong> (výmenou za o 20% nižšiu obranu). V Raidoch patria k najlepším útočníkom v hre.
         </p>
-        <div class="p-4 rounded-xl bg-purple-500/10 border border-purple-500/20 text-sm">
+        <div class="p-4 rounded-2xl bg-purple-50 border border-purple-200 text-sm text-purple-900">
           <strong>Nezabúdajte na Rocket Takeover eventy:</strong> Shadow Pokémoni majú útok <em>Frustration</em>, ktorý sa nedá bežne zmeniť. Počas špeciálnych Rocket eventov môžete použiť bežný Charged TM a získať prémiový útok.
         </div>
       </section>
@@ -102,17 +102,17 @@ import Footer from "../components/Footer.astro";
     </div>
 
     <!-- Domain Sale Callout -->
-    <div class="mt-16 p-8 rounded-3xl bg-gradient-to-r from-poke-red/20 via-slate-900 to-poke-yellow/20 border border-slate-700 text-center space-y-4">
-      <h3 class="font-display text-2xl font-bold text-white">Chcete prevádzkovať najčítanejší Pokémon portál?</h3>
-      <p class="text-sm text-slate-300 max-w-xl mx-auto">
+    <div class="mt-16 p-8 rounded-3xl bg-slate-50 border border-slate-200/90 text-center space-y-4">
+      <h3 class="font-display text-2xl font-bold text-slate-900">Chcete prevádzkovať najčítanejší Pokémon portál?</h3>
+      <p class="text-sm text-slate-600 max-w-xl mx-auto">
         Táto stránka je len ukážkou potenciálu obsahu. Doména <strong>pokemongo.sk</strong> je na predaj a môže byť vaším centrom pre návody, tipy a komunitné články.
       </p>
       <div class="pt-2">
         <a
           href="/#ponuka"
-          class="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-sm text-slate-950 bg-poke-yellow hover:bg-amber-300 transition-all shadow-lg shadow-amber-500/20"
+          class="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-sm text-white bg-slate-900 hover:bg-slate-800 transition shadow-sm"
         >
-          Poslať ponuku na kúpu domény →
+          Predložiť ponuku na kúpu domény →
         </a>
       </div>
     </div>

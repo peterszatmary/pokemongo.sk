@@ -6,21 +6,19 @@ interface Props {
 const { accessKey = "970db82a-59c2-4846-85ff-e4a3beb761e5" } = Astro.props;
 ---
 
-<div class="relative bg-slate-900/90 border border-slate-800 rounded-3xl p-6 sm:p-10 shadow-2xl backdrop-blur-xl">
-  <!-- Decorative corner Pokéball accent -->
-  <div class="absolute -top-5 -right-5 w-16 h-16 opacity-30 pointer-events-none hidden sm:block">
-    <img src="/favicon.svg" alt="" class="w-full h-full rotate-12" />
-  </div>
+<div class="relative bg-white border border-slate-200/90 rounded-3xl p-6 sm:p-10 shadow-xl shadow-slate-200/50">
+  <!-- Subtle top accent line -->
+  <div class="absolute top-0 left-8 right-8 h-1 bg-gradient-to-r from-rose-500 via-amber-400 to-sky-500 rounded-t-3xl"></div>
 
   <div class="mb-8">
-    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-poke-yellow/10 text-poke-yellow border border-poke-yellow/20 mb-3">
-      <span class="w-2 h-2 rounded-full bg-poke-yellow animate-pulse"></span>
+    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-rose-50 text-rose-600 border border-rose-200 mb-3">
+      <span class="w-2 h-2 rounded-full bg-rose-500 animate-pulse"></span>
       Nezáväzný dopyt & ponuka
     </div>
-    <h3 class="font-display text-2xl sm:text-3xl font-bold text-white mb-2">
+    <h3 class="font-display text-2xl sm:text-3xl font-bold text-slate-900 mb-2">
       Máte záujem o kúpu domény?
     </h3>
-    <p class="text-slate-400 text-sm sm:text-base">
+    <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
       Vyplňte krátky formulár so svojou cenovou ponukou. Každú serióznu ponuku posúdime a odpovieme vám do 24 hodín.
     </p>
   </div>
@@ -29,15 +27,15 @@ const { accessKey = "970db82a-59c2-4846-85ff-e4a3beb761e5" } = Astro.props;
     <!-- Web3Forms Access Key -->
     <input type="hidden" name="access_key" value={accessKey} id="web3forms_key" />
     <input type="hidden" name="subject" value="Nová cenová ponuka na doménu pokemongo.sk" />
-    <input type="hidden" name="from_name" value="Pokemongo.sk Offer Bot" />
+    <input type="hidden" name="from_name" value="Pokemongo.sk Ponuka" />
     <!-- Honeypot for spam protection -->
     <input type="checkbox" name="botcheck" class="hidden" style="display: none;" />
 
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
       <!-- Name -->
       <div>
-        <label for="name" class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">
-          Vaše Meno / Spoločnosť <span class="text-poke-red">*</span>
+        <label for="name" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
+          Vaše Meno / Spoločnosť <span class="text-rose-500">*</span>
         </label>
         <input
           type="text"
@@ -45,14 +43,14 @@ const { accessKey = "970db82a-59c2-4846-85ff-e4a3beb761e5" } = Astro.props;
           name="name"
           required
           placeholder="napr. Ján Novák / PokéShop s.r.o."
-          class="w-full px-4 py-3 bg-slate-950/80 border border-slate-700 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-poke-yellow focus:ring-1 focus:ring-poke-yellow transition text-sm"
+          class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-slate-900 placeholder-slate-400 focus:bg-white focus:outline-none focus:border-rose-500 focus:ring-1 focus:ring-rose-500 transition text-sm"
         />
       </div>
 
       <!-- Email -->
       <div>
-        <label for="email" class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">
-          Váš E-mail <span class="text-poke-red">*</span>
+        <label for="email" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
+          Váš E-mail <span class="text-rose-500">*</span>
         </label>
         <input
           type="email"
@@ -60,7 +58,7 @@ const { accessKey = "970db82a-59c2-4846-85ff-e4a3beb761e5" } = Astro.props;
           name="email"
           required
           placeholder="jan.novak@priklad.sk"
-          class="w-full px-4 py-3 bg-slate-950/80 border border-slate-700 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-poke-yellow focus:ring-1 focus:ring-poke-yellow transition text-sm"
+          class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-slate-900 placeholder-slate-400 focus:bg-white focus:outline-none focus:border-rose-500 focus:ring-1 focus:ring-rose-500 transition text-sm"
         />
       </div>
     </div>
@@ -68,22 +66,22 @@ const { accessKey = "970db82a-59c2-4846-85ff-e4a3beb761e5" } = Astro.props;
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
       <!-- Phone -->
       <div>
-        <label for="phone" class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">
-          Telefónne číslo <span class="text-slate-500">(voliteľné)</span>
+        <label for="phone" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
+          Telefónne číslo <span class="text-slate-400 font-normal">(voliteľné)</span>
         </label>
         <input
           type="tel"
           id="phone"
           name="phone"
           placeholder="+421 900 123 456"
-          class="w-full px-4 py-3 bg-slate-950/80 border border-slate-700 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-poke-yellow focus:ring-1 focus:ring-poke-yellow transition text-sm"
+          class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-slate-900 placeholder-slate-400 focus:bg-white focus:outline-none focus:border-rose-500 focus:ring-1 focus:ring-rose-500 transition text-sm"
         />
       </div>
 
       <!-- Offer Amount -->
       <div>
-        <label for="offer" class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">
-          Navrhovaná cena (€) <span class="text-poke-red">*</span>
+        <label for="offer" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
+          Navrhovaná cena (€) <span class="text-rose-500">*</span>
         </label>
         <input
           type="text"
@@ -91,20 +89,20 @@ const { accessKey = "970db82a-59c2-4846-85ff-e4a3beb761e5" } = Astro.props;
           name="offer"
           required
           placeholder="napr. 1 500 € (alebo 'Dohodou')"
-          class="w-full px-4 py-3 bg-slate-950/80 border border-slate-700 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-poke-yellow focus:ring-1 focus:ring-poke-yellow transition text-sm font-semibold"
+          class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-slate-900 placeholder-slate-400 focus:bg-white focus:outline-none focus:border-rose-500 focus:ring-1 focus:ring-rose-500 transition text-sm font-semibold"
         />
       </div>
     </div>
 
     <!-- Purpose / Intent -->
     <div>
-      <label for="purpose" class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">
+      <label for="purpose" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
         Plánované využitie domény
       </label>
       <select
         id="purpose"
         name="purpose"
-        class="w-full px-4 py-3 bg-slate-950/80 border border-slate-700 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-poke-yellow focus:ring-1 focus:ring-poke-yellow transition text-sm"
+        class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-slate-900 focus:bg-white focus:outline-none focus:border-rose-500 focus:ring-1 focus:ring-rose-500 transition text-sm"
       >
         <option value="eshop">E-shop (Pokémon kartičky, zberateľstvo, merch)</option>
         <option value="portal">Komunitný portál alebo sprievodca hrou</option>
@@ -116,15 +114,15 @@ const { accessKey = "970db82a-59c2-4846-85ff-e4a3beb761e5" } = Astro.props;
 
     <!-- Message -->
     <div>
-      <label for="message" class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">
-        Poznámka alebo správa <span class="text-slate-500">(voliteľné)</span>
+      <label for="message" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
+        Poznámka alebo správa <span class="text-slate-400 font-normal">(voliteľné)</span>
       </label>
       <textarea
         id="message"
         name="message"
         rows="3"
-        placeholder="Napíšte nám ďalšie podrobnosti, preferovaný spôsob platby, alebo akékoľvek otázky k prevodu..."
-        class="w-full px-4 py-3 bg-slate-950/80 border border-slate-700 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-poke-yellow focus:ring-1 focus:ring-poke-yellow transition text-sm resize-y"
+        placeholder="Napíšte nám ďalšie podrobnosti, preferovaný spôsob platby, alebo otázky k prevodu..."
+        class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-slate-900 placeholder-slate-400 focus:bg-white focus:outline-none focus:border-rose-500 focus:ring-1 focus:ring-rose-500 transition text-sm resize-y"
       ></textarea>
     </div>
 
@@ -133,7 +131,7 @@ const { accessKey = "970db82a-59c2-4846-85ff-e4a3beb761e5" } = Astro.props;
       <button
         type="submit"
         id="submit-button"
-        class="w-full py-4 px-6 rounded-xl font-bold text-base text-slate-950 bg-gradient-to-r from-poke-yellow via-amber-400 to-poke-yellow hover:from-amber-300 hover:to-amber-400 shadow-xl shadow-amber-500/20 hover:shadow-amber-500/30 transition-all hover:scale-[1.01] active:scale-[0.99] flex items-center justify-center gap-3"
+        class="w-full py-4 px-6 rounded-xl font-bold text-base text-white bg-slate-900 hover:bg-slate-800 shadow-md hover:shadow-lg transition-all hover:-translate-y-0.5 active:translate-y-0 flex items-center justify-center gap-3"
       >
         <img src="/favicon.svg" alt="" class="w-5 h-5" />
         <span>Odoslať nezáväznú cenovú ponuku</span>
@@ -141,8 +139,8 @@ const { accessKey = "970db82a-59c2-4846-85ff-e4a3beb761e5" } = Astro.props;
     </div>
 
     <!-- Security Note -->
-    <div class="flex items-center justify-center gap-2 text-xs text-slate-300 pt-2 text-center">
-      <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <div class="flex items-center justify-center gap-2 text-xs text-slate-500 pt-2 text-center">
+      <svg class="w-4 h-4 text-emerald-600 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
       </svg>
       <span>Vaše údaje sú v bezpečí a nebudú poskytnuté tretím stranám.</span>
@@ -161,24 +159,12 @@ const { accessKey = "970db82a-59c2-4846-85ff-e4a3beb761e5" } = Astro.props;
   if (form && result && submitBtn) {
     form.addEventListener("submit", async function (e) {
       e.preventDefault();
-      
-      const keyInput = document.getElementById("web3forms_key") as HTMLInputElement;
-      if (keyInput && keyInput.value === "YOUR_WEB3FORMS_ACCESS_KEY_HERE") {
-        // Helpful dev guidance if key is not configured yet
-        result.className = "mt-4 p-4 rounded-xl text-sm font-medium text-center bg-amber-500/20 text-amber-300 border border-amber-500/40";
-        result.innerHTML = `
-          <strong>Web3Forms kľúč ešte nie je nastavený.</strong><br/>
-          Pre aktiváciu stačí zadať bezplatný prístupový kľúč z <a href="https://web3forms.com" target="_blank" class="underline font-bold">web3forms.com</a> do kódu formulára.
-        `;
-        result.classList.remove("hidden");
-        return;
-      }
 
       submitBtn.disabled = true;
       submitBtn.classList.add("opacity-70", "cursor-not-allowed");
       const originalText = submitBtn.innerHTML;
       submitBtn.innerHTML = `
-        <svg class="animate-spin h-5 w-5 text-slate-950 inline mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <svg class="animate-spin h-5 w-5 text-white inline mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
           <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
           <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
         </svg>
@@ -196,16 +182,16 @@ const { accessKey = "970db82a-59c2-4846-85ff-e4a3beb761e5" } = Astro.props;
         const data = await response.json();
 
         if (response.status === 200) {
-          result.className = "mt-4 p-4 rounded-xl text-sm font-medium text-center bg-emerald-500/20 text-emerald-300 border border-emerald-500/40";
+          result.className = "mt-4 p-4 rounded-xl text-sm font-medium text-center bg-emerald-50 text-emerald-800 border border-emerald-200";
           result.innerHTML = "🎉 <strong>Ďakujeme!</strong> Vaša cenová ponuka bola úspešne doručená. Odpovieme vám čo najskôr na zadaný e-mail.";
           form.reset();
         } else {
-          result.className = "mt-4 p-4 rounded-xl text-sm font-medium text-center bg-red-500/20 text-red-300 border border-red-500/40";
+          result.className = "mt-4 p-4 rounded-xl text-sm font-medium text-center bg-rose-50 text-rose-800 border border-rose-200";
           result.innerHTML = `⚠️ Chyba: ${data.message || "Nepodarilo sa odoslať správu. Skúste to znova neskôr."}`;
         }
       } catch (error) {
-        result.className = "mt-4 p-4 rounded-xl text-sm font-medium text-center bg-red-500/20 text-red-300 border border-red-500/40";
-        result.innerHTML = "⚠️ Nastala neočakávaná chyba pri odosielaní. Skontrolujte svoje internetové pripojenie.";
+        result.className = "mt-4 p-4 rounded-xl text-sm font-medium text-center bg-rose-50 text-rose-800 border border-rose-200";
+        result.innerHTML = "⚠️ Nastala neočakávaná chyba pri odosielaní. Skontrolujte internetové pripojenie.";
       } finally {
         submitBtn.disabled = false;
         submitBtn.classList.remove("opacity-70", "cursor-not-allowed");
