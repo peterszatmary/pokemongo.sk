@@ -195,7 +195,7 @@ const structuredData = [
       {
         pokemonList.map((pokemon) => {
           const typesSkJoined = pokemon.typesSk.join(" ");
-          const searchData = `${pokemon.name.toLowerCase()} ${pokemon.number.toLowerCase()} ${pokemon.id} ${typesSkJoined.toLowerCase()}`;
+          const searchData = `${pokemon.name.toLowerCase()} ${pokemon.number.toLowerCase()} ${pokemon.id} ${typesSkJoined.toLowerCase()} ${pokemon.description.toLowerCase()}`;
 
           return (
             <div

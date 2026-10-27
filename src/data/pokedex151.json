@@ -19,8 +19,9 @@
       "Sp. Defense": 65,
       "Speed": 45
     },
-    "description": "A strange seed was planted on its back at birth. The plant sprouts and grows with this POKéMON.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
+    "description": "Pri narodení mu bolo na chrbát zasadené zvláštne semienko. Rastlina klíči a rastie s týmto Pokémonom.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
+    "descriptionEn": "A strange seed was planted on its back at birth. The plant sprouts and grows with this POKéMON."
   },
   {
     "id": 2,
@@ -42,8 +43,9 @@
       "Sp. Defense": 80,
       "Speed": 60
     },
-    "description": "When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png"
+    "description": "Keď sa cibuľka na chrbte zväčší, zdá sa, že stráca schopnosť stáť na zadných nohách.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png",
+    "descriptionEn": "When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs."
   },
   {
     "id": 3,
@@ -65,8 +67,9 @@
       "Sp. Defense": 100,
       "Speed": 80
     },
-    "description": "The plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png"
+    "description": "Rastlina kvitne, keď absorbuje slnečnú energiu. Zostáva v pohybe, aby hľadal slnečné svetlo.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png",
+    "descriptionEn": "The plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight."
   },
   {
     "id": 4,
@@ -86,8 +89,9 @@
       "Sp. Defense": 50,
       "Speed": 65
     },
-    "description": "Obviously prefers hot places. When it rains, steam is said to spout from the tip of its tail.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png"
+    "description": "Očividne preferuje horúce miesta. Keď prší, hovorí sa, že zo špičky jeho chvosta tryská para.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png",
+    "descriptionEn": "Obviously prefers hot places. When it rains, steam is said to spout from the tip of its tail."
   },
   {
     "id": 5,
@@ -107,8 +111,9 @@
       "Sp. Defense": 65,
       "Speed": 80
     },
-    "description": "When it swings its burning tail, it elevates the temperature to unbearably high levels.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/5.png"
+    "description": "Keď kýva horiacim chvostom, zvyšuje teplotu na neznesiteľne vysoké úrovne.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/5.png",
+    "descriptionEn": "When it swings its burning tail, it elevates the temperature to unbearably high levels."
   },
   {
     "id": 6,
@@ -130,8 +135,9 @@
       "Sp. Defense": 85,
       "Speed": 100
     },
-    "description": "Spits fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png"
+    "description": "Chrlí oheň, ktorý je dostatočne horúci na to, aby roztopil balvany. Je známe, že neúmyselne spôsobuje lesné požiare.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png",
+    "descriptionEn": "Spits fire that is hot enough to melt boulders. Known to cause forest fires unintentionally."
   },
   {
     "id": 7,
@@ -151,8 +157,9 @@
       "Sp. Defense": 64,
       "Speed": 43
     },
-    "description": "After birth, its back swells and hardens into a shell. Powerfully sprays foam from its mouth.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png"
+    "description": "Po narodení jej chrbát napuchne a stvrdne do ulity. Silne strieka penu z úst.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png",
+    "descriptionEn": "After birth, its back swells and hardens into a shell. Powerfully sprays foam from its mouth."
   },
   {
     "id": 8,
@@ -172,8 +179,9 @@
       "Sp. Defense": 80,
       "Speed": 58
     },
-    "description": "Often hides in water to stalk unwary prey. For swimming fast, it moves its ears to maintain balance.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/8.png"
+    "description": "Často sa skrýva vo vode, aby sledoval neopatrnú korisť. Pre rýchle plávanie pohybuje ušami, aby udržal rovnováhu.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/8.png",
+    "descriptionEn": "Often hides in water to stalk unwary prey. For swimming fast, it moves its ears to maintain balance."
   },
   {
     "id": 9,
@@ -193,8 +201,9 @@
       "Sp. Defense": 105,
       "Speed": 78
     },
-    "description": "A brutal POKéMON with pressurized water jets on its shell. They are used for high speed tackles.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/9.png"
+    "description": "Brutálny Pokémon s tlakovými vodnými tryskami na škrupine. Používajú sa na vysokorýchlostné náčinie.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/9.png",
+    "descriptionEn": "A brutal POKéMON with pressurized water jets on its shell. They are used for high speed tackles."
   },
   {
     "id": 10,
@@ -214,8 +223,9 @@
       "Sp. Defense": 20,
       "Speed": 45
     },
-    "description": "Its short feet are tipped with suction pads that enable it to tirelessly climb slopes and walls.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10.png"
+    "description": "Jeho krátke nohy sú zakončené prísavnými podložkami, ktoré mu umožňujú neúnavne stúpať po svahoch a stenách.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10.png",
+    "descriptionEn": "Its short feet are tipped with suction pads that enable it to tirelessly climb slopes and walls."
   },
   {
     "id": 11,
@@ -235,8 +245,9 @@
       "Sp. Defense": 25,
       "Speed": 30
     },
-    "description": "This POKéMON is vulnerable to attack while its shell is soft, exposing its weak and tender body.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/11.png"
+    "description": "Tento Pokémon je náchylný na útok, zatiaľ čo jeho ulita je mäkká a odhaľuje jeho slabé a jemné telo.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/11.png",
+    "descriptionEn": "This POKéMON is vulnerable to attack while its shell is soft, exposing its weak and tender body."
   },
   {
     "id": 12,
@@ -258,8 +269,9 @@
       "Sp. Defense": 80,
       "Speed": 70
     },
-    "description": "In battle, it flaps its wings at high speed to release highly toxic dust into the air.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/12.png"
+    "description": "V boji máva krídlami pri vysokej rýchlosti, aby vypustil do vzduchu vysoko toxický prach.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/12.png",
+    "descriptionEn": "In battle, it flaps its wings at high speed to release highly toxic dust into the air."
   },
   {
     "id": 13,
@@ -281,8 +293,9 @@
       "Sp. Defense": 20,
       "Speed": 50
     },
-    "description": "Often found in forests, eating leaves. It has a sharp venomous stinger on its head.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/13.png"
+    "description": "Často sa vyskytuje v lesoch, jedia listy. Na hlave má ostré jedovaté žihadlo.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/13.png",
+    "descriptionEn": "Often found in forests, eating leaves. It has a sharp venomous stinger on its head."
   },
   {
     "id": 14,
@@ -304,8 +317,9 @@
       "Sp. Defense": 25,
       "Speed": 35
     },
-    "description": "Almost incapable of moving, this POKéMON can only harden its shell to protect itself from predators.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/14.png"
+    "description": "Takmer neschopný pohybu, tento Pokémon dokáže iba stvrdnúť svoju schránku, aby sa ochránil pred predátormi.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/14.png",
+    "descriptionEn": "Almost incapable of moving, this POKéMON can only harden its shell to protect itself from predators."
   },
   {
     "id": 15,
@@ -327,8 +341,9 @@
       "Sp. Defense": 80,
       "Speed": 75
     },
-    "description": "Flies at high speed and attacks using its large venomous stingers on its forelegs and tail.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/15.png"
+    "description": "Lieta vysokou rýchlosťou a útočí pomocou veľkých jedovatých žihadiel na predné končatiny a chvost.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/15.png",
+    "descriptionEn": "Flies at high speed and attacks using its large venomous stingers on its forelegs and tail."
   },
   {
     "id": 16,
@@ -350,8 +365,9 @@
       "Sp. Defense": 35,
       "Speed": 56
     },
-    "description": "A common sight in forests and woods. It flaps its wings at ground level to kick up blinding sand.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/16.png"
+    "description": "Bežný pohľad v lesoch a lesoch. Máva krídlami na úrovni zeme, aby nadvihol oslepujúci piesok.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/16.png",
+    "descriptionEn": "A common sight in forests and woods. It flaps its wings at ground level to kick up blinding sand."
   },
   {
     "id": 17,
@@ -373,8 +389,9 @@
       "Sp. Defense": 50,
       "Speed": 71
     },
-    "description": "Very protective of its sprawling territorial area, this POKéMON will fiercely peck at any intruder.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/17.png"
+    "description": "Tento Pokémon, ktorý si veľmi chráni svoju rozľahlú teritoriálnu oblasť, bude zúrivo klovať každého votrelca.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/17.png",
+    "descriptionEn": "Very protective of its sprawling territorial area, this POKéMON will fiercely peck at any intruder."
   },
   {
     "id": 18,
@@ -396,8 +413,9 @@
       "Sp. Defense": 70,
       "Speed": 101
     },
-    "description": "When hunting, it skims the surface of water at high speed to pick off unwary prey such as MAGIKARP.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/18.png"
+    "description": "Pri love skĺzne vysokou rýchlosťou po hladine vody, aby odtrhol neopatrnú korisť, ako je MAGIKARP.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/18.png",
+    "descriptionEn": "When hunting, it skims the surface of water at high speed to pick off unwary prey such as MAGIKARP."
   },
   {
     "id": 19,
@@ -417,8 +435,9 @@
       "Sp. Defense": 35,
       "Speed": 72
     },
-    "description": "Bites anything when it attacks. Small and very quick, it is a common sight in many places.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/19.png"
+    "description": "Pri útoku niečo hryzie. Malý a veľmi rýchly, na mnohých miestach je to bežný pohľad.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/19.png",
+    "descriptionEn": "Bites anything when it attacks. Small and very quick, it is a common sight in many places."
   },
   {
     "id": 20,
@@ -438,8 +457,9 @@
       "Sp. Defense": 70,
       "Speed": 97
     },
-    "description": "It uses its whis­ kers to maintain its balance. It apparently slows down if they are cut off.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/20.png"
+    "description": "Používa svoje fúzy na udržanie rovnováhy. Zjavne sa spomalí, ak sú odrezaní.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/20.png",
+    "descriptionEn": "It uses its whis­ kers to maintain its balance. It apparently slows down if they are cut off."
   },
   {
     "id": 21,
@@ -461,8 +481,9 @@
       "Sp. Defense": 31,
       "Speed": 70
     },
-    "description": "Eats bugs in grassy areas. It has to flap its short wings at high speed to stay airborne.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/21.png"
+    "description": "Požiera chrobáky na trávnatých plochách. Musí mávať krátkymi krídlami pri vysokej rýchlosti, aby zostalo vo vzduchu.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/21.png",
+    "descriptionEn": "Eats bugs in grassy areas. It has to flap its short wings at high speed to stay airborne."
   },
   {
     "id": 22,
@@ -484,8 +505,9 @@
       "Sp. Defense": 61,
       "Speed": 100
     },
-    "description": "With its huge and magnificent wings, it can keep aloft without ever having to land for rest.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/22.png"
+    "description": "So svojimi obrovskými a veľkolepými krídlami sa dokáže udržať vo výške bez toho, aby musel pristáť na odpočinok.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/22.png",
+    "descriptionEn": "With its huge and magnificent wings, it can keep aloft without ever having to land for rest."
   },
   {
     "id": 23,
@@ -505,8 +527,9 @@
       "Sp. Defense": 54,
       "Speed": 55
     },
-    "description": "Moves silently and stealthily. Eats the eggs of birds, such as PIDGEY and SPEAROW, whole.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/23.png"
+    "description": "Pohybuje sa ticho a nenápadne. Konzumuje celé vajcia vtákov, ako sú PIDGEY a SPEAROW.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/23.png",
+    "descriptionEn": "Moves silently and stealthily. Eats the eggs of birds, such as PIDGEY and SPEAROW, whole."
   },
   {
     "id": 24,
@@ -526,8 +549,9 @@
       "Sp. Defense": 79,
       "Speed": 80
     },
-    "description": "It is rumored that the ferocious warning markings on its belly differ from area to area.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/24.png"
+    "description": "Povráva sa, že ozrutné výstražné značky na jeho bruchu sa v jednotlivých oblastiach líšia.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/24.png",
+    "descriptionEn": "It is rumored that the ferocious warning markings on its belly differ from area to area."
   },
   {
     "id": 25,
@@ -547,8 +571,9 @@
       "Sp. Defense": 50,
       "Speed": 90
     },
-    "description": "When several of these POKéMON gather, their electricity could build and cause lightning storms.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png"
+    "description": "Keď sa niekoľko týchto Pokémonov zhromaždí, ich elektrina sa môže nahromadiť a spôsobiť búrky.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png",
+    "descriptionEn": "When several of these POKéMON gather, their electricity could build and cause lightning storms."
   },
   {
     "id": 26,
@@ -568,8 +593,9 @@
       "Sp. Defense": 80,
       "Speed": 110
     },
-    "description": "Its long tail serves as a ground to protect itself from its own high voltage power.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/26.png"
+    "description": "Jeho dlhý chvost slúži ako uzemnenie na ochranu pred vlastným vysokým napätím.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/26.png",
+    "descriptionEn": "Its long tail serves as a ground to protect itself from its own high voltage power."
   },
   {
     "id": 27,
@@ -589,8 +615,9 @@
       "Sp. Defense": 30,
       "Speed": 40
     },
-    "description": "Burrows deep underground in arid locations far from water. It only emerges to hunt for food.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/27.png"
+    "description": "Hrabe hlboko pod zemou na suchých miestach ďaleko od vody. Objavuje sa len pri love potravy.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/27.png",
+    "descriptionEn": "Burrows deep underground in arid locations far from water. It only emerges to hunt for food."
   },
   {
     "id": 28,
@@ -610,8 +637,9 @@
       "Sp. Defense": 55,
       "Speed": 65
     },
-    "description": "Curls up into a spiny ball when threatened. It can roll while curled up to attack or escape.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/28.png"
+    "description": "Pri ohrození sa stočí do ostnatej gule. Môže sa kotúľať, keď je stočený, aby zaútočil alebo unikol.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/28.png",
+    "descriptionEn": "Curls up into a spiny ball when threatened. It can roll while curled up to attack or escape."
   },
   {
     "id": 29,
@@ -631,8 +659,9 @@
       "Sp. Defense": 40,
       "Speed": 41
     },
-    "description": "Although small, its venomous barbs render this POKéMON dangerous. The female has smaller horns.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/29.png"
+    "description": "Hoci je malý, jeho jedovaté ostne robia tohto Pokémona nebezpečným. Samica má menšie rohy.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/29.png",
+    "descriptionEn": "Although small, its venomous barbs render this POKéMON dangerous. The female has smaller horns."
   },
   {
     "id": 30,
@@ -652,8 +681,9 @@
       "Sp. Defense": 55,
       "Speed": 56
     },
-    "description": "The female's horn develops slowly. Prefers physical attacks such as clawing and biting.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/30.png"
+    "description": "Roh ženy sa vyvíja pomaly. Uprednostňuje fyzické útoky, ako sú pazúry a hryzenie.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/30.png",
+    "descriptionEn": "The female's horn develops slowly. Prefers physical attacks such as clawing and biting."
   },
   {
     "id": 31,
@@ -675,8 +705,9 @@
       "Sp. Defense": 85,
       "Speed": 76
     },
-    "description": "Its hard scales provide strong protection. It uses its hefty bulk to execute powerful moves.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/31.png"
+    "description": "Jeho tvrdé šupiny poskytujú silnú ochranu. Využíva svoj statný objem na vykonávanie silných pohybov.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/31.png",
+    "descriptionEn": "Its hard scales provide strong protection. It uses its hefty bulk to execute powerful moves."
   },
   {
     "id": 32,
@@ -696,8 +727,9 @@
       "Sp. Defense": 40,
       "Speed": 50
     },
-    "description": "Stiffens its ears to sense danger. The larger its horns, the more powerful its secreted venom.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/32.png"
+    "description": "Stužuje uši, aby vycítil nebezpečenstvo. Čím väčšie sú jeho rohy, tým silnejší je jeho vylučovaný jed.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/32.png",
+    "descriptionEn": "Stiffens its ears to sense danger. The larger its horns, the more powerful its secreted venom."
   },
   {
     "id": 33,
@@ -717,8 +749,9 @@
       "Sp. Defense": 55,
       "Speed": 65
     },
-    "description": "An aggressive POKéMON that is quick to attack. The horn on its head secretes a powerful venom.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/33.png"
+    "description": "Agresívny Pokémon, ktorý rýchlo útočí. Roh na hlave vylučuje silný jed.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/33.png",
+    "descriptionEn": "An aggressive POKéMON that is quick to attack. The horn on its head secretes a powerful venom."
   },
   {
     "id": 34,
@@ -740,8 +773,9 @@
       "Sp. Defense": 75,
       "Speed": 85
     },
-    "description": "It uses its powerful tail in battle to smash, constrict, then break the prey's bones.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/34.png"
+    "description": "V boji používa svoj silný chvost, aby rozdrvil, zovrel a potom zlomil kosti koristi.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/34.png",
+    "descriptionEn": "It uses its powerful tail in battle to smash, constrict, then break the prey's bones."
   },
   {
     "id": 35,
@@ -761,8 +795,9 @@
       "Sp. Defense": 65,
       "Speed": 35
     },
-    "description": "Its magical and cute appeal has many admirers. It is rare and found only in certain areas.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/35.png"
+    "description": "Jeho magická a roztomilá príťažlivosť má veľa obdivovateľov. Je vzácny a vyskytuje sa len v určitých oblastiach.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/35.png",
+    "descriptionEn": "Its magical and cute appeal has many admirers. It is rare and found only in certain areas."
   },
   {
     "id": 36,
@@ -782,8 +817,9 @@
       "Sp. Defense": 90,
       "Speed": 60
     },
-    "description": "A timid fairy POKéMON that is rarely seen. It will run and hide the moment it senses people.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/36.png"
+    "description": "Nesmelá víla Pokémon, ktorá sa vidí málokedy. Utečie a skryje sa vo chvíli, keď zacíti ľudí.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/36.png",
+    "descriptionEn": "A timid fairy POKéMON that is rarely seen. It will run and hide the moment it senses people."
   },
   {
     "id": 37,
@@ -803,8 +839,9 @@
       "Sp. Defense": 65,
       "Speed": 65
     },
-    "description": "At the time of birth, it has just one tail. The tail splits from its tip as it grows older.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/37.png"
+    "description": "V čase narodenia má len jeden chvost. Ako starne, chvost sa oddeľuje od špičky.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/37.png",
+    "descriptionEn": "At the time of birth, it has just one tail. The tail splits from its tip as it grows older."
   },
   {
     "id": 38,
@@ -824,8 +861,9 @@
       "Sp. Defense": 100,
       "Speed": 100
     },
-    "description": "Very smart and very vengeful. Grabbing one of its many tails could result in a 1000-year curse.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/38.png"
+    "description": "Veľmi inteligentný a veľmi pomstychtivý. Chytenie jedného z jeho mnohých chvostov by mohlo mať za následok 1000-ročnú kliatbu.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/38.png",
+    "descriptionEn": "Very smart and very vengeful. Grabbing one of its many tails could result in a 1000-year curse."
   },
   {
     "id": 39,
@@ -847,8 +885,9 @@
       "Sp. Defense": 25,
       "Speed": 20
     },
-    "description": "When its huge eyes light up, it sings a mysteriously soothing melody that lulls its enemies to sleep.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/39.png"
+    "description": "Keď sa jeho obrovské oči rozžiaria, zaspieva tajomne upokojujúcu melódiu, ktorá uspáva svojich nepriateľov.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/39.png",
+    "descriptionEn": "When its huge eyes light up, it sings a mysteriously soothing melody that lulls its enemies to sleep."
   },
   {
     "id": 40,
@@ -870,8 +909,9 @@
       "Sp. Defense": 50,
       "Speed": 45
     },
-    "description": "The body is soft and rubbery. When angered, it will suck in air and inflate itself to an enormous size.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/40.png"
+    "description": "Telo je mäkké a gumené. Keď sa nahnevá, nasaje vzduch a nafúkne sa do obrovskej veľkosti.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/40.png",
+    "descriptionEn": "The body is soft and rubbery. When angered, it will suck in air and inflate itself to an enormous size."
   },
   {
     "id": 41,
@@ -893,8 +933,9 @@
       "Sp. Defense": 40,
       "Speed": 55
     },
-    "description": "Forms colonies in perpetually dark places. Uses ultrasonic waves to identify and approach targets.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/41.png"
+    "description": "Vytvára kolónie na trvalo tmavých miestach. Používa ultrazvukové vlny na identifikáciu a priblíženie sa k cieľom.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/41.png",
+    "descriptionEn": "Forms colonies in perpetually dark places. Uses ultrasonic waves to identify and approach targets."
   },
   {
     "id": 42,
@@ -916,8 +957,9 @@
       "Sp. Defense": 75,
       "Speed": 90
     },
-    "description": "Once it strikes, it will not stop draining energy from the victim even if it gets too heavy to fly.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/42.png"
+    "description": "Akonáhle zasiahne, neprestane odčerpávať energiu z obete, aj keď bude príliš ťažká na to, aby lietala.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/42.png",
+    "descriptionEn": "Once it strikes, it will not stop draining energy from the victim even if it gets too heavy to fly."
   },
   {
     "id": 43,
@@ -939,8 +981,9 @@
       "Sp. Defense": 65,
       "Speed": 30
     },
-    "description": "During the day, it keeps its face buried in the ground. At night, it wanders around sowing its seeds.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/43.png"
+    "description": "Cez deň má tvár zaborenú do zeme. V noci sa túla a rozsieva semená.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/43.png",
+    "descriptionEn": "During the day, it keeps its face buried in the ground. At night, it wanders around sowing its seeds."
   },
   {
     "id": 44,
@@ -962,8 +1005,9 @@
       "Sp. Defense": 75,
       "Speed": 40
     },
-    "description": "The fluid that oozes from its mouth isn't drool. It is a nectar that is used to attract prey.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/44.png"
+    "description": "Tekutina, ktorá mu vyteká z úst, nie sú sliny. Je to nektár, ktorý sa používa na prilákanie koristi.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/44.png",
+    "descriptionEn": "The fluid that oozes from its mouth isn't drool. It is a nectar that is used to attract prey."
   },
   {
     "id": 45,
@@ -985,8 +1029,9 @@
       "Sp. Defense": 90,
       "Speed": 50
     },
-    "description": "The larger its petals, the more toxic pollen it contains. Its big head is heavy and hard to hold up.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/45.png"
+    "description": "Čím väčšie sú jeho okvetné lístky, tým viac toxického peľu obsahuje. Jeho veľká hlava je ťažká a ťažko sa drží.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/45.png",
+    "descriptionEn": "The larger its petals, the more toxic pollen it contains. Its big head is heavy and hard to hold up."
   },
   {
     "id": 46,
@@ -1008,8 +1053,9 @@
       "Sp. Defense": 55,
       "Speed": 25
     },
-    "description": "Burrows to suck tree roots. The mushrooms on its back grow by draw­ ing nutrients from the bug host.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/46.png"
+    "description": "Hrabe na vysávanie koreňov stromov. Huby na jeho chrbte rastú čerpaním živín z hostiteľa hmyzu.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/46.png",
+    "descriptionEn": "Burrows to suck tree roots. The mushrooms on its back grow by draw­ ing nutrients from the bug host."
   },
   {
     "id": 47,
@@ -1031,8 +1077,9 @@
       "Sp. Defense": 80,
       "Speed": 30
     },
-    "description": "A host-parasite pair in which the parasite mushroom has taken over the host bug. Prefers damp places.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/47.png"
+    "description": "Pár hostiteľ-parazit, v ktorom parazit huba prevzal hostiteľskú plošticu. Preferuje vlhké miesta.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/47.png",
+    "descriptionEn": "A host-parasite pair in which the parasite mushroom has taken over the host bug. Prefers damp places."
   },
   {
     "id": 48,
@@ -1054,8 +1101,9 @@
       "Sp. Defense": 55,
       "Speed": 45
     },
-    "description": "Lives in the shadows of tall trees where it eats insects. It is attracted by light at night.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/48.png"
+    "description": "Žije v tieni vysokých stromov, kde sa živí hmyzom. V noci ho priťahuje svetlo.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/48.png",
+    "descriptionEn": "Lives in the shadows of tall trees where it eats insects. It is attracted by light at night."
   },
   {
     "id": 49,
@@ -1077,8 +1125,9 @@
       "Sp. Defense": 75,
       "Speed": 90
     },
-    "description": "The dust-like scales covering its wings are color coded to indicate the kinds of poison it has.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/49.png"
+    "description": "Prachovité šupiny pokrývajúce jeho krídla sú farebne označené, aby označovali druhy jedu, ktoré má.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/49.png",
+    "descriptionEn": "The dust-like scales covering its wings are color coded to indicate the kinds of poison it has."
   },
   {
     "id": 50,
@@ -1098,8 +1147,9 @@
       "Sp. Defense": 45,
       "Speed": 95
     },
-    "description": "Lives about one yard underground where it feeds on plant roots. It sometimes appears above ground.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/50.png"
+    "description": "Žije asi jeden dvor pod zemou, kde sa živí koreňmi rastlín. Niekedy sa objavuje nad zemou.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/50.png",
+    "descriptionEn": "Lives about one yard underground where it feeds on plant roots. It sometimes appears above ground."
   },
   {
     "id": 51,
@@ -1119,8 +1169,9 @@
       "Sp. Defense": 70,
       "Speed": 120
     },
-    "description": "A team of DIGLETT triplets. It triggers huge earthquakes by burrowing 60 miles underground.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/51.png"
+    "description": "Tím trojčiat DIGLETT. Vyvoláva obrovské zemetrasenia tým, že sa zaborí 60 míľ pod zem.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/51.png",
+    "descriptionEn": "A team of DIGLETT triplets. It triggers huge earthquakes by burrowing 60 miles underground."
   },
   {
     "id": 52,
@@ -1140,8 +1191,9 @@
       "Sp. Defense": 40,
       "Speed": 90
     },
-    "description": "Adores circular objects. Wanders the streets on a nightly basis to look for dropped loose change.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/52.png"
+    "description": "Zbožňuje kruhové predmety. Každý večer sa túla ulicami, aby hľadala vypadnuté drobné.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/52.png",
+    "descriptionEn": "Adores circular objects. Wanders the streets on a nightly basis to look for dropped loose change."
   },
   {
     "id": 53,
@@ -1161,8 +1213,9 @@
       "Sp. Defense": 65,
       "Speed": 115
     },
-    "description": "Although its fur has many admirers, it is tough to raise as a pet because of its fickle meanness.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/53.png"
+    "description": "Hoci jeho srsť má veľa obdivovateľov, je ťažké ho vychovať ako domáceho maznáčika kvôli jeho vrtkavej podlosti.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/53.png",
+    "descriptionEn": "Although its fur has many admirers, it is tough to raise as a pet because of its fickle meanness."
   },
   {
     "id": 54,
@@ -1182,8 +1235,9 @@
       "Sp. Defense": 50,
       "Speed": 55
     },
-    "description": "While lulling its enemies with its vacant look, this wily POKéMON will use psychokinetic powers.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/54.png"
+    "description": "Zatiaľ čo uspáva svojich nepriateľov prázdnym pohľadom, tento prefíkaný Pokémon využije psychokinetické schopnosti.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/54.png",
+    "descriptionEn": "While lulling its enemies with its vacant look, this wily POKéMON will use psychokinetic powers."
   },
   {
     "id": 55,
@@ -1203,8 +1257,9 @@
       "Sp. Defense": 80,
       "Speed": 85
     },
-    "description": "Often seen swim­ ming elegantly by lake shores. It is often mistaken for the Japanese monster, Kappa.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/55.png"
+    "description": "Často vidieť elegantne plávať pri brehoch jazera. Často sa mýli s japonským monštrom Kappa.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/55.png",
+    "descriptionEn": "Often seen swim­ ming elegantly by lake shores. It is often mistaken for the Japanese monster, Kappa."
   },
   {
     "id": 56,
@@ -1224,8 +1279,9 @@
       "Sp. Defense": 45,
       "Speed": 70
     },
-    "description": "Extremely quick to anger. It could be docile one moment then thrashing away the next instant.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/56.png"
+    "description": "Extrémne rýchlo sa hnevať. V jednom momente by to mohlo byť poslušné a v ďalšom momente by to mohlo byť preč.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/56.png",
+    "descriptionEn": "Extremely quick to anger. It could be docile one moment then thrashing away the next instant."
   },
   {
     "id": 57,
@@ -1245,8 +1301,9 @@
       "Sp. Defense": 70,
       "Speed": 95
     },
-    "description": "Always furious and tenacious to boot. It will not abandon chasing its quarry until it is caught.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/57.png"
+    "description": "Vždy zúrivý a húževnatý. Neopustí prenasledovanie svojho lomu, kým ho nechytia.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/57.png",
+    "descriptionEn": "Always furious and tenacious to boot. It will not abandon chasing its quarry until it is caught."
   },
   {
     "id": 58,
@@ -1266,8 +1323,9 @@
       "Sp. Defense": 50,
       "Speed": 60
     },
-    "description": "Very protective of its territory. It will bark and bite to repel intruders from its space.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/58.png"
+    "description": "Veľmi chráni svoje územie. Bude štekať a hrýzť, aby odpudil votrelcov zo svojho priestoru.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/58.png",
+    "descriptionEn": "Very protective of its territory. It will bark and bite to repel intruders from its space."
   },
   {
     "id": 59,
@@ -1287,8 +1345,9 @@
       "Sp. Defense": 80,
       "Speed": 95
     },
-    "description": "A POKéMON that has been admired since the past for its beauty. It runs agilely as if on wings.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/59.png"
+    "description": "Pokémon, ktorý je od minulosti obdivovaný pre svoju krásu. Beží svižne ako na krídlach.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/59.png",
+    "descriptionEn": "A POKéMON that has been admired since the past for its beauty. It runs agilely as if on wings."
   },
   {
     "id": 60,
@@ -1308,8 +1367,9 @@
       "Sp. Defense": 40,
       "Speed": 90
     },
-    "description": "Its newly grown legs prevent it from running. It appears to prefer swimming than trying to stand.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/60.png"
+    "description": "Jeho novo narastené nohy mu bránia v behu. Zdá sa, že uprednostňuje plávanie ako snahu stáť.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/60.png",
+    "descriptionEn": "Its newly grown legs prevent it from running. It appears to prefer swimming than trying to stand."
   },
   {
     "id": 61,
@@ -1329,8 +1389,9 @@
       "Sp. Defense": 50,
       "Speed": 90
     },
-    "description": "Capable of living in or out of water. When out of water, it sweats to keep its body slimy.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/61.png"
+    "description": "Schopný žiť vo vode alebo mimo nej. Keď je mimo vody, potí sa, aby si telo udržalo slizké.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/61.png",
+    "descriptionEn": "Capable of living in or out of water. When out of water, it sweats to keep its body slimy."
   },
   {
     "id": 62,
@@ -1352,8 +1413,9 @@
       "Sp. Defense": 90,
       "Speed": 70
     },
-    "description": "An adept swimmer at both the front crawl and breast stroke. Easily overtakes the best human swimmers.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/62.png"
+    "description": "Skvelá plavkyňa vpredu kraul aj prsia. Ľahko predbehne najlepších ľudských plavcov.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/62.png",
+    "descriptionEn": "An adept swimmer at both the front crawl and breast stroke. Easily overtakes the best human swimmers."
   },
   {
     "id": 63,
@@ -1373,8 +1435,9 @@
       "Sp. Defense": 55,
       "Speed": 90
     },
-    "description": "Using its ability to read minds, it will identify impending danger and TELEPORT to safety.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/63.png"
+    "description": "Pomocou svojej schopnosti čítať myšlienky identifikuje hroziace nebezpečenstvo a TELEPORTUJE sa do bezpečia.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/63.png",
+    "descriptionEn": "Using its ability to read minds, it will identify impending danger and TELEPORT to safety."
   },
   {
     "id": 64,
@@ -1394,8 +1457,9 @@
       "Sp. Defense": 70,
       "Speed": 105
     },
-    "description": "It emits special alpha waves from its body that induce headaches just by being close by.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/64.png"
+    "description": "Zo svojho tela vysiela špeciálne alfa vlny, ktoré vyvolávajú bolesti hlavy už len tým, že sú nablízku.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/64.png",
+    "descriptionEn": "It emits special alpha waves from its body that induce headaches just by being close by."
   },
   {
     "id": 65,
@@ -1415,8 +1479,9 @@
       "Sp. Defense": 95,
       "Speed": 120
     },
-    "description": "Its brain can out­ perform a super­ computer. Its intelligence quotient is said to be 5,000.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/65.png"
+    "description": "Jeho mozog dokáže vykonávať superpočítač. Jeho inteligenčný kvocient je údajne 5000.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/65.png",
+    "descriptionEn": "Its brain can out­ perform a super­ computer. Its intelligence quotient is said to be 5,000."
   },
   {
     "id": 66,
@@ -1436,8 +1501,9 @@
       "Sp. Defense": 35,
       "Speed": 35
     },
-    "description": "Loves to build its muscles. It trains in all styles of martial arts to become even stronger.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/66.png"
+    "description": "Rád si buduje svaly. Cvičí sa vo všetkých štýloch bojových umení, aby sa stal ešte silnejším.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/66.png",
+    "descriptionEn": "Loves to build its muscles. It trains in all styles of martial arts to become even stronger."
   },
   {
     "id": 67,
@@ -1457,8 +1523,9 @@
       "Sp. Defense": 60,
       "Speed": 45
     },
-    "description": "Its muscular body is so powerful, it must wear a power save belt to be able to regulate its motions.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/67.png"
+    "description": "Jeho svalnaté telo je také silné, že musí nosiť úsporný opasok, aby mohol regulovať svoje pohyby.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/67.png",
+    "descriptionEn": "Its muscular body is so powerful, it must wear a power save belt to be able to regulate its motions."
   },
   {
     "id": 68,
@@ -1478,8 +1545,9 @@
       "Sp. Defense": 85,
       "Speed": 55
     },
-    "description": "Using its heavy muscles, it throws powerful punches that can send the victim clear over the horizon.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/68.png"
+    "description": "Pomocou svojich ťažkých svalov vrhá silné údery, ktoré môžu obeť vystreliť za horizont.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/68.png",
+    "descriptionEn": "Using its heavy muscles, it throws powerful punches that can send the victim clear over the horizon."
   },
   {
     "id": 69,
@@ -1501,8 +1569,9 @@
       "Sp. Defense": 30,
       "Speed": 40
     },
-    "description": "A carnivorous POKéMON that traps and eats bugs. It uses its root feet to soak up needed moisture.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/69.png"
+    "description": "Mäsožravý Pokémon, ktorý chytá a požiera chrobáky. Používa svoje koreňové nôžky na nasávanie potrebnej vlhkosti.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/69.png",
+    "descriptionEn": "A carnivorous POKéMON that traps and eats bugs. It uses its root feet to soak up needed moisture."
   },
   {
     "id": 70,
@@ -1524,8 +1593,9 @@
       "Sp. Defense": 45,
       "Speed": 55
     },
-    "description": "It spits out POISONPOWDER to immobilize the enemy and then finishes it with a spray of ACID.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/70.png"
+    "description": "Vypľuje POISONPOWDER, aby znehybnil nepriateľa a potom to dokončí sprejom KYSELINY.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/70.png",
+    "descriptionEn": "It spits out POISONPOWDER to immobilize the enemy and then finishes it with a spray of ACID."
   },
   {
     "id": 71,
@@ -1547,8 +1617,9 @@
       "Sp. Defense": 70,
       "Speed": 70
     },
-    "description": "Said to live in huge colonies deep in jungles, although no one has ever returned from there.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/71.png"
+    "description": "Hovorí sa, že žije v obrovských kolóniách hlboko v džungli, hoci sa odtiaľ nikto nikdy nevrátil.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/71.png",
+    "descriptionEn": "Said to live in huge colonies deep in jungles, although no one has ever returned from there."
   },
   {
     "id": 72,
@@ -1570,8 +1641,9 @@
       "Sp. Defense": 100,
       "Speed": 70
     },
-    "description": "Drifts in shallow seas. Anglers who hook them by accident are often punished by its stinging acid.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/72.png"
+    "description": "Záplavy v plytkých moriach. Rybári, ktorí ich náhodou ulovia, sú často potrestaní jeho štipľavou kyselinou.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/72.png",
+    "descriptionEn": "Drifts in shallow seas. Anglers who hook them by accident are often punished by its stinging acid."
   },
   {
     "id": 73,
@@ -1593,8 +1665,9 @@
       "Sp. Defense": 120,
       "Speed": 100
     },
-    "description": "The tentacles are normally kept short. On hunts, they are extended to ensnare and immobilize prey.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/73.png"
+    "description": "Tykadlá sú zvyčajne krátke. Na poľovačkách sú vysunuté, aby chytili a znehybnili korisť.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/73.png",
+    "descriptionEn": "The tentacles are normally kept short. On hunts, they are extended to ensnare and immobilize prey."
   },
   {
     "id": 74,
@@ -1616,8 +1689,9 @@
       "Sp. Defense": 30,
       "Speed": 20
     },
-    "description": "Found in fields and mountains. Mistaking them for boulders, people often step or trip on them.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/74.png"
+    "description": "Nájdené na poliach a horách. Ľudia si ich mýlia s balvanmi a často na ne šliapu alebo zakopnú.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/74.png",
+    "descriptionEn": "Found in fields and mountains. Mistaking them for boulders, people often step or trip on them."
   },
   {
     "id": 75,
@@ -1639,8 +1713,9 @@
       "Sp. Defense": 45,
       "Speed": 35
     },
-    "description": "Rolls down slopes to move. It rolls over any obstacle without slowing or changing its direction.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/75.png"
+    "description": "Roluje sa po svahoch, aby sa mohol pohybovať. Prevalí sa cez akúkoľvek prekážku bez spomalenia alebo zmeny smeru.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/75.png",
+    "descriptionEn": "Rolls down slopes to move. It rolls over any obstacle without slowing or changing its direction."
   },
   {
     "id": 76,
@@ -1662,8 +1737,9 @@
       "Sp. Defense": 65,
       "Speed": 45
     },
-    "description": "Its boulder-like body is extremely hard. It can easily withstand dynamite blasts without damage.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/76.png"
+    "description": "Jeho balvanovité telo je mimoriadne tvrdé. Ľahko odolá výbuchom dynamitu bez poškodenia.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/76.png",
+    "descriptionEn": "Its boulder-like body is extremely hard. It can easily withstand dynamite blasts without damage."
   },
   {
     "id": 77,
@@ -1683,8 +1759,9 @@
       "Sp. Defense": 65,
       "Speed": 90
     },
-    "description": "Its hooves are 10 times harder than diamonds. It can trample anything completely flat in little time.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/77.png"
+    "description": "Jeho kopytá sú 10-krát tvrdšie ako diamanty. Za krátky čas dokáže pošliapať čokoľvek úplne ploché.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/77.png",
+    "descriptionEn": "Its hooves are 10 times harder than diamonds. It can trample anything completely flat in little time."
   },
   {
     "id": 78,
@@ -1704,8 +1781,9 @@
       "Sp. Defense": 80,
       "Speed": 105
     },
-    "description": "Very competitive, this POKéMON will chase anything that moves fast in the hopes of racing it.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/78.png"
+    "description": "Veľmi konkurencieschopný, tento Pokémon bude prenasledovať všetko, čo sa rýchlo pohybuje, v nádeji, že s tým bude pretekať.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/78.png",
+    "descriptionEn": "Very competitive, this POKéMON will chase anything that moves fast in the hopes of racing it."
   },
   {
     "id": 79,
@@ -1727,8 +1805,9 @@
       "Sp. Defense": 40,
       "Speed": 15
     },
-    "description": "Incredibly slow and dopey. It takes 5 seconds for it to feel pain when under attack.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/79.png"
+    "description": "Neuveriteľne pomalé a otrasné. Trvá 5 sekúnd, kým pri útoku pocíti bolesť.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/79.png",
+    "descriptionEn": "Incredibly slow and dopey. It takes 5 seconds for it to feel pain when under attack."
   },
   {
     "id": 80,
@@ -1750,8 +1829,9 @@
       "Sp. Defense": 80,
       "Speed": 30
     },
-    "description": "The SHELLDER that is latched onto SLOWPOKE's tail is said to feed on the host's left over scraps.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/80.png"
+    "description": "O SHELLDER, ktorý je pripevnený na chvost SLOWPOKE, sa hovorí, že sa živí zvyškami hostiteľa.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/80.png",
+    "descriptionEn": "The SHELLDER that is latched onto SLOWPOKE's tail is said to feed on the host's left over scraps."
   },
   {
     "id": 81,
@@ -1773,8 +1853,9 @@
       "Sp. Defense": 55,
       "Speed": 45
     },
-    "description": "Uses anti-gravity to stay suspended. Appears without warning and uses THUNDER WAVE and similar moves.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/81.png"
+    "description": "Používa antigravitáciu, aby zostal pozastavený. Objaví sa bez varovania a používa THUNDER WAVE a podobné pohyby.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/81.png",
+    "descriptionEn": "Uses anti-gravity to stay suspended. Appears without warning and uses THUNDER WAVE and similar moves."
   },
   {
     "id": 82,
@@ -1796,8 +1877,9 @@
       "Sp. Defense": 70,
       "Speed": 70
     },
-    "description": "Formed by several MAGNEMITEs linked together. They frequently appear when sunspots flare up.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/82.png"
+    "description": "Tvorilo ju niekoľko MAGNEMITE spojených dohromady. Často sa objavujú pri vzplanutí slnečných škvŕn.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/82.png",
+    "descriptionEn": "Formed by several MAGNEMITEs linked together. They frequently appear when sunspots flare up."
   },
   {
     "id": 83,
@@ -1819,8 +1901,9 @@
       "Sp. Defense": 62,
       "Speed": 60
     },
-    "description": "The sprig of green onions it holds is its weapon. It is used much like a metal sword.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/83.png"
+    "description": "Jeho zbraňou je vetvička zelenej cibuľky, ktorú drží. Používa sa podobne ako kovový meč.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/83.png",
+    "descriptionEn": "The sprig of green onions it holds is its weapon. It is used much like a metal sword."
   },
   {
     "id": 84,
@@ -1842,8 +1925,9 @@
       "Sp. Defense": 35,
       "Speed": 75
     },
-    "description": "A bird that makes up for its poor flying with its fast foot speed. Leaves giant footprints.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/84.png"
+    "description": "Vták, ktorý si svoje slabé lietanie vynahrádza rýchlou nohou. Zanecháva obrovské stopy.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/84.png",
+    "descriptionEn": "A bird that makes up for its poor flying with its fast foot speed. Leaves giant footprints."
   },
   {
     "id": 85,
@@ -1865,8 +1949,9 @@
       "Sp. Defense": 60,
       "Speed": 110
     },
-    "description": "Uses its three brains to execute complex plans. While two heads sleep, one head stays awake.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/85.png"
+    "description": "Používa svoje tri mozgy na realizáciu zložitých plánov. Kým dve hlavy spia, jedna hlava zostáva hore.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/85.png",
+    "descriptionEn": "Uses its three brains to execute complex plans. While two heads sleep, one head stays awake."
   },
   {
     "id": 86,
@@ -1886,8 +1971,9 @@
       "Sp. Defense": 70,
       "Speed": 45
     },
-    "description": "The protruding horn on its head is very hard. It is used for bashing through thick ice.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/86.png"
+    "description": "Vyčnievajúci roh na hlave je veľmi tvrdý. Používa sa na prerazenie cez hrubý ľad.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/86.png",
+    "descriptionEn": "The protruding horn on its head is very hard. It is used for bashing through thick ice."
   },
   {
     "id": 87,
@@ -1909,8 +1995,9 @@
       "Sp. Defense": 95,
       "Speed": 70
     },
-    "description": "Stores thermal energy in its body. Swims at a steady 8 knots even in intensely cold waters.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/87.png"
+    "description": "Ukladá tepelnú energiu vo svojom tele. Pláva stabilnou rýchlosťou 8 uzlov aj vo veľmi studených vodách.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/87.png",
+    "descriptionEn": "Stores thermal energy in its body. Swims at a steady 8 knots even in intensely cold waters."
   },
   {
     "id": 88,
@@ -1930,8 +2017,9 @@
       "Sp. Defense": 50,
       "Speed": 25
     },
-    "description": "Appears in filthy areas. Thrives by sucking up polluted sludge that is pumped out of factories.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/88.png"
+    "description": "Objavuje sa v špinavých oblastiach. Prosperuje tým, že vysáva znečistený kal, ktorý sa odčerpáva z tovární.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/88.png",
+    "descriptionEn": "Appears in filthy areas. Thrives by sucking up polluted sludge that is pumped out of factories."
   },
   {
     "id": 89,
@@ -1951,8 +2039,9 @@
       "Sp. Defense": 100,
       "Speed": 50
     },
-    "description": "Thickly covered with a filthy, vile sludge. It is so toxic, even its footprints contain poison.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/89.png"
+    "description": "Husto pokryté špinavým, odporným kalom. Je taký toxický, dokonca aj jeho stopy obsahujú jed.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/89.png",
+    "descriptionEn": "Thickly covered with a filthy, vile sludge. It is so toxic, even its footprints contain poison."
   },
   {
     "id": 90,
@@ -1972,8 +2061,9 @@
       "Sp. Defense": 25,
       "Speed": 40
     },
-    "description": "Its hard shell repels any kind of attack. It is vulnerable only when its shell is open.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/90.png"
+    "description": "Jeho tvrdá škrupina odpudzuje akýkoľvek druh útoku. Je zraniteľný iba vtedy, keď je jeho škrupina otvorená.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/90.png",
+    "descriptionEn": "Its hard shell repels any kind of attack. It is vulnerable only when its shell is open."
   },
   {
     "id": 91,
@@ -1995,8 +2085,9 @@
       "Sp. Defense": 45,
       "Speed": 70
     },
-    "description": "When attacked, it launches its horns in quick volleys. Its innards have never been seen.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/91.png"
+    "description": "Pri útoku vystrelí rohy rýchlymi salvami. Jeho útroby nikdy nevideli.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/91.png",
+    "descriptionEn": "When attacked, it launches its horns in quick volleys. Its innards have never been seen."
   },
   {
     "id": 92,
@@ -2018,8 +2109,9 @@
       "Sp. Defense": 35,
       "Speed": 80
     },
-    "description": "Almost invisible, this gaseous POKéMON cloaks the target and puts it to sleep without notice.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/92.png"
+    "description": "Takmer neviditeľný, tento plynný Pokémon zamaskuje cieľ a bez povšimnutia ho uspí.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/92.png",
+    "descriptionEn": "Almost invisible, this gaseous POKéMON cloaks the target and puts it to sleep without notice."
   },
   {
     "id": 93,
@@ -2041,8 +2133,9 @@
       "Sp. Defense": 55,
       "Speed": 95
     },
-    "description": "Because of its ability to slip through block walls, it is said to be from an­ other dimension.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/93.png"
+    "description": "Pre svoju schopnosť prekĺznuť cez blokové steny sa hovorí, že pochádza z inej dimenzie.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/93.png",
+    "descriptionEn": "Because of its ability to slip through block walls, it is said to be from an­ other dimension."
   },
   {
     "id": 94,
@@ -2064,8 +2157,9 @@
       "Sp. Defense": 75,
       "Speed": 110
     },
-    "description": "Under a full moon, this POKéMON likes to mimic the shadows of people and laugh at their fright.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/94.png"
+    "description": "Za splnu tento Pokémon rád napodobňuje tiene ľudí a smeje sa ich strachu.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/94.png",
+    "descriptionEn": "Under a full moon, this POKéMON likes to mimic the shadows of people and laugh at their fright."
   },
   {
     "id": 95,
@@ -2087,8 +2181,9 @@
       "Sp. Defense": 45,
       "Speed": 70
     },
-    "description": "As it grows, the stone portions of its body harden to become similar to a diamond, but colored black.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/95.png"
+    "description": "Ako rastie, kamenné časti jeho tela stvrdnú, aby sa stali podobnými diamantu, ale sfarbené na čierno.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/95.png",
+    "descriptionEn": "As it grows, the stone portions of its body harden to become similar to a diamond, but colored black."
   },
   {
     "id": 96,
@@ -2108,8 +2203,9 @@
       "Sp. Defense": 90,
       "Speed": 42
     },
-    "description": "Puts enemies to sleep then eats their dreams. Occasionally gets sick from eating bad dreams.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/96.png"
+    "description": "Uspáva nepriateľov a potom zje ich sny. Občas ochorie z jedenia zlých snov.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/96.png",
+    "descriptionEn": "Puts enemies to sleep then eats their dreams. Occasionally gets sick from eating bad dreams."
   },
   {
     "id": 97,
@@ -2129,8 +2225,9 @@
       "Sp. Defense": 115,
       "Speed": 67
     },
-    "description": "When it locks eyes with an enemy, it will use a mix of PSI moves such as HYPNOSIS and CONFUSION.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/97.png"
+    "description": "Keď upriami oči na nepriateľa, použije kombináciu pohybov PSI, ako je HYPNÓZA a zmätok.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/97.png",
+    "descriptionEn": "When it locks eyes with an enemy, it will use a mix of PSI moves such as HYPNOSIS and CONFUSION."
   },
   {
     "id": 98,
@@ -2150,8 +2247,9 @@
       "Sp. Defense": 25,
       "Speed": 50
     },
-    "description": "Its pincers are not only powerful weapons, they are used for balance when walking sideways.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/98.png"
+    "description": "Jeho kliešte nie sú len silnými zbraňami, ale slúžia na rovnováhu pri chôdzi do strán.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/98.png",
+    "descriptionEn": "Its pincers are not only powerful weapons, they are used for balance when walking sideways."
   },
   {
     "id": 99,
@@ -2171,8 +2269,9 @@
       "Sp. Defense": 50,
       "Speed": 75
     },
-    "description": "The large pincer has 10000 hp of crushing power. However, its huge size makes it unwieldy to use.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/99.png"
+    "description": "Veľký kliešť má drviacu silu 10 000 hp. Jeho obrovská veľkosť ho však znemožňuje používať.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/99.png",
+    "descriptionEn": "The large pincer has 10000 hp of crushing power. However, its huge size makes it unwieldy to use."
   },
   {
     "id": 100,
@@ -2192,8 +2291,9 @@
       "Sp. Defense": 55,
       "Speed": 100
     },
-    "description": "Usually found in power plants. Easily mistaken for a POKé BALL, they have zapped many people.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/100.png"
+    "description": "Zvyčajne sa vyskytuje v elektrárňach. Ľahko si ich pomýlite s POKÉ BALL a zabavili veľa ľudí.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/100.png",
+    "descriptionEn": "Usually found in power plants. Easily mistaken for a POKé BALL, they have zapped many people."
   },
   {
     "id": 101,
@@ -2213,8 +2313,9 @@
       "Sp. Defense": 80,
       "Speed": 150
     },
-    "description": "It stores electric energy under very high pressure. It often explodes with little or no provocation.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/101.png"
+    "description": "Ukladá elektrickú energiu pod veľmi vysokým tlakom. Často exploduje s malou alebo žiadnou provokáciou.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/101.png",
+    "descriptionEn": "It stores electric energy under very high pressure. It often explodes with little or no provocation."
   },
   {
     "id": 102,
@@ -2236,8 +2337,9 @@
       "Sp. Defense": 45,
       "Speed": 40
     },
-    "description": "Often mistaken for eggs. When disturbed, they quickly gather and attack in swarms.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/102.png"
+    "description": "Často mylne považované za vajcia. Pri vyrušení sa rýchlo zhromažďujú a útočia v rojoch.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/102.png",
+    "descriptionEn": "Often mistaken for eggs. When disturbed, they quickly gather and attack in swarms."
   },
   {
     "id": 103,
@@ -2259,8 +2361,9 @@
       "Sp. Defense": 75,
       "Speed": 55
     },
-    "description": "Legend has it that on rare occasions, one of its heads will drop off and continue on as an EXEGGCUTE.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/103.png"
+    "description": "Legenda hovorí, že pri zriedkavých príležitostiach jedna z jeho hláv odpadne a pokračuje ďalej ako EXEGGCUTE.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/103.png",
+    "descriptionEn": "Legend has it that on rare occasions, one of its heads will drop off and continue on as an EXEGGCUTE."
   },
   {
     "id": 104,
@@ -2280,8 +2383,9 @@
       "Sp. Defense": 50,
       "Speed": 35
     },
-    "description": "Because it never removes its skull helmet, no one has ever seen this POKéMON's real face.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/104.png"
+    "description": "Pretože nikdy nezloží svoju lebku prilbu, nikto nikdy nevidel skutočnú tvár tohto Pokémona.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/104.png",
+    "descriptionEn": "Because it never removes its skull helmet, no one has ever seen this POKéMON's real face."
   },
   {
     "id": 105,
@@ -2301,8 +2405,9 @@
       "Sp. Defense": 80,
       "Speed": 45
     },
-    "description": "The bone it holds is its key weapon. It throws the bone skillfully like a boomerang to KO targets.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/105.png"
+    "description": "Kosť, ktorú drží, je jeho kľúčovou zbraňou. Kosť hádže šikovne ako bumerang na KO ciele.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/105.png",
+    "descriptionEn": "The bone it holds is its key weapon. It throws the bone skillfully like a boomerang to KO targets."
   },
   {
     "id": 106,
@@ -2322,8 +2427,9 @@
       "Sp. Defense": 110,
       "Speed": 87
     },
-    "description": "When in a hurry, its legs lengthen progressively. It runs smoothly with extra long, loping strides.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/106.png"
+    "description": "Keď sa ponáhľa, jeho nohy sa postupne predlžujú. Beží hladko s extra dlhými, šikmými krokmi.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/106.png",
+    "descriptionEn": "When in a hurry, its legs lengthen progressively. It runs smoothly with extra long, loping strides."
   },
   {
     "id": 107,
@@ -2343,8 +2449,9 @@
       "Sp. Defense": 110,
       "Speed": 76
     },
-    "description": "While apparently doing nothing, it fires punches in lightning fast volleys that are impossible to see.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/107.png"
+    "description": "Zatiaľ čo zjavne nič nerobí, strieľa údery v bleskových salvách, ktoré nie je možné vidieť.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/107.png",
+    "descriptionEn": "While apparently doing nothing, it fires punches in lightning fast volleys that are impossible to see."
   },
   {
     "id": 108,
@@ -2364,8 +2471,9 @@
       "Sp. Defense": 75,
       "Speed": 30
     },
-    "description": "Its tongue can be extended like a chameleon's. It leaves a tingling sensation when it licks enemies.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/108.png"
+    "description": "Jeho jazyk môže byť rozšírený ako chameleón. Zanecháva pocit mravčenia, keď olizuje nepriateľov.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/108.png",
+    "descriptionEn": "Its tongue can be extended like a chameleon's. It leaves a tingling sensation when it licks enemies."
   },
   {
     "id": 109,
@@ -2385,8 +2493,9 @@
       "Sp. Defense": 45,
       "Speed": 35
     },
-    "description": "Because it stores several kinds of toxic gases in its body, it is prone to exploding without warning.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/109.png"
+    "description": "Pretože vo svojom tele ukladá niekoľko druhov toxických plynov, je náchylný na výbuch bez varovania.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/109.png",
+    "descriptionEn": "Because it stores several kinds of toxic gases in its body, it is prone to exploding without warning."
   },
   {
     "id": 110,
@@ -2406,8 +2515,9 @@
       "Sp. Defense": 70,
       "Speed": 60
     },
-    "description": "Where two kinds of poison gases meet, 2 KOFFINGs can fuse into a WEEZING over many years.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/110.png"
+    "description": "Tam, kde sa stretnú dva druhy jedovatých plynov, 2 KOFFINGY sa môžu počas mnohých rokov spojiť do WEEZINGU.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/110.png",
+    "descriptionEn": "Where two kinds of poison gases meet, 2 KOFFINGs can fuse into a WEEZING over many years."
   },
   {
     "id": 111,
@@ -2429,8 +2539,9 @@
       "Sp. Defense": 30,
       "Speed": 25
     },
-    "description": "Its massive bones are 1000 times harder than human bones. It can easily knock a trailer flying.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/111.png"
+    "description": "Jeho masívne kosti sú 1000-krát tvrdšie ako ľudské kosti. Môže ľahko zraziť letiaci príves.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/111.png",
+    "descriptionEn": "Its massive bones are 1000 times harder than human bones. It can easily knock a trailer flying."
   },
   {
     "id": 112,
@@ -2452,8 +2563,9 @@
       "Sp. Defense": 45,
       "Speed": 40
     },
-    "description": "Protected by an armor-like hide, it is capable of living in molten lava of 3,600 degrees.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/112.png"
+    "description": "Chránený brnenou kožou je schopný žiť v roztavenej láve s teplotou 3600 stupňov.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/112.png",
+    "descriptionEn": "Protected by an armor-like hide, it is capable of living in molten lava of 3,600 degrees."
   },
   {
     "id": 113,
@@ -2473,8 +2585,9 @@
       "Sp. Defense": 105,
       "Speed": 50
     },
-    "description": "A rare and elusive POKéMON that is said to bring happiness to those who manage to get it.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/113.png"
+    "description": "Vzácny a nepolapiteľný Pokémon, o ktorom sa hovorí, že prináša šťastie tým, ktorým sa ho podarí získať.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/113.png",
+    "descriptionEn": "A rare and elusive POKéMON that is said to bring happiness to those who manage to get it."
   },
   {
     "id": 114,
@@ -2494,8 +2607,9 @@
       "Sp. Defense": 40,
       "Speed": 60
     },
-    "description": "The whole body is swathed with wide vines that are similar to sea­ weed. Its vines shake as it walks.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/114.png"
+    "description": "Celé telo je posiate širokými viničmi, ktoré sú podobné morským riasam. Jeho vinič sa pri chôdzi trasie.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/114.png",
+    "descriptionEn": "The whole body is swathed with wide vines that are similar to sea­ weed. Its vines shake as it walks."
   },
   {
     "id": 115,
@@ -2515,8 +2629,9 @@
       "Sp. Defense": 80,
       "Speed": 90
     },
-    "description": "The infant rarely ventures out of its mother's protective pouch until it is 3 years old.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/115.png"
+    "description": "Dojča sa len zriedka odváži vytiahnuť z matkinho ochranného vaku, kým nemá 3 roky.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/115.png",
+    "descriptionEn": "The infant rarely ventures out of its mother's protective pouch until it is 3 years old."
   },
   {
     "id": 116,
@@ -2536,8 +2651,9 @@
       "Sp. Defense": 25,
       "Speed": 60
     },
-    "description": "Known to shoot down flying bugs with precision blasts of ink from the surface of the water.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/116.png"
+    "description": "Známy tým, že zostreľuje lietajúce chrobáky pomocou presných výtryskov atramentu z hladiny vody.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/116.png",
+    "descriptionEn": "Known to shoot down flying bugs with precision blasts of ink from the surface of the water."
   },
   {
     "id": 117,
@@ -2557,8 +2673,9 @@
       "Sp. Defense": 45,
       "Speed": 85
     },
-    "description": "Capable of swim­ ming backwards by rapidly flapping its wing-like pectoral fins and stout tail.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/117.png"
+    "description": "Dokáže plávať dozadu rýchlym mávaním krídlovitými prsnými plutvami a mohutným chvostom.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/117.png",
+    "descriptionEn": "Capable of swim­ ming backwards by rapidly flapping its wing-like pectoral fins and stout tail."
   },
   {
     "id": 118,
@@ -2578,8 +2695,9 @@
       "Sp. Defense": 50,
       "Speed": 63
     },
-    "description": "Its tail fin billows like an elegant ballroom dress, giving it the nickname of the Water Queen.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/118.png"
+    "description": "Jeho chvostová plutva sa vlní ako elegantné spoločenské šaty, čo mu dáva prezývku vodná kráľovná.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/118.png",
+    "descriptionEn": "Its tail fin billows like an elegant ballroom dress, giving it the nickname of the Water Queen."
   },
   {
     "id": 119,
@@ -2599,8 +2717,9 @@
       "Sp. Defense": 80,
       "Speed": 68
     },
-    "description": "In the autumn spawning season, they can be seen swimming power­ fully up rivers and creeks.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/119.png"
+    "description": "V jesennom období neresu ich možno vidieť naplno plávať v riekach a potokoch.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/119.png",
+    "descriptionEn": "In the autumn spawning season, they can be seen swimming power­ fully up rivers and creeks."
   },
   {
     "id": 120,
@@ -2620,8 +2739,9 @@
       "Sp. Defense": 55,
       "Speed": 85
     },
-    "description": "An enigmatic POKéMON that can effortlessly regenerate any appendage it loses in battle.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/120.png"
+    "description": "Záhadný Pokémon, ktorý dokáže bez námahy regenerovať akýkoľvek prívesok, ktorý stratí v boji.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/120.png",
+    "descriptionEn": "An enigmatic POKéMON that can effortlessly regenerate any appendage it loses in battle."
   },
   {
     "id": 121,
@@ -2643,8 +2763,9 @@
       "Sp. Defense": 85,
       "Speed": 115
     },
-    "description": "Its central core glows with the seven colors of the rainbow. Some people value the core as a gem.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/121.png"
+    "description": "Jeho centrálne jadro žiari siedmimi farbami dúhy. Niektorí ľudia si cenia jadro ako drahokam.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/121.png",
+    "descriptionEn": "Its central core glows with the seven colors of the rainbow. Some people value the core as a gem."
   },
   {
     "id": 122,
@@ -2666,8 +2787,9 @@
       "Sp. Defense": 120,
       "Speed": 90
     },
-    "description": "If interrupted while it is miming, it will slap around the offender with its broad hands.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/122.png"
+    "description": "Ak ho počas napodobňovania prerušia, širokými rukami obopne páchateľa.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/122.png",
+    "descriptionEn": "If interrupted while it is miming, it will slap around the offender with its broad hands."
   },
   {
     "id": 123,
@@ -2689,8 +2811,9 @@
       "Sp. Defense": 80,
       "Speed": 105
     },
-    "description": "With ninja-like agility and speed, it can create the illusion that there is more than one.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/123.png"
+    "description": "S obratnosťou a rýchlosťou ako ninja môže vytvoriť ilúziu, že existuje viac ako jeden.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/123.png",
+    "descriptionEn": "With ninja-like agility and speed, it can create the illusion that there is more than one."
   },
   {
     "id": 124,
@@ -2712,8 +2835,9 @@
       "Sp. Defense": 95,
       "Speed": 95
     },
-    "description": "It seductively wiggles its hips as it walks. It can cause people to dance in unison with it.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/124.png"
+    "description": "Pri chôdzi zvodne vrtí bokmi. To môže spôsobiť, že ľudia budú tancovať v súlade s ním.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/124.png",
+    "descriptionEn": "It seductively wiggles its hips as it walks. It can cause people to dance in unison with it."
   },
   {
     "id": 125,
@@ -2733,8 +2857,9 @@
       "Sp. Defense": 85,
       "Speed": 105
     },
-    "description": "Normally found near power plants, they can wander away and cause major blackouts in cities.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/125.png"
+    "description": "Bežne sa vyskytujú v blízkosti elektrární, môžu sa zatúlať a spôsobiť veľké výpadky prúdu v mestách.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/125.png",
+    "descriptionEn": "Normally found near power plants, they can wander away and cause major blackouts in cities."
   },
   {
     "id": 126,
@@ -2754,8 +2879,9 @@
       "Sp. Defense": 85,
       "Speed": 93
     },
-    "description": "Its body always burns with an orange glow that enables it to hide perfectly among flames.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/126.png"
+    "description": "Jeho telo vždy horí oranžovou žiarou, ktorá mu umožňuje dokonale sa ukryť medzi plameňmi.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/126.png",
+    "descriptionEn": "Its body always burns with an orange glow that enables it to hide perfectly among flames."
   },
   {
     "id": 127,
@@ -2775,8 +2901,9 @@
       "Sp. Defense": 70,
       "Speed": 85
     },
-    "description": "If it fails to crush the victim in its pincers, it will swing it around and toss it hard.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/127.png"
+    "description": "Ak sa mu nepodarí rozdrviť obeť v kliešťoch, otočí ju a silno ju odhodí.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/127.png",
+    "descriptionEn": "If it fails to crush the victim in its pincers, it will swing it around and toss it hard."
   },
   {
     "id": 128,
@@ -2796,8 +2923,9 @@
       "Sp. Defense": 70,
       "Speed": 110
     },
-    "description": "When it targets an enemy, it charges furiously while whipping its body with its long tails.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/128.png"
+    "description": "Keď sa zameria na nepriateľa, zúrivo útočí, zatiaľ čo telo bičuje dlhými chvostmi.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/128.png",
+    "descriptionEn": "When it targets an enemy, it charges furiously while whipping its body with its long tails."
   },
   {
     "id": 129,
@@ -2817,8 +2945,9 @@
       "Sp. Defense": 20,
       "Speed": 80
     },
-    "description": "In the distant past, it was somewhat stronger than the horribly weak descendants that exist today.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/129.png"
+    "description": "V dávnej minulosti bol o niečo silnejší ako príšerne slabí potomkovia, ktorí existujú dnes.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/129.png",
+    "descriptionEn": "In the distant past, it was somewhat stronger than the horribly weak descendants that exist today."
   },
   {
     "id": 130,
@@ -2840,8 +2969,9 @@
       "Sp. Defense": 100,
       "Speed": 81
     },
-    "description": "Rarely seen in the wild. Huge and vicious, it is capable of destroying entire cities in a rage.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/130.png"
+    "description": "Vo voľnej prírode ho možno vidieť len zriedka. Obrovský a krutý, je schopný zničiť celé mestá v zúrivosti.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/130.png",
+    "descriptionEn": "Rarely seen in the wild. Huge and vicious, it is capable of destroying entire cities in a rage."
   },
   {
     "id": 131,
@@ -2863,8 +2993,9 @@
       "Sp. Defense": 95,
       "Speed": 60
     },
-    "description": "A POKéMON that has been over­ hunted almost to extinction. It can ferry people across the water.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/131.png"
+    "description": "Pokémon, ktorý bol prenasledovaný takmer na vyhynutie. Dokáže prepraviť ľudí cez vodu.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/131.png",
+    "descriptionEn": "A POKéMON that has been over­ hunted almost to extinction. It can ferry people across the water."
   },
   {
     "id": 132,
@@ -2884,8 +3015,9 @@
       "Sp. Defense": 48,
       "Speed": 48
     },
-    "description": "Capable of copying an enemy's genetic code to instantly transform itself into a duplicate of the enemy.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/132.png"
+    "description": "Schopný skopírovať genetický kód nepriateľa a okamžite sa premeniť na duplikát nepriateľa.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/132.png",
+    "descriptionEn": "Capable of copying an enemy's genetic code to instantly transform itself into a duplicate of the enemy."
   },
   {
     "id": 133,
@@ -2905,8 +3037,9 @@
       "Sp. Defense": 65,
       "Speed": 55
     },
-    "description": "Its genetic code is irregular. It may mutate if it is exposed to radiation from element STONEs.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/133.png"
+    "description": "Jeho genetický kód je nepravidelný. Môže zmutovať, ak je vystavený žiareniu z prvkov STONEs.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/133.png",
+    "descriptionEn": "Its genetic code is irregular. It may mutate if it is exposed to radiation from element STONEs."
   },
   {
     "id": 134,
@@ -2926,8 +3059,9 @@
       "Sp. Defense": 95,
       "Speed": 65
     },
-    "description": "Lives close to water. Its long tail is ridged with a fin which is often mistaken for a mermaid's.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/134.png"
+    "description": "Žije blízko vody. Jeho dlhý chvost je lemovaný plutvou, ktorá je často mylne považovaná za morskú pannu.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/134.png",
+    "descriptionEn": "Lives close to water. Its long tail is ridged with a fin which is often mistaken for a mermaid's."
   },
   {
     "id": 135,
@@ -2947,8 +3081,9 @@
       "Sp. Defense": 95,
       "Speed": 130
     },
-    "description": "It accumulates negative ions in the atmosphere to blast out 10000- volt lightning bolts.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/135.png"
+    "description": "Zhromažďuje záporné ióny v atmosfére, aby vystrelilo 10 000-voltové blesky.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/135.png",
+    "descriptionEn": "It accumulates negative ions in the atmosphere to blast out 10000- volt lightning bolts."
   },
   {
     "id": 136,
@@ -2968,8 +3103,9 @@
       "Sp. Defense": 110,
       "Speed": 65
     },
-    "description": "When storing thermal energy in its body, its temperature could soar to over 1600 degrees.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/136.png"
+    "description": "Pri ukladaní tepelnej energie v tele by jej teplota mohla vystúpiť až nad 1600 stupňov.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/136.png",
+    "descriptionEn": "When storing thermal energy in its body, its temperature could soar to over 1600 degrees."
   },
   {
     "id": 137,
@@ -2989,8 +3125,9 @@
       "Sp. Defense": 75,
       "Speed": 40
     },
-    "description": "A POKéMON that consists entirely of programming code. Capable of moving freely in cyberspace.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/137.png"
+    "description": "Pokémon, ktorý pozostáva výlučne z programovacieho kódu. Schopný voľne sa pohybovať v kyberpriestore.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/137.png",
+    "descriptionEn": "A POKéMON that consists entirely of programming code. Capable of moving freely in cyberspace."
   },
   {
     "id": 138,
@@ -3012,8 +3149,9 @@
       "Sp. Defense": 55,
       "Speed": 35
     },
-    "description": "Although long extinct, in rare cases, it can be genetically resurrected from fossils.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/138.png"
+    "description": "Hoci už dávno vyhynul, v ojedinelých prípadoch môže byť geneticky vzkriesený z fosílií.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/138.png",
+    "descriptionEn": "Although long extinct, in rare cases, it can be genetically resurrected from fossils."
   },
   {
     "id": 139,
@@ -3035,8 +3173,9 @@
       "Sp. Defense": 70,
       "Speed": 55
     },
-    "description": "A prehistoric POKéMON that died out when its heavy shell made it impossible to catch prey.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/139.png"
+    "description": "Praveký Pokémon, ktorý vyhynul, keď jeho ťažká škrupina znemožnila chytiť korisť.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/139.png",
+    "descriptionEn": "A prehistoric POKéMON that died out when its heavy shell made it impossible to catch prey."
   },
   {
     "id": 140,
@@ -3058,8 +3197,9 @@
       "Sp. Defense": 45,
       "Speed": 55
     },
-    "description": "A POKéMON that was resurrected from a fossil found in what was once the ocean floor eons ago.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/140.png"
+    "description": "Pokémon, ktorý bol vzkriesený z fosílie nájdenej na dne oceánu pred vekami.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/140.png",
+    "descriptionEn": "A POKéMON that was resurrected from a fossil found in what was once the ocean floor eons ago."
   },
   {
     "id": 141,
@@ -3081,8 +3221,9 @@
       "Sp. Defense": 70,
       "Speed": 80
     },
-    "description": "Its sleek shape is perfect for swim­ ming. It slashes prey with its claws and drains the body fluids.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/141.png"
+    "description": "Jeho elegantný tvar je ideálny na plávanie. Korisť seká pazúrmi a odvádza telesné tekutiny.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/141.png",
+    "descriptionEn": "Its sleek shape is perfect for swim­ ming. It slashes prey with its claws and drains the body fluids."
   },
   {
     "id": 142,
@@ -3104,8 +3245,9 @@
       "Sp. Defense": 75,
       "Speed": 130
     },
-    "description": "A ferocious, pre­ historic POKéMON that goes for the enemy's throat with its serrated saw-like fangs.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/142.png"
+    "description": "Divoký, prehistorický Pokémon, ktorý svojimi zúbkovanými pílovitými tesákmi ide po krku nepriateľovi.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/142.png",
+    "descriptionEn": "A ferocious, pre­ historic POKéMON that goes for the enemy's throat with its serrated saw-like fangs."
   },
   {
     "id": 143,
@@ -3125,8 +3267,9 @@
       "Sp. Defense": 110,
       "Speed": 30
     },
-    "description": "Very lazy. Just eats and sleeps. As its rotund bulk builds, it becomes steadily more slothful.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/143.png"
+    "description": "Veľmi lenivý. Len je a spí. Ako jeho okrúhly objem narastá, stáva sa stále lenivejším.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/143.png",
+    "descriptionEn": "Very lazy. Just eats and sleeps. As its rotund bulk builds, it becomes steadily more slothful."
   },
   {
     "id": 144,
@@ -3148,8 +3291,9 @@
       "Sp. Defense": 125,
       "Speed": 85
     },
-    "description": "A legendary bird POKéMON that is said to appear to doomed people who are lost in icy mountains.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/144.png"
+    "description": "Legendárny vták Pokémon, o ktorom sa hovorí, že sa zjavuje odsúdeným ľuďom strateným v ľadových horách.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/144.png",
+    "descriptionEn": "A legendary bird POKéMON that is said to appear to doomed people who are lost in icy mountains."
   },
   {
     "id": 145,
@@ -3171,8 +3315,9 @@
       "Sp. Defense": 90,
       "Speed": 100
     },
-    "description": "A legendary bird POKéMON that is said to appear from clouds while dropping enormous lightning bolts.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/145.png"
+    "description": "Legendárny vták Pokémon, o ktorom sa hovorí, že sa zjavuje z oblakov pri zhadzovaní obrovských bleskov.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/145.png",
+    "descriptionEn": "A legendary bird POKéMON that is said to appear from clouds while dropping enormous lightning bolts."
   },
   {
     "id": 146,
@@ -3194,8 +3339,9 @@
       "Sp. Defense": 85,
       "Speed": 90
     },
-    "description": "Known as the legendary bird of fire. Every flap of its wings creates a dazzling flash of flames.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/146.png"
+    "description": "Známy ako legendárny ohnivý vták. Každé mávnutie jeho krídel vytvára oslnivý záblesk plameňov.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/146.png",
+    "descriptionEn": "Known as the legendary bird of fire. Every flap of its wings creates a dazzling flash of flames."
   },
   {
     "id": 147,
@@ -3215,8 +3361,9 @@
       "Sp. Defense": 50,
       "Speed": 50
     },
-    "description": "Long considered a mythical POKéMON until recently when a small colony was found living underwater.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/147.png"
+    "description": "Dlho považovaný za mýtického Pokémona až donedávna, keď bola nájdená malá kolónia žijúca pod vodou.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/147.png",
+    "descriptionEn": "Long considered a mythical POKéMON until recently when a small colony was found living underwater."
   },
   {
     "id": 148,
@@ -3236,8 +3383,9 @@
       "Sp. Defense": 70,
       "Speed": 70
     },
-    "description": "A mystical POKéMON that exudes a gentle aura. Has the ability to change climate conditions.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/148.png"
+    "description": "Mystický Pokémon, ktorý vyžaruje jemnú auru. Má schopnosť meniť klimatické podmienky.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/148.png",
+    "descriptionEn": "A mystical POKéMON that exudes a gentle aura. Has the ability to change climate conditions."
   },
   {
     "id": 149,
@@ -3259,8 +3407,9 @@
       "Sp. Defense": 100,
       "Speed": 80
     },
-    "description": "An extremely rarely seen marine POKéMON. Its intelligence is said to match that of humans.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/149.png"
+    "description": "Extrémne zriedka videný morský Pokémon. Jeho inteligencia sa vraj vyrovná ľudskej.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/149.png",
+    "descriptionEn": "An extremely rarely seen marine POKéMON. Its intelligence is said to match that of humans."
   },
   {
     "id": 150,
@@ -3280,8 +3429,9 @@
       "Sp. Defense": 90,
       "Speed": 130
     },
-    "description": "It was created by a scientist after years of horrific gene splicing and DNA engineering experiments.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/150.png"
+    "description": "Vytvoril ho vedec po rokoch strašného spájania génov a experimentov s DNA inžinierstvom.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/150.png",
+    "descriptionEn": "It was created by a scientist after years of horrific gene splicing and DNA engineering experiments."
   },
   {
     "id": 151,
@@ -3301,7 +3451,8 @@
       "Sp. Defense": 100,
       "Speed": 100
     },
-    "description": "So rare that it is still said to be a mirage by many experts. Only a few people have seen it worldwide.",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/151.png"
+    "description": "Tak vzácny, že je dodnes mnohými odborníkmi považovaný za fatamorgánu. Na celom svete to videlo len pár ľudí.",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/151.png",
+    "descriptionEn": "So rare that it is still said to be a mirage by many experts. Only a few people have seen it worldwide."
   }
 ]
