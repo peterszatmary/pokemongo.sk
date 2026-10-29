@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
 import pokemonList from "../data/pokedex.json";
 
-// Type color helper for badges
+// Type color helper for initial static render
 const getTypeBadgeClasses = (type: string) => {
   switch (type.toLowerCase()) {
     case "fire":
@@ -117,16 +117,19 @@ const structuredData = [
   {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    "name": "Pokédex: Kompletný zoznam 1 025 Pokémonov (Gen 1 – Gen 9)",
-    "description": "Zoznam všetkých 1 025 Pokémonov národného Pokédexu s oficiálnymi obrázkami, typmi, popismi a bojovými štatistikami.",
+    "name": "Pokédex: Kompletný zoznam 1 025 Pokémonov v slovenčine (Gen 1 – Gen 9)",
+    "description": "Kompletný zoznam všetkých 1 025 Pokémonov národného Pokédexu v slovenskom preklade s obrázkami, typmi a bojovými štatistikami.",
     "numberOfItems": 1025
   }
 ];
+
+// Initial pre-render first 32 items for instant first-paint
+const initialPokemon = pokemonList.slice(0, 32);
 ---
 
 <Layout
-  title="Pokédex: Všetkých 1 025 Pokémonov (Gen 1 – Gen 9) | pokemongo.sk"
-  description="Kompletný národný Pokédex všetkých 1 025 Pokémonov od Kanto až po Paldea. Filtrovanie podľa 9 generácií, 18 typov a okamžité vyhľadávanie."
+  title="Pokédex: Všetkých 1 025 Pokémonov v slovenčine (Gen 1 – Gen 9) | pokemongo.sk"
+  description="Slovenský národný Pokédex všetkých 1 025 Pokémonov od Kanto až po Paldea. Slovenské popisy, typy, štatistiky, filtrovanie generácií a okamžité vyhľadávanie."
   jsonLd={structuredData}
 >
   <Navbar slot="navbar" />
@@ -137,13 +140,13 @@ const structuredData = [
     <header class="text-center max-w-3xl mx-auto mb-10 sm:mb-14">
       <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-rose-50 text-rose-700 border border-rose-200 mb-4 shadow-xs">
         <span>📖</span>
-        <span>Národný Pokédex • 1 025 Pokémonov • 9 Generácií</span>
+        <span>Národný Pokédex • 1 025 Pokémonov v slovenčine</span>
       </div>
       <h1 class="font-display text-4xl sm:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight">
         Kompletný Pokédex
       </h1>
       <p class="text-base sm:text-xl text-slate-600 mt-4 leading-relaxed">
-        Prehľadávajte všetkých 1 025 Pokémonov od Bulbasaura (#001) až po Pecharunta (#1025). Filtrujte podľa generácie, typu alebo okamžite vyhľadávajte.
+        Prehľadávajte všetkých 1 025 Pokémonov od Bulbasaura (#001) až po Pecharunta (#1025) so slovenskými popismi. Filtrujte podľa generácie, typu alebo okamžite vyhľadávajte.
       </p>
 
       <div class="mt-6 flex flex-wrap items-center justify-center gap-3 text-xs font-semibold">
@@ -151,7 +154,7 @@ const structuredData = [
           href="/hra"
           class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-slate-900 text-white hover:bg-slate-800 transition shadow-sm"
         >
-          <span>🎮</span> Zahraj si kvíz: Kto je ten Pokémon? →
+          <span>🎮</span> Zahraj si kvíz s 1 025 Pokémonmi →
         </a>
       </div>
     </header>
@@ -169,16 +172,25 @@ const structuredData = [
         <input
           type="text"
           id="pokedex-search"
-          placeholder="Hľadať podľa mena, čísla alebo regiónu (napr. Pikachu, #025, Lucario, Charizard)..."
-          class="w-full pl-12 pr-4 py-3.5 bg-slate-50 border border-slate-200 rounded-2xl text-slate-900 placeholder-slate-400 focus:bg-white focus:outline-none focus:border-rose-500 focus:ring-1 focus:ring-rose-500 transition text-sm sm:text-base shadow-inner"
+          placeholder="Hľadať Pokémona (napr. Pikachu, Charizard, Lucario, #025, oheň, tráva)..."
+          autocomplete="off"
+          class="w-full pl-12 pr-10 py-3.5 bg-slate-50 border border-slate-200 rounded-2xl text-slate-900 placeholder-slate-400 focus:bg-white focus:outline-none focus:border-rose-500 focus:ring-1 focus:ring-rose-500 transition text-sm sm:text-base shadow-inner"
         />
+        <button
+          type="button"
+          id="clear-search-btn"
+          class="absolute inset-y-0 right-0 pr-4 flex items-center text-slate-400 hover:text-slate-600 hidden cursor-pointer"
+          title="Zmazať vyhľadávanie"
+        >
+          ✕
+        </button>
       </div>
 
       <!-- Generation Filter Tabs -->
       <div>
         <div class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3 text-center sm:text-left flex items-center justify-between">
           <span>Generácia & Región:</span>
-          <span class="text-[11px] font-normal text-slate-400 hidden sm:inline">Vyberte región pre zobrazenie generácie</span>
+          <span class="text-[11px] font-normal text-slate-400 hidden sm:inline">Vyberte región alebo zobrazte všetky</span>
         </div>
         <div class="flex flex-wrap gap-1.5 sm:gap-2 justify-center sm:justify-start" id="gen-filters">
           {
@@ -186,7 +198,7 @@ const structuredData = [
               <button
                 type="button"
                 data-gen={gen.id}
-                class={`gen-btn px-3 py-1.5 rounded-xl text-xs font-semibold transition-all border ${
+                class={`gen-btn px-3 py-1.5 rounded-xl text-xs font-semibold transition-all border cursor-pointer ${
                   gen.id === "all"
                     ? "bg-slate-900 text-white border-slate-900 shadow-sm"
                     : "bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100 hover:text-slate-900"
@@ -211,7 +223,7 @@ const structuredData = [
               <button
                 type="button"
                 data-type={type === "Všetky typy" ? "all" : type}
-                class={`type-filter-btn px-3 py-1 rounded-xl text-xs font-semibold transition-all border ${
+                class={`type-filter-btn px-3 py-1 rounded-xl text-xs font-semibold transition-all border cursor-pointer ${
                   type === "Všetky typy"
                     ? "bg-rose-600 text-white border-rose-600 shadow-xs"
                     : "bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100 hover:text-slate-900"
@@ -232,28 +244,22 @@ const structuredData = [
           id="reset-filter-btn"
           class="text-rose-600 hover:text-rose-700 hover:underline hidden cursor-pointer"
         >
-          Resetovať všetky filtre
+          Resetovať filtre
         </button>
       </div>
 
     </div>
 
-    <!-- Pokémon Grid (All 1025 rendered with native lazy-loading) -->
+    <!-- Pokémon Grid Container -->
     <div
       id="pokemon-grid"
       class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
     >
       {
-        pokemonList.map((pokemon) => {
-          const typesSkJoined = pokemon.typesSk.join(" ");
-          const searchData = `${pokemon.name.toLowerCase()} ${pokemon.number.toLowerCase()} ${pokemon.id} ${pokemon.region.toLowerCase()} ${typesSkJoined.toLowerCase()} ${pokemon.description.toLowerCase()}`;
-
+        initialPokemon.map((pokemon) => {
           return (
             <div
               class="pokemon-card group bg-white border border-slate-200/90 rounded-3xl p-5 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between"
-              data-search={searchData}
-              data-types={typesSkJoined}
-              data-gen={pokemon.generation.toString()}
             >
               <div>
                 <!-- Card Header: Number, Region & Types -->
@@ -300,7 +306,7 @@ const structuredData = [
                   )}
                 </div>
 
-                <!-- Description -->
+                <!-- Description in Slovak -->
                 <p class="text-xs text-slate-500 leading-relaxed line-clamp-3 mb-4">
                   {pokemon.description}
                 </p>
@@ -322,12 +328,23 @@ const structuredData = [
       }
     </div>
 
+    <!-- Load More Button (for large sets) -->
+    <div id="load-more-container" class="mt-8 text-center hidden">
+      <button
+        type="button"
+        id="load-more-btn"
+        class="px-8 py-3.5 rounded-2xl font-bold text-sm bg-white border border-slate-300 text-slate-800 hover:bg-slate-50 hover:border-slate-400 shadow-sm transition-all cursor-pointer"
+      >
+        Načítať ďalších Pokémonov
+      </button>
+    </div>
+
     <!-- Empty State -->
     <div id="no-results" class="hidden text-center py-16 bg-white border border-slate-200/90 rounded-3xl p-8 mt-6">
       <div class="text-4xl mb-3">🔍</div>
       <h3 class="font-display text-xl font-bold text-slate-900 mb-2">Žiaden Pokémon sa nenašiel</h3>
       <p class="text-sm text-slate-500 max-w-md mx-auto mb-4">
-        Skúste upraviť hľadaný výraz alebo resetovať zvolenú generáciu a typ.
+        Skúste upraviť hľadaný výraz alebo resetovať filtre.
       </p>
       <button
         type="button"
@@ -344,7 +361,7 @@ const structuredData = [
         Chcete vybudovať najväčšiu Pokémon databázu a komunitu v SR?
       </h3>
       <p class="text-sm sm:text-base text-slate-600 max-w-2xl mx-auto leading-relaxed">
-        Tento Pokédex s 1 025 Pokémonmi je živou ukážkou potenciálu. Doména <strong>pokemongo.sk</strong> je na predaj a môže byť vaším centrom pre e-shop s kartami, sprievodcu a najnavštevovanejší portál na Slovensku.
+        Tento kompletný Pokédex s 1 025 Pokémonmi v slovenčine je živou ukážkou potenciálu. Doména <strong>pokemongo.sk</strong> je na predaj a môže byť vaším centrom pre e-shop s kartami, sprievodcu a najnavštevovanejší portál na Slovensku.
       </p>
       <div class="pt-2">
         <a
@@ -361,99 +378,234 @@ const structuredData = [
   <Footer slot="footer" />
 </Layout>
 
-<script>
-  const searchInput = document.getElementById("pokedex-search") as HTMLInputElement;
-  const cards = document.querySelectorAll(".pokemon-card") as NodeListOf<HTMLElement>;
-  const counterText = document.getElementById("counter-text");
-  const noResults = document.getElementById("no-results");
-  const genBtns = document.querySelectorAll(".gen-btn") as NodeListOf<HTMLButtonElement>;
-  const typeBtns = document.querySelectorAll(".type-filter-btn") as NodeListOf<HTMLButtonElement>;
-  const resetBtn = document.getElementById("reset-filter-btn");
-  const emptyResetBtn = document.getElementById("empty-reset-btn");
+<script define:vars={{ pokemonList }}>
+  // Type styling map
+  const typeBadgeClasses = {
+    "ohnivý": "bg-rose-50 text-rose-700 border-rose-200",
+    "vodný": "bg-sky-50 text-sky-700 border-sky-200",
+    "trávový": "bg-emerald-50 text-emerald-700 border-emerald-200",
+    "elektrický": "bg-amber-50 text-amber-700 border-amber-200",
+    "jedovatý": "bg-purple-50 text-purple-700 border-purple-200",
+    "psychický": "bg-pink-50 text-pink-700 border-pink-200",
+    "hmyzí": "bg-lime-50 text-lime-700 border-lime-200",
+    "zemný": "bg-amber-100/70 text-amber-800 border-amber-300",
+    "kamenný": "bg-stone-100 text-stone-700 border-stone-300",
+    "bojový": "bg-orange-50 text-orange-800 border-orange-200",
+    "duchovný": "bg-indigo-50 text-indigo-700 border-indigo-200",
+    "ľadový": "bg-cyan-50 text-cyan-700 border-cyan-200",
+    "dračí": "bg-violet-50 text-violet-800 border-violet-200",
+    "oceľový": "bg-slate-100 text-slate-800 border-slate-300",
+    "temný": "bg-neutral-800 text-neutral-100 border-neutral-700",
+    "vílí": "bg-pink-100/70 text-pink-800 border-pink-300",
+    "normálny": "bg-slate-100 text-slate-700 border-slate-200"
+  };
 
+  function getTypeBadge(type) {
+    const key = (type || "").toLowerCase();
+    return typeBadgeClasses[key] || "bg-slate-100 text-slate-700 border-slate-200";
+  }
+
+  // Normalize string: removes accents (diacritics), lowercase, trims
+  function normalize(str) {
+    return (str || "")
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase()
+      .trim();
+  }
+
+  // Precompute searchable strings for lightning-fast search
+  const searchableList = pokemonList.map((p) => {
+    const typesStr = p.typesSk.join(" ") + " " + p.types.join(" ");
+    const fullText = `${p.name} ${p.number} #${p.id} ${p.id} ${p.region} ${typesStr} ${p.genus || ""} ${p.description || ""}`;
+    return {
+      pokemon: p,
+      normalizedSearch: normalize(fullText),
+      normalizedName: normalize(p.name),
+      normalizedNumber: normalize(p.number),
+      normalizedTypes: p.typesSk.map(t => normalize(t))
+    };
+  });
+
+  // State
   let activeGen = "all";
   let activeType = "all";
   let searchQuery = "";
+  let visibleBatchLimit = 48;
+  let currentFiltered = [];
 
+  // DOM Elements
+  const searchInput = document.getElementById("pokedex-search");
+  const clearSearchBtn = document.getElementById("clear-search-btn");
+  const gridEl = document.getElementById("pokemon-grid");
+  const counterText = document.getElementById("counter-text");
+  const noResults = document.getElementById("no-results");
+  const genBtns = document.querySelectorAll(".gen-btn");
+  const typeBtns = document.querySelectorAll(".type-filter-btn");
+  const resetBtn = document.getElementById("reset-filter-btn");
+  const emptyResetBtn = document.getElementById("empty-reset-btn");
+  const loadMoreContainer = document.getElementById("load-more-container");
+  const loadMoreBtn = document.getElementById("load-more-btn");
+
+  // Render individual card HTML
+  function renderCardHtml(p) {
+    const typesHtml = p.typesSk
+      .map(t => `<span class="px-2 py-0.5 rounded-lg text-[10px] font-bold uppercase tracking-wider border ${getTypeBadge(t)}">${t}</span>`)
+      .join("");
+
+    return `
+      <div class="pokemon-card group bg-white border border-slate-200/90 rounded-3xl p-5 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between mb-3">
+            <div class="flex items-center gap-1.5">
+              <span class="font-display font-bold text-xs text-slate-400 group-hover:text-slate-600 transition">
+                ${p.number}
+              </span>
+              <span class="px-2 py-0.5 rounded-md text-[10px] font-bold bg-slate-100 text-slate-500">
+                ${p.region}
+              </span>
+            </div>
+            <div class="flex gap-1">
+              ${typesHtml}
+            </div>
+          </div>
+
+          <div class="relative w-full aspect-square flex items-center justify-center p-3 bg-slate-50/70 rounded-2xl mb-4 group-hover:bg-slate-50 transition">
+            <img
+              src="${p.image}"
+              alt="${p.name}"
+              loading="lazy"
+              decoding="async"
+              class="w-40 h-40 object-contain drop-shadow-md group-hover:scale-110 transition-transform duration-500 select-none"
+            />
+          </div>
+
+          <div class="mb-2">
+            <h3 class="font-display text-xl font-bold text-slate-900 group-hover:text-rose-600 transition leading-tight">
+              ${p.name}
+            </h3>
+            ${p.genus ? `<span class="text-[11px] text-slate-400 font-medium">${p.genus}</span>` : ""}
+          </div>
+
+          <p class="text-xs text-slate-500 leading-relaxed line-clamp-3 mb-4">
+            ${p.description}
+          </p>
+        </div>
+
+        <div class="pt-3 border-t border-slate-100 text-[11px] text-slate-500 space-y-1.5">
+          <div class="flex justify-between items-center">
+            <span>HP: <strong class="text-slate-800">${p.stats.HP}</strong></span>
+            <span>Útok: <strong class="text-slate-800">${p.stats.Attack}</strong></span>
+            <span>Obrana: <strong class="text-slate-800">${p.stats.Defense}</strong></span>
+            <span>Rýchlosť: <strong class="text-slate-800">${p.stats.Speed}</strong></span>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
+  // Filter and display results
   function applyFilters() {
-    let visibleCount = 0;
+    const q = normalize(searchQuery);
 
-    cards.forEach((card) => {
-      const searchData = card.getAttribute("data-search") || "";
-      const typesData = card.getAttribute("data-types") || "";
-      const genData = card.getAttribute("data-gen") || "";
+    if (clearSearchBtn) {
+      clearSearchBtn.classList.toggle("hidden", searchQuery.length === 0);
+    }
 
-      // If user is searching by text, search across ALL generations unless specifically filtered
-      const matchesSearch = !searchQuery || searchData.includes(searchQuery);
-      const matchesGen = activeGen === "all" || genData === activeGen;
-      const matchesType = activeType === "all" || typesData.includes(activeType);
-
-      if (matchesSearch && matchesGen && matchesType) {
-        card.style.display = "flex";
-        visibleCount++;
+    currentFiltered = searchableList.filter(item => {
+      // If user typed in search box, search across all Pokémon
+      if (q) {
+        if (!item.normalizedSearch.includes(q)) return false;
       } else {
-        card.style.display = "none";
+        // If search is empty, filter by active generation
+        if (activeGen !== "all" && item.pokemon.generation.toString() !== activeGen) {
+          return false;
+        }
       }
+
+      // Type filter
+      if (activeType !== "all") {
+        const normType = normalize(activeType);
+        const matchesType = item.normalizedTypes.some(t => t === normType);
+        if (!matchesType) return false;
+      }
+
+      return true;
     });
 
+    renderGrid();
+  }
+
+  // Render cards to grid
+  function renderGrid() {
+    const total = currentFiltered.length;
+
+    // Update counter
     if (counterText) {
-      counterText.textContent = `Zobrazuje sa ${visibleCount} z 1 025 Pokémonov`;
+      if (searchQuery.length > 0) {
+        counterText.textContent = `Nájdených ${total} Pokémonov pre výraz „${searchQuery}“`;
+      } else if (activeGen !== "all") {
+        counterText.textContent = `Zobrazuje sa ${total} Pokémonov v generácii`;
+      } else {
+        counterText.textContent = `Zobrazuje sa ${total} z 1 025 Pokémonov`;
+      }
     }
 
+    // Toggle no results
     if (noResults) {
-      noResults.classList.toggle("hidden", visibleCount > 0);
+      noResults.classList.toggle("hidden", total > 0);
     }
 
+    // Toggle reset button
     const isFiltered = activeGen !== "all" || activeType !== "all" || searchQuery !== "";
     if (resetBtn) {
       resetBtn.classList.toggle("hidden", !isFiltered);
     }
+
+    // Render batch of items
+    const toRender = currentFiltered.slice(0, visibleBatchLimit);
+    gridEl.innerHTML = toRender.map(item => renderCardHtml(item.pokemon)).join("");
+
+    // Toggle load more
+    if (loadMoreContainer) {
+      loadMoreContainer.classList.toggle("hidden", visibleBatchLimit >= total);
+    }
   }
 
-  function resetAll() {
-    activeGen = "all";
-    activeType = "all";
+  // Load more
+  loadMoreBtn?.addEventListener("click", () => {
+    visibleBatchLimit += 48;
+    renderGrid();
+  });
+
+  // Debounced Search Input
+  let debounceTimer = null;
+  searchInput?.addEventListener("input", (e) => {
+    searchQuery = e.target.value;
+    clearTimeout(debounceTimer);
+    debounceTimer = setTimeout(() => {
+      visibleBatchLimit = 48; // reset batch when search changes
+      applyFilters();
+    }, 70);
+  });
+
+  clearSearchBtn?.addEventListener("click", () => {
     searchQuery = "";
     if (searchInput) searchInput.value = "";
-
-    // Reset Gen buttons
-    genBtns.forEach((btn) => {
-      const isDefault = btn.getAttribute("data-gen") === "all";
-      btn.className = `gen-btn px-3 py-1.5 rounded-xl text-xs font-semibold transition-all border ${
-        isDefault
-          ? "bg-slate-900 text-white border-slate-900 shadow-sm"
-          : "bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100 hover:text-slate-900"
-      }`;
-    });
-
-    // Reset Type buttons
-    typeBtns.forEach((btn) => {
-      const isDefault = btn.getAttribute("data-type") === "all";
-      btn.className = `type-filter-btn px-3 py-1 rounded-xl text-xs font-semibold transition-all border ${
-        isDefault
-          ? "bg-rose-600 text-white border-rose-600 shadow-xs"
-          : "bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100 hover:text-slate-900"
-      }`;
-    });
-
+    visibleBatchLimit = 48;
     applyFilters();
-  }
+    searchInput?.focus();
+  });
 
-  if (searchInput) {
-    searchInput.addEventListener("input", (e) => {
-      searchQuery = (e.target as HTMLInputElement).value.toLowerCase().trim();
-      applyFilters();
-    });
-  }
-
-  // Generation button click
+  // Generation Tabs
   genBtns.forEach((btn) => {
     btn.addEventListener("click", () => {
       activeGen = btn.getAttribute("data-gen") || "all";
+      visibleBatchLimit = 48;
 
       genBtns.forEach((b) => {
         const isSelected = b === btn;
-        b.className = `gen-btn px-3 py-1.5 rounded-xl text-xs font-semibold transition-all border ${
+        b.className = `gen-btn px-3 py-1.5 rounded-xl text-xs font-semibold transition-all border cursor-pointer ${
           isSelected
             ? "bg-slate-900 text-white border-slate-900 shadow-sm"
             : "bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100 hover:text-slate-900"
@@ -464,14 +616,15 @@ const structuredData = [
     });
   });
 
-  // Type button click
+  // Type Filters
   typeBtns.forEach((btn) => {
     btn.addEventListener("click", () => {
       activeType = btn.getAttribute("data-type") || "all";
+      visibleBatchLimit = 48;
 
       typeBtns.forEach((b) => {
         const isSelected = b === btn;
-        b.className = `type-filter-btn px-3 py-1 rounded-xl text-xs font-semibold transition-all border ${
+        b.className = `type-filter-btn px-3 py-1 rounded-xl text-xs font-semibold transition-all border cursor-pointer ${
           isSelected
             ? "bg-rose-600 text-white border-rose-600 shadow-xs"
             : "bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100 hover:text-slate-900"
@@ -482,6 +635,38 @@ const structuredData = [
     });
   });
 
+  // Reset Filters
+  function resetAll() {
+    activeGen = "all";
+    activeType = "all";
+    searchQuery = "";
+    visibleBatchLimit = 48;
+    if (searchInput) searchInput.value = "";
+
+    genBtns.forEach((btn) => {
+      const isDefault = btn.getAttribute("data-gen") === "all";
+      btn.className = `gen-btn px-3 py-1.5 rounded-xl text-xs font-semibold transition-all border cursor-pointer ${
+        isDefault
+          ? "bg-slate-900 text-white border-slate-900 shadow-sm"
+          : "bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100 hover:text-slate-900"
+      }`;
+    });
+
+    typeBtns.forEach((btn) => {
+      const isDefault = btn.getAttribute("data-type") === "all";
+      btn.className = `type-filter-btn px-3 py-1 rounded-xl text-xs font-semibold transition-all border cursor-pointer ${
+        isDefault
+          ? "bg-rose-600 text-white border-rose-600 shadow-xs"
+          : "bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100 hover:text-slate-900"
+      }`;
+    });
+
+    applyFilters();
+  }
+
   if (resetBtn) resetBtn.addEventListener("click", resetAll);
   if (emptyResetBtn) emptyResetBtn.addEventListener("click", resetAll);
+
+  // Initial render on load
+  applyFilters();
 </script>
