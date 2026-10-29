@@ -25,10 +25,57 @@ const structuredData = [
   },
   {
     "@context": "https://schema.org",
-    "@type": "Game",
-    "name": "Kto je ten Pokémon? — Kvízová minihra (1 025 Pokémonov)",
-    "description": "Uhádni Pokémona podľa obrázka a indícií. Dokážeš správne identifikovať Pokémonov z Kanto regiónu alebo celého národného Pokédexu bez jedinej chyby?",
-    "inLanguage": "sk-SK"
+    "@type": ["SoftwareApplication", "VideoGame"],
+    "name": "Kto je ten Pokémon? — Slovenská kvízová hra",
+    "applicationCategory": "GameApplication",
+    "operatingSystem": "Web Browser (Chrome, Safari, Firefox, Edge, iOS, Android)",
+    "browserRequirements": "Requires JavaScript. Requires HTML5.",
+    "url": "https://pokemongo.sk/hra/",
+    "image": "https://pokemongo.sk/og-image.png",
+    "description": "Zábavná online kvízová minihra 'Kto je ten Pokémon?'. Otestuj svoje vedomosti o všetkých 1 025 Pokémonoch z národného Pokédexu alebo klasickom Kanto výbere bez jedinej chyby.",
+    "inLanguage": "sk-SK",
+    "genre": ["Kvíz", "Vedomostná hra", "Pokémon", "Trivia"],
+    "playMode": "SinglePlayer",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "EUR",
+      "availability": "https://schema.org/InStock"
+    },
+    "author": {
+      "@type": "Organization",
+      "name": "pokemongo.sk"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Ako sa hrá kvízová hra Kto je ten Pokémon?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "V každom kole sa zobrazí Pokémon (alebo jeho tieň) a jeho bojové indície (útok, obrana, rýchlosť a kategória). Máte 4 možnosti odpovede. Za každú správnu odpoveď získate +1 bod do série (Streak). Pri nesprávnej odpovedi hra končí."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Aké herné režimy sú v kvíze k dispozícii?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Môžete si zvoliť hru so všetkými 1 025 Pokémonmi (Gen 1 – Gen 9) alebo klasický Kanto výber (prvých 151 Pokémonov). Pre vyššiu náročnosť môžete aktivovať režim Tieň (Silueta)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Dá sa hra ovládať klávesnicou?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Áno, na počítači môžete možnosti 1 až 4 vyberať stlačením klávesov 1, 2, 3 alebo 4 na numerickej alebo hlavnej klávesnici. Pre novú hru stačí stlačiť Medzerník alebo Enter."
+        }
+      }
+    ]
   }
 ];
 ---
@@ -36,6 +83,7 @@ const structuredData = [
 <Layout
   title="Kto je ten Pokémon? Kvíz Hra (1 025 Pokémonov) | pokemongo.sk"
   description="Uhádni Pokémona podľa obrázka, typov a štatistík! Zábavná kvízová hra s výberom medzi klasickým Kanto regiónom (151) alebo všetkými 1 025 Pokémonmi."
+  keywords="kto je ten pokemon, pokemon kviz, hadaj pokemonov, pokemon hra online, pokemon trivia, pokemon hra v prehliadaci, 1025 pokemonov kviz"
   jsonLd={structuredData}
 >
   <Navbar slot="navbar" />

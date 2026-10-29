@@ -9,9 +9,31 @@ const structuredData = [
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "pokemongo.sk",
+    "alternateName": "Pokémon Slovensko",
     "url": "https://pokemongo.sk/",
-    "description": "Prémiová slovenská národná doména pokemongo.sk je na predaj. Ideálna adresa pre Pokémon e-shop s kartičkami, komunitný portál alebo sprievodcu.",
-    "inLanguage": "sk-SK"
+    "description": "Prémiová slovenská národná doména a portál pokemongo.sk. Národný Pokédex 1 025 Pokémonov v slovenčine, kvízová hra, sprievodca a overené obchody s Pokémon kartičkami.",
+    "inLanguage": "sk-SK",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://pokemongo.sk/pokedex?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "pokemongo.sk",
+    "url": "https://pokemongo.sk/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://pokemongo.sk/favicon.svg",
+      "width": "512",
+      "height": "512"
+    },
+    "description": "Slovenský Pokémon portál a exkluzívna národná doména na predaj."
   },
   {
     "@context": "https://schema.org",
@@ -19,6 +41,8 @@ const structuredData = [
     "name": "Internetová doména pokemongo.sk",
     "image": "https://pokemongo.sk/og-image.png",
     "description": "Exkluzívna národná doména pokemongo.sk najvyššej úrovne (.sk) pre e-shop s Pokémon kartičkami, herný portál a komunitu na Slovensku.",
+    "category": "Domain Names",
+    "sku": "DOMAIN-POKEMONGO-SK",
     "brand": {
       "@type": "Brand",
       "name": "pokemongo.sk"
@@ -28,7 +52,9 @@ const structuredData = [
       "url": "https://pokemongo.sk/#ponuka",
       "priceCurrency": "EUR",
       "price": "1000",
+      "priceValidUntil": "2027-12-31",
       "availability": "https://schema.org/InStock",
+      "itemCondition": "https://schema.org/NewCondition",
       "seller": {
         "@type": "Organization",
         "name": "pokemongo.sk"
@@ -71,6 +97,7 @@ const structuredData = [
 <Layout
   title="pokemongo.sk - Prémiová slovenská doména na predaj"
   description="Exkluzívna národná doména pokemongo.sk je na predaj. Ideálna adresa pre slovenský e-shop s kartičkami, komunitný portál alebo sprievodcu hrou. Pošlite svoju ponuku."
+  keywords="pokemongo.sk, predaj domeny, pokemon go slovensko, pokemon karty sk, pokemon tcg predajne, slovensky pokedex, kto je ten pokemon, charizard, pikachu"
   jsonLd={structuredData}
 >
   <Navbar slot="navbar" />

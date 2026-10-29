@@ -25,12 +25,14 @@ const structuredData = [
   {
     "@context": "https://schema.org",
     "@type": "Article",
+    "mainEntityOfPage": "https://pokemongo.sk/sprievodca/",
     "headline": "Veľký sprievodca hrou Pokémon GO: Tipy, Raidy a Stratégie",
     "description": "Kompletný sprievodca hrou Pokémon GO na Slovensku. Návod na IV hodnoty, Raidy, Mega Evolúcie a boj s Team GO Rocket.",
     "image": "https://pokemongo.sk/og-image.png",
     "author": {
       "@type": "Organization",
-      "name": "pokemongo.sk"
+      "name": "pokemongo.sk",
+      "url": "https://pokemongo.sk/"
     },
     "publisher": {
       "@type": "Organization",
@@ -41,7 +43,38 @@ const structuredData = [
       }
     },
     "datePublished": "2026-10-27",
+    "dateModified": "2026-10-30",
     "inLanguage": "sk-SK"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Čo sú IV hodnoty v Pokémon GO a prečo sú dôležité?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "IV (Individual Values) sú skryté vrodené atribúty Attack, Defense a HP od 0 do 15. Zistíte ich kliknutím na 'Appraise' v profile Pokémona. Hodnotenie 3 hviezdičky s červeným pozadím značí 100% IV (tzv. Hundo), čo je maximálny bojový potenciál."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Ako najrýchlejšie získať XP a zvyšovať úroveň trénera?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Najúčinnejšou cestou je posielanie a otváranie darčekov (získavanie úrovní priateľstva: Ultra Friend dáva 50 000 XP, Best Friend 100 000 XP — pri použití Lucky Egg dvojnásobok) a účasť na legendárnych 5-hviezdičkových raidoch."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Ako fungujú Mega Evolúcie v Pokémon GO?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Mega Evolúciu aktivujete pomocou Mega Energy získanej z Mega Raidov. Trvá 8 hodín, výrazne posilní vášho Pokémona v bojoch a poskytne extra XP a Candy pri chytaní Pokémonov rovnakého typu. S každým použitím sa úroveň Mega Pokémona zvyšuje a cooldown skracuje."
+        }
+      }
+    ]
   }
 ];
 ---
@@ -50,6 +83,7 @@ const structuredData = [
   title="Sprievodca hrou Pokémon GO: Tipy, Raidy a Stratégie | pokemongo.sk"
   description="Kompletný sprievodca hrou Pokémon GO. Tipy na chytanie, IV hodnoty, Community Days, Raidy, boj proti Team GO Rocket a efektívne expenie na Slovensku."
   type="article"
+  keywords="pokemon go sprievodca slovensky, navod pokemon go sk, iv hodnoty appraisal, mega evolucia, team go rocket clif sierra arlo giovanni, rychly level up xp"
   jsonLd={structuredData}
 >
   <Navbar slot="navbar" />

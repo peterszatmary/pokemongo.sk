@@ -33,13 +33,48 @@ const structuredData = [
       "@type": "ListItem",
       "position": idx + 1,
       "item": {
-        "@type": "LocalBusiness",
+        "@type": "Store",
         "name": s.name,
-        "address": s.address,
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": s.address,
+          "addressLocality": s.city,
+          "addressCountry": "SK"
+        },
         "url": s.web,
         "description": s.description
       }
     }))
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Kde na Slovensku kúpim zaručene originálne Pokémon karty?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Odporúčame nakupovať v overených špecializovaných predajniach a herniach, ako sú iHRYsko, Funtastic, Cloud 9, Veselý drak alebo TCGPark. Tieto obchody odoberajú tovar priamo od oficiálnych distribútorov."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Ako rozoznám falošné Pokémon kartičky (fejky)?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Originálne karty majú vysokokvalitný kartón s tmavou strednou vrstvou, ostrú typografiu bez gramatických chýb, presné farby na zadnom logu Pokéballu a špeciálnu textúru pri ultra-vzácnych (Secret Rare / Full Art) kartách. Pozor na extrémne lacné booster boxy z trhovísk a neoverených čínskych e-shopov."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Čo je najlepšie kúpiť pre začínajúceho hráča alebo zberateľa?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pre začínajúcich hráčov sú ideálne Battle Decks (vopred pripravené balíčky pripravené na hru). Pre zberateľov a začiatočníkov je skvelou voľbou Elite Trainer Box (ETB), ktorý obsahuje 9 balíčkov, obaly, kocky a promo kartu."
+        }
+      }
+    ]
   }
 ];
 ---
@@ -47,6 +82,7 @@ const structuredData = [
 <Layout
   title="Kde kúpiť Pokémon kartičky v SR a ČR: Overené predajne a e-shopy | pokemongo.sk"
   description="Veľký prehľad overených kamenných predajní, herní a e-shopov s originálnymi Pokémon TCG kartami na Slovensku a v Českej republike. Adresy, lokality a webové odkazy."
+  keywords="kde kupit pokemon karty, overene pokemon obchody sk, ihrisko pokemon, funtastic bratislava, elite trainer box sk, booster balicky pokemon predaj"
   jsonLd={structuredData}
 >
   <Navbar slot="navbar" />

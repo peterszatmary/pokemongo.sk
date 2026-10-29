@@ -119,7 +119,45 @@ const structuredData = [
     "@type": "ItemList",
     "name": "Pokédex: Kompletný zoznam 1 025 Pokémonov v slovenčine (Gen 1 – Gen 9)",
     "description": "Kompletný zoznam všetkých 1 025 Pokémonov národného Pokédexu v slovenskom preklade s obrázkami, typmi a bojovými štatistikami.",
-    "numberOfItems": 1025
+    "numberOfItems": pokemonList.length,
+    "itemListElement": pokemonList.slice(0, 50).map((p, idx) => ({
+      "@type": "ListItem",
+      "position": idx + 1,
+      "name": `${p.name} (#${String(p.id).padStart(4, '0')})`,
+      "image": p.image,
+      "description": p.description,
+      "url": `https://pokemongo.sk/pokedex/#pokemon-${p.id}`
+    }))
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Koľko Pokémonov obsahuje slovenský Pokédex na pokemongo.sk?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Náš národný Pokédex obsahuje kompletných 1 025 oficiálnych Pokémonov z 9 generácií (od Kanto po Paldea). Všetky karty obsahujú oficiálne slovenské popisy, typy a bojové štatistiky."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Ako môžem filtrovať a vyhľadávať Pokémonov v Pokédexe?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Vyhľadávať môžete podľa mena aj čísla bez ohľadu na diakritiku (napr. 'carm' nájde Charmander aj Charizard). K dispozícii je okamžité filtrovanie podľa 9 generácií a 18 elementárnych typov."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Aké štatistiky sú v slovenskom Pokédexe zobrazené?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pri každom Pokémonovi nájdete životy (HP), útok (Attack), obranu (Defense) a rýchlosť (Speed), spolu s primárnym a sekundárnym typom a biologickou kategóriou rodu."
+        }
+      }
+    ]
   }
 ];
 
@@ -130,6 +168,7 @@ const initialPokemon = pokemonList.slice(0, 32);
 <Layout
   title="Pokédex: Všetkých 1 025 Pokémonov v slovenčine (Gen 1 – Gen 9) | pokemongo.sk"
   description="Slovenský národný Pokédex všetkých 1 025 Pokémonov od Kanto až po Paldea. Slovenské popisy, typy, štatistiky, filtrovanie generácií a okamžité vyhľadávanie."
+  keywords="slovensky pokedex, vsetci pokemoni, zoznam pokemonov, pokedex 1025 pokemonov, kanto johto hoenn sinnoh unova kalos alola galar paldea, pokemon statistiky, pokemon go slovensko"
   jsonLd={structuredData}
 >
   <Navbar slot="navbar" />

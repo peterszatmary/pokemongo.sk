@@ -25,12 +25,14 @@ const structuredData = [
   {
     "@context": "https://schema.org",
     "@type": "Article",
+    "mainEntityOfPage": "https://pokemongo.sk/komunita/",
     "headline": "Slovenská Pokémon Komunita & Fenomén TCG Kariet",
     "description": "Prehľad slovenskej komunity Pokémon GO, raidových lokalít a miliardového zberateľského trhu s Pokémon kartičkami na Slovensku.",
     "image": "https://pokemongo.sk/og-image.png",
     "author": {
       "@type": "Organization",
-      "name": "pokemongo.sk"
+      "name": "pokemongo.sk",
+      "url": "https://pokemongo.sk/"
     },
     "publisher": {
       "@type": "Organization",
@@ -41,7 +43,38 @@ const structuredData = [
       }
     },
     "datePublished": "2026-10-27",
+    "dateModified": "2026-10-30",
     "inLanguage": "sk-SK"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Kde sú najlepšie lokality na Raidy a Community Days na Slovensku?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "V Bratislave sú najaktívnejšími miestami Sad Janka Kráľa, Eurovea nábrežie, Medická záhrada a Prezidentská záhrada s desiatkami pokéstopov a gymov. V Košiciach je centrom diania Hlavná ulica a Mestský park."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kde nájdem slovenských hráčov na organizovanie raidov?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Slovenskí tréneri koordinujú raidy najmä cez oficiálnu aplikáciu Niantic Campfire, komunitné Discord servery (Pokémon GO Slovensko) a lokálne Facebook / Messenger skupiny vo všetkých krajských mestách."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kde sa organizujú burzy a turnaje v Pokémon TCG?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pravidelné turnaje, Prerelease podujatia a burzy kariet organizujú špecializované herne v Bratislave (iHRYsko, Funtastic, Cloud 9), Košiciach, Trnave, Žiline a ďalších mestách."
+        }
+      }
+    ]
   }
 ];
 ---
@@ -50,6 +83,7 @@ const structuredData = [
   title="Slovenská Pokémon Komunita & TCG Svet: Raidy, Kartičky a Skupiny | pokemongo.sk"
   description="Kompletný prehľad slovenskej Pokémon GO komunity a TCG zberateľstva. Kde sa stretávajú tréneri, raidové hotspoty v Bratislave a Košiciach, a boom okolo Pokémon kartičiek."
   type="article"
+  keywords="pokemon komunita slovensko, pokemon go bratislava raidy, pokemon campfire slovensko, pokemon tcg bursa, pokemon karty zberatelia sk, pokemon go kosice"
   jsonLd={structuredData}
 >
   <Navbar slot="navbar" />

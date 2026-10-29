@@ -54,6 +54,36 @@ const structuredData = [
         "text": "Auth-Info kód zadáte u svojho registrátora a doména je plne vaša."
       }
     ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Ako dlho trvá prevod domény .sk cez SK-NIC?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Po úhrade a vygenerovaní autorizačného kódu (Auth-Info kód) trvá samotný prevod v systéme SK-NIC obvykle menej než 1 hodinu, maximálne do 24 hodín."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Je k dispozícii faktúra a oficiálna kúpna zmluva?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Áno, samozrejmosťou je vypracovanie riadnej Zmluvy o prevode domény a vystavenie faktúry s možnosťou platby bankovým prevodom."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Je možné využiť notársku alebo advokátsku úschovu (Escrow)?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Áno, pre garantovanú obojstrannú bezpečnosť transakcie je možné využiť advokátsku alebo notársku úschovu finančných prostriedkov."
+        }
+      }
+    ]
   }
 ];
 ---
@@ -61,6 +91,7 @@ const structuredData = [
 <Layout
   title="Ako kúpiť doménu pokemongo.sk: Proces prevodu a bezpečnosť"
   description="Podrobný a transparentný postup prevodu národnej domény pokemongo.sk cez SK-NIC. Kúpna zmluva, faktúra, možnosti bezpečnej úschovy a okamžitý transfer."
+  keywords="ako kupit domenu, sk-nic prevod domeny, predaj pokemongo.sk, kupna zmluva domena, auth-info kod sk-nic"
   jsonLd={structuredData}
 >
   <Navbar slot="navbar" />

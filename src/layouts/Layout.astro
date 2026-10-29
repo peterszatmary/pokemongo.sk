@@ -4,6 +4,7 @@ interface Props {
   description?: string;
   image?: string;
   type?: "website" | "article" | "product";
+  keywords?: string;
   jsonLd?: Record<string, any> | Array<Record<string, any>>;
 }
 
@@ -12,6 +13,7 @@ const {
   description = "Prémiová doména pokemongo.sk je na predaj. Ideálna adresa pre slovenský e-shop s Pokémon kartičkami, komunitný portál alebo sprievodcu hrou.",
   image = "/og-image.png",
   type = "website",
+  keywords = "pokemongo.sk, pokemon go slovensko, pokemon pokedex slovensky, kto je ten pokemon kviz, pokemon karty sk, pokemon tcg, charizard, bulbasaur, pikachu, pokemon predajne, sk-nic prevod domeny",
   jsonLd,
 } = Astro.props;
 
@@ -43,12 +45,14 @@ const ogImageURL = new URL(image, Astro.site || "https://pokemongo.sk");
     <meta name="title" content={title} />
     <meta name="description" content={description} />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-    <meta name="keywords" content="pokemongo.sk, predaj domeny, pokemon go slovensko, pokemon karty sk, pokemon tcg, charizard, bulbasaur, pokemon e-shop, sk-nic prevod" />
+    <meta name="keywords" content={keywords} />
     <meta name="author" content="pokemongo.sk" />
+    <meta name="application-name" content="pokemongo.sk" />
     <meta name="geo.region" content="SK" />
     <meta name="geo.placename" content="Slovensko" />
     <meta name="theme-color" content="#ffffff" />
     <meta name="apple-mobile-web-app-title" content="pokemongo.sk" />
+    <meta name="format-detection" content="telephone=no" />
 
     <!-- Favicons & Icons -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -66,7 +70,7 @@ const ogImageURL = new URL(image, Astro.site || "https://pokemongo.sk");
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:alt" content="pokemongo.sk - Prémiová slovenská doména na predaj" />
+    <meta property="og:image:alt" content={title} />
     <meta property="og:locale" content="sk_SK" />
     <meta property="og:site_name" content="Pokemongo.sk" />
 
@@ -76,9 +80,10 @@ const ogImageURL = new URL(image, Astro.site || "https://pokemongo.sk");
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImageURL} />
-    <meta name="twitter:image:alt" content="pokemongo.sk - Prémiová slovenská doména na predaj" />
+    <meta name="twitter:image:alt" content={title} />
 
-    <!-- Fonts -->
+    <!-- Fonts & Preconnections for Speed -->
+    <link rel="preconnect" href="https://raw.githubusercontent.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
