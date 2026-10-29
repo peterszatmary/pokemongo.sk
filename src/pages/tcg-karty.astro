@@ -1,151 +1,24 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Navbar from "../components/Navbar.astro";
-import Footer from "../components/Footer.astro";
-
-const structuredData = [
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Domov",
-        "item": "https://pokemongo.sk/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "TCG Kartičky",
-        "item": "https://pokemongo.sk/tcg-karty/"
-      }
-    ]
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "Fenomén Pokémon kariet: Prečo je to miliardový biznis na Slovensku?",
-    "description": "Analýza rastu zberateľského trhu s Pokémon kartičkami a prečo je doména pokemongo.sk ideálnou platformou pre slovenský e-shop.",
-    "image": "https://pokemongo.sk/og-image.png",
-    "author": {
-      "@type": "Organization",
-      "name": "pokemongo.sk"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "pokemongo.sk",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://pokemongo.sk/favicon.svg"
-      }
-    },
-    "datePublished": "2026-10-27",
-    "inLanguage": "sk-SK"
-  }
-];
+// Presmerovanie na zlúčenú stránku Komunita & TCG
 ---
-
-<Layout
-  title="Pokémon TCG Kartičky: Zberateľstvo & E-shop Potenciál | pokemongo.sk"
-  description="Pokémon TCG zažíva na Slovensku obrovský boom. Zistite, prečo je doména pokemongo.sk ideálnou platformou pre úspešný e-shop s kartičkami, boxami a merchom."
-  type="article"
-  jsonLd={structuredData}
->
-  <Navbar slot="navbar" />
-
-  <article class="py-16 sm:py-24 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-    <!-- Header -->
-    <header class="mb-14 text-center">
-      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-amber-50 text-amber-700 border border-amber-200 mb-4">
-        ✨ Zberateľský Trh & E-Commerce
-      </div>
-      <h1 class="font-display text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight mb-4">
-        Fenomén Pokémon kariet: Prečo je to miliardový biznis?
-      </h1>
-      <p class="text-base sm:text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
-        Od detskej zábavy až po prémiové alternatívne investície s kartami ako Charizard. Slovenský trh s Pokémon kartičkami rastie každý rok.
+<!DOCTYPE html>
+<html lang="sk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="refresh" content="0;url=/komunita#tcg" />
+    <link rel="canonical" href="https://pokemongo.sk/komunita" />
+    <title>Presmerovanie na Komunita & TCG | pokemongo.sk</title>
+  </head>
+  <body class="bg-slate-50 flex items-center justify-center min-h-screen font-sans text-slate-700">
+    <div class="text-center p-8 bg-white rounded-3xl border border-slate-200 shadow-sm max-w-md mx-4">
+      <div class="w-12 h-12 mx-auto mb-4 text-3xl">🃏</div>
+      <h1 class="text-xl font-bold text-slate-900 mb-2">Presmerovávame...</h1>
+      <p class="text-sm text-slate-600 mb-4">
+        Obsah o Pokémon TCG kartičkách sme zlúčili s komunitnou stránkou.
       </p>
-    </header>
-
-    <!-- Content Sections -->
-    <div class="space-y-8 text-slate-600 leading-relaxed text-base">
-
-      <section class="bg-white border border-slate-200/90 rounded-3xl p-6 sm:p-8 shadow-sm">
-        <h2 class="font-display text-2xl font-bold text-slate-900 mb-4">Zberateľská mánia, ktorá nikdy neutícha</h2>
-        <p class="mb-4">
-          Pokémon Trading Card Game (TCG) nie je len nostalgická spomienka na 90. roky. V súčasnosti ide o globálny trh v hodnote miliárd dolárov. Na Slovensku a v Česku vznikla za posledné roky obrovská komunita zberateľov, investorov a hráčov.
-        </p>
-        <p>
-          Zákazníci už nehľadajú len jednotlivé balíčky v novinových stánkoch — kupujú celé <strong class="text-slate-900">Booster Boxy, Elite Trainer Boxy (ETB), prémiové zberateľské kufríky a špeciálne promo edície</strong>.
-        </p>
-      </section>
-
-      <!-- Market Segments Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="p-6 rounded-3xl bg-white border border-slate-200/90 shadow-sm">
-          <div class="text-amber-700 text-lg font-bold mb-2">1. Dospelí zberatelia (Mileniáli)</div>
-          <p class="text-sm text-slate-600 leading-relaxed">
-            Generácia, ktorá na Pokémonoch vyrastala, má dnes stabilný príjem. Pre mnohých z nich sú vzácne karty (najmä legendárny Charizard, Umbreon či Pikachu) formou alternatívnej investície s ročným zhodnotením v desiatkach percent.
-          </p>
-        </div>
-
-        <div class="p-6 rounded-3xl bg-white border border-slate-200/90 shadow-sm">
-          <div class="text-rose-600 text-lg font-bold mb-2">2. Rodičia a nová generácia detí</div>
-          <p class="text-sm text-slate-600 leading-relaxed">
-            Pokémon je multigeneračná značka. Rodičia radi kupujú deťom originálne karty a hľadajú overený slovenský e-shop s rýchlym doručením, ktorý garantuje 100% pravosť produktov bez falzifikátov.
-          </p>
-        </div>
-      </div>
-
-      <!-- Why pokemongo.sk for e-shop -->
-      <section class="bg-gradient-to-br from-amber-50/50 via-white to-rose-50/30 border border-amber-200/80 rounded-3xl p-6 sm:p-8 shadow-sm">
-        <h2 class="font-display text-2xl font-bold text-slate-900 mb-4">
-          Prečo vybudovať e-shop na doméne <span class="text-rose-600">pokemongo.sk</span>?
-        </h2>
-        <div class="space-y-4 text-sm sm:text-base">
-          <div class="flex items-start gap-3">
-            <span class="text-amber-600 font-bold text-lg">✓</span>
-            <div>
-              <strong class="text-slate-900">Prirodzená organická návštevnosť:</strong>
-              <p class="text-slate-600 text-sm">Ľudia často hľadajú „pokemon karty sk“ alebo píšu adresu priamo. Získavate organický traffic zadarmo bez platenej reklamy.</p>
-            </div>
-          </div>
-          <div class="flex items-start gap-3">
-            <span class="text-amber-600 font-bold text-lg">✓</span>
-            <div>
-              <strong class="text-slate-900">Okamžitá dôveryhodnosť v košíku:</strong>
-              <p class="text-slate-600 text-sm">Pri predaji zberateľských kariet je najväčšou obavou zákazníkov falšovaný tovar. Prémiová, čistá národná doména buduje dôveru, ktorá dramaticky zvyšuje konverzný pomer.</p>
-            </div>
-          </div>
-          <div class="flex items-start gap-3">
-            <span class="text-amber-600 font-bold text-lg">✓</span>
-            <div>
-              <strong class="text-slate-900">Jednoduchá expanzia do ďalšieho tovaru:</strong>
-              <p class="text-slate-600 text-sm">Okrem kariet môžete predávať herné príslušenstvo (obaly Ultra Pro, toploadery, albumy), plyšové hračky, figúrky, oblečenie či licencovaný merch.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      <a href="/komunita#tcg" class="inline-block px-5 py-2.5 rounded-xl text-sm font-semibold text-white bg-slate-900 hover:bg-slate-800 transition">
+        Prejsť na Komunita & TCG →
+      </a>
     </div>
-
-    <!-- CTA Box -->
-    <div class="mt-16 p-8 rounded-3xl bg-slate-50 border border-slate-200/90 text-center space-y-4">
-      <h3 class="font-display text-2xl font-bold text-slate-900">Chcete spustiť svoj vlastný Pokémon e-shop?</h3>
-      <p class="text-sm text-slate-600 max-w-xl mx-auto">
-        Prvým a najdôležitejším krokom je silná adresa, ktorú si každý zapamätá. Pošlite svoju ponuku a získajte doménu pokemongo.sk.
-      </p>
-      <div class="pt-2">
-        <a
-          href="/#ponuka"
-          class="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-sm text-white bg-slate-900 hover:bg-slate-800 transition shadow-sm"
-        >
-          Predložiť cenovú ponuku na doménu →
-        </a>
-      </div>
-    </div>
-  </article>
-
-  <Footer slot="footer" />
-</Layout>
+  </body>
+</html>

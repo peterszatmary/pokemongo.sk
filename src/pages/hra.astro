@@ -1,0 +1,811 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import pokemonList from "../data/pokedex151.json";
+
+const structuredData = [
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Domov",
+        "item": "https://pokemongo.sk/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Kvíz: Kto je ten Pokémon?",
+        "item": "https://pokemongo.sk/hra/"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Game",
+    "name": "Kto je ten Pokémon? — Kvízová minihra (151 Pokémonov)",
+    "description": "Uhádni Pokémona podľa obrázka a indícií. Dokážeš správne identifikovať všetkých 151 pôvodných Pokémonov prvej generácie bez jedinej chyby?",
+    "inLanguage": "sk-SK"
+  }
+];
+---
+
+<Layout
+  title="Kto je ten Pokémon? Kvíz Hra (151 Pokémonov) | pokemongo.sk"
+  description="Uhádni Pokémona podľa obrázka, typov a štatistík! Zábavná kvízová hra so 151 pôvodnými Pokémonmi z Kanto regiónu. Jedna chyba a končíš — aké skóre dosiahneš?"
+  jsonLd={structuredData}
+>
+  <Navbar slot="navbar" />
+
+  <main class="py-10 sm:py-16 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <!-- Header -->
+    <header class="text-center mb-8">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-rose-50 text-rose-700 border border-rose-200 mb-3 shadow-xs">
+        <span>🎮</span> Interaktívny Kvíz (151 Pokémonov)
+      </div>
+      <h1 class="font-display text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight mb-3">
+        Kto je ten Pokémon?
+      </h1>
+      <p class="text-sm sm:text-base text-slate-600 max-w-xl mx-auto leading-relaxed">
+        Pozri sa na obrázok a indície. Vyber správne meno zo 4 možností. Ak uhádneš, získaš bod a pokračuješ ďalej — ak sa pomýliš, hra končí!
+      </p>
+    </header>
+
+    <!-- Top Score & Control Bar -->
+    <div class="bg-white border border-slate-200/90 rounded-2xl p-4 sm:p-5 shadow-sm mb-6 flex flex-wrap items-center justify-between gap-4">
+      <!-- Scores -->
+      <div class="flex items-center gap-4 sm:gap-6">
+        <div class="flex items-center gap-2">
+          <div class="w-9 h-9 rounded-xl bg-rose-100/80 text-rose-600 flex items-center justify-center font-bold text-lg">
+            🔥
+          </div>
+          <div>
+            <div class="text-[11px] font-bold uppercase tracking-wider text-slate-400">Aktuálne skóre</div>
+            <div id="current-score" class="font-display text-2xl font-black text-slate-900">0</div>
+          </div>
+        </div>
+
+        <div class="h-8 w-px bg-slate-200"></div>
+
+        <div class="flex items-center gap-2">
+          <div class="w-9 h-9 rounded-xl bg-amber-100/80 text-amber-600 flex items-center justify-center font-bold text-lg">
+            🏆
+          </div>
+          <div>
+            <div class="text-[11px] font-bold uppercase tracking-wider text-slate-400">Najlepší rekord</div>
+            <div id="high-score" class="font-display text-2xl font-black text-slate-900">0</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls & Toggles -->
+      <div class="flex items-center gap-2 sm:gap-3 ml-auto">
+        <!-- Silhouette mode toggle -->
+        <button
+          type="button"
+          id="toggle-silhouette-btn"
+          class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold border transition bg-slate-100 text-slate-700 border-slate-200 hover:bg-slate-200"
+          title="Prepnúť režim siluety (ako v TV seriáli)"
+        >
+          <span id="silhouette-icon">👤</span>
+          <span id="silhouette-label" class="hidden sm:inline">Silueta: Vypnutá</span>
+        </button>
+
+        <!-- Sound toggle -->
+        <button
+          type="button"
+          id="toggle-sound-btn"
+          class="p-2 rounded-xl text-xs font-semibold border transition bg-slate-100 text-slate-700 border-slate-200 hover:bg-slate-200"
+          title="Zvukové efekty"
+          aria-label="Zapnúť/vypnúť zvuk"
+        >
+          <span id="sound-icon">🔊</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- MAIN GAME AREA -->
+    <div id="game-container" class="relative">
+
+      <!-- ACTIVE QUESTION CARD -->
+      <div id="quiz-card" class="bg-white border border-slate-200/90 rounded-3xl p-6 sm:p-8 shadow-sm transition-all duration-300">
+        
+        <!-- Question Meta (Round Counter & Hints) -->
+        <div class="flex flex-wrap items-center justify-between gap-2 pb-4 mb-4 border-b border-slate-100 text-xs text-slate-500">
+          <div class="flex items-center gap-2">
+            <span class="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            <span id="streak-indicator" class="font-bold text-slate-700">Kolo 1</span>
+            <span class="text-slate-400">•</span>
+            <span id="remaining-count">Zostáva 151 Pokémonov</span>
+          </div>
+
+          <!-- Type Badges Container -->
+          <div id="pokemon-types" class="flex items-center gap-1.5">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+          
+          <!-- LEFT: Pokemon Artwork -->
+          <div class="md:col-span-5 flex flex-col items-center justify-center">
+            <div class="relative w-full max-w-[260px] aspect-square rounded-3xl bg-gradient-to-b from-slate-50 to-slate-100/80 border border-slate-200/70 p-4 flex items-center justify-center overflow-hidden shadow-inner group">
+              <!-- Decorative Pokéball watermark in background -->
+              <div class="absolute inset-0 flex items-center justify-center opacity-5 pointer-events-none">
+                <img src="/favicon.svg" alt="" class="w-48 h-48" />
+              </div>
+
+              <!-- Pokémon image -->
+              <img
+                id="pokemon-img"
+                src=""
+                alt="Pokémon na uhádnutie"
+                class="relative z-10 w-48 h-48 sm:w-52 sm:h-52 object-contain drop-shadow-lg select-none transition-all duration-500"
+              />
+
+              <!-- Correct / Wrong Overlay Badge -->
+              <div id="result-badge" class="absolute inset-0 z-20 hidden items-center justify-center bg-white/70 backdrop-blur-xs transition-opacity rounded-3xl">
+                <span id="result-badge-text" class="text-4xl"></span>
+              </div>
+            </div>
+
+            <div class="mt-2 text-center">
+              <span id="pokemon-generation" class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">
+                Kanto región • 1. Generácia
+              </span>
+            </div>
+          </div>
+
+          <!-- RIGHT: Clues & 4 Choice Buttons -->
+          <div class="md:col-span-7 flex flex-col justify-between space-y-5">
+            
+            <!-- Clues Box -->
+            <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/70 space-y-2">
+              <div class="text-[11px] font-bold uppercase tracking-wider text-slate-400 flex items-center justify-between">
+                <span>Indície o Pokémonovi:</span>
+                <span id="clue-stats-hp" class="text-slate-600 font-semibold"></span>
+              </div>
+
+              <!-- Pokedex Lore Description Clue -->
+              <p id="pokemon-lore" class="text-xs text-slate-600 leading-relaxed italic">
+                Načítavam informácie...
+              </p>
+
+              <!-- Quick Stats Preview -->
+              <div id="stats-preview" class="grid grid-cols-3 gap-2 pt-2 border-t border-slate-200/60 text-[11px] text-slate-500">
+                <div>Útok: <strong id="stat-atk" class="text-slate-800">-</strong></div>
+                <div>Obrana: <strong id="stat-def" class="text-slate-800">-</strong></div>
+                <div>Rýchlosť: <strong id="stat-spd" class="text-slate-800">-</strong></div>
+              </div>
+            </div>
+
+            <!-- 4 Choice Options -->
+            <div>
+              <div class="text-xs font-bold text-slate-700 uppercase tracking-wider mb-2.5 flex items-center justify-between">
+                <span>Ako sa volá tento Pokémon?</span>
+                <span class="text-[11px] font-normal text-slate-400 hidden sm:inline">Môžeš stlačiť 1, 2, 3 alebo 4</span>
+              </div>
+
+              <div id="options-grid" class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                <!-- 4 Option buttons dynamically rendered -->
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- GAME OVER SCREEN (Hidden by default) -->
+      <div
+        id="game-over-card"
+        class="hidden bg-white border border-rose-200/90 rounded-3xl p-6 sm:p-10 shadow-lg text-center"
+      >
+        <div class="w-16 h-16 mx-auto mb-4 rounded-2xl bg-rose-100 text-rose-600 flex items-center justify-center text-3xl shadow-sm">
+          💥
+        </div>
+
+        <div class="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-rose-700 border border-rose-200 mb-2">
+          Nesprávna odpoveď — Koniec hry!
+        </div>
+
+        <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-slate-900 mb-2">
+          Koniec tvojej cesty trénera!
+        </h2>
+
+        <!-- Reveal of the Pokémon -->
+        <div class="max-w-md mx-auto my-6 p-5 rounded-2xl bg-slate-50 border border-slate-200/80 flex items-center justify-center gap-5">
+          <img
+            id="gameover-pokemon-img"
+            src=""
+            alt=""
+            class="w-20 h-20 object-contain drop-shadow"
+          />
+          <div class="text-left">
+            <span id="gameover-pokemon-number" class="text-xs font-bold text-slate-400 block"></span>
+            <h3 id="gameover-pokemon-name" class="font-display text-2xl font-bold text-slate-900"></h3>
+            <span id="gameover-pokemon-types" class="text-xs font-medium text-slate-600"></span>
+          </div>
+        </div>
+
+        <!-- Score summary -->
+        <div class="mb-6">
+          <div class="text-sm text-slate-500 mb-1">Tvoje dosiahnuté skóre:</div>
+          <div class="flex items-center justify-center gap-2">
+            <span id="gameover-final-score" class="font-display text-5xl font-black text-rose-600">0</span>
+            <span class="text-lg font-bold text-slate-500">bodov</span>
+          </div>
+
+          <div id="gameover-new-record" class="hidden mt-2 inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-amber-100 text-amber-800 border border-amber-300">
+            <span>🎉</span> Nový osobný rekord!
+          </div>
+
+          <div class="mt-3">
+            <span class="text-xs text-slate-400">Získaný trénerský titul:</span>
+            <div id="gameover-rank-title" class="font-display text-lg font-bold text-slate-800 mt-0.5">
+              Začiatočník v Pallet Town 🐣
+            </div>
+          </div>
+        </div>
+
+        <!-- Actions -->
+        <div class="flex flex-wrap items-center justify-center gap-3 pt-2">
+          <button
+            type="button"
+            id="restart-btn"
+            class="px-6 py-3.5 rounded-xl font-bold text-sm text-white bg-slate-900 hover:bg-slate-800 shadow-md hover:shadow-lg transition-all active:scale-95 cursor-pointer"
+          >
+            🔄 Hrať znova (Medzerník / Enter)
+          </button>
+
+          <button
+            type="button"
+            id="share-btn"
+            class="px-5 py-3.5 rounded-xl font-semibold text-sm text-slate-700 bg-slate-100 hover:bg-slate-200 border border-slate-300 transition-all active:scale-95 cursor-pointer flex items-center gap-2"
+          >
+            <span>📋</span> Zdieľať skóre
+          </button>
+
+          <a
+            href="/pokedex"
+            class="px-5 py-3.5 rounded-xl font-semibold text-sm text-rose-700 bg-rose-50 hover:bg-rose-100 border border-rose-200 transition-all"
+          >
+            📖 Prejsť do Pokédexu
+          </a>
+        </div>
+
+        <div id="share-toast" class="hidden mt-3 text-xs font-semibold text-emerald-600">
+          ✓ Skóre bolo skopírované do schránky!
+        </div>
+      </div>
+
+      <!-- VICTORY SCREEN (If someone completes all 151!) -->
+      <div
+        id="victory-card"
+        class="hidden bg-white border border-amber-300 rounded-3xl p-6 sm:p-10 shadow-xl text-center"
+      >
+        <div class="text-5xl mb-3">👑</div>
+        <h2 class="font-display text-3xl sm:text-5xl font-black text-amber-600 mb-2">
+          Absolútny Pokémon Majster!
+        </h2>
+        <p class="text-base text-slate-700 max-w-lg mx-auto mb-6">
+          Neuveriteľné! Uhádol si všetkých 151 pôvodných Pokémonov prvej generácie bez jedinej chyby!
+        </p>
+        <div class="font-display text-6xl font-black text-slate-900 mb-6">151 / 151</div>
+        <button
+          type="button"
+          id="victory-restart-btn"
+          class="px-8 py-3.5 rounded-xl font-bold text-sm text-white bg-slate-900 hover:bg-slate-800 transition"
+        >
+          Hrať znova od začiatku
+        </button>
+      </div>
+
+    </div>
+
+    <!-- RULES & HOW TO PLAY -->
+    <section class="mt-12 bg-slate-50 border border-slate-200/90 rounded-3xl p-6 sm:p-8">
+      <h2 class="font-display text-xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+        <span>📖</span> Pravidlá kvízu: Kto je ten Pokémon?
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 text-xs text-slate-600">
+        <div class="p-4 rounded-2xl bg-white border border-slate-200/70">
+          <strong class="text-slate-900 block mb-1">1. 151 Pokémonov</strong>
+          V hre sa náhodne striedajú všetci pôvodní Pokémoni Kanto regiónu z prvej generácie bez opakovania v rámci jedného pokusu.
+        </div>
+        <div class="p-4 rounded-2xl bg-white border border-slate-200/70">
+          <strong class="text-slate-900 block mb-1">2. Indície a pomoc</strong>
+          Pre každého Pokémona vidíš jeho typy, bojové štatistiky a opis z Pokédexu (s vynechaným menom).
+        </div>
+        <div class="p-4 rounded-2xl bg-white border border-slate-200/70">
+          <strong class="text-slate-900 block mb-1">3. 4 možnosti</strong>
+          Máš na výber 4 mená. Môžeš klikať na obrazovku alebo použiť klávesy 1, 2, 3 a 4 na rýchle hádanie.
+        </div>
+        <div class="p-4 rounded-2xl bg-white border border-slate-200/70">
+          <strong class="text-slate-900 block mb-1">4. Jedna chyba a koniec</strong>
+          Za každú správnu odpoveď máš +1 bod. Prvá nesprávna odpoveď ťa vyradí a zapíše tvoje najvyššie skóre!
+        </div>
+      </div>
+    </section>
+
+    <!-- PROMOTIONAL / DOMAIN CTA -->
+    <div class="mt-10 p-8 rounded-3xl bg-white border border-slate-200/90 text-center space-y-4">
+      <h3 class="font-display text-2xl font-bold text-slate-900">
+        Páči sa vám tento Pokémon projekt?
+      </h3>
+      <p class="text-sm text-slate-600 max-w-xl mx-auto">
+        Doména <strong>pokemongo.sk</strong> je na predaj. Vytvorte na nej slovenský Pokémon portál, herný magazín alebo úspešný e-shop s kartami.
+      </p>
+      <div class="pt-2">
+        <a
+          href="/#ponuka"
+          class="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-sm text-white bg-slate-900 hover:bg-slate-800 transition shadow-sm"
+        >
+          Predložiť cenovú ponuku na doménu →
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <Footer slot="footer" />
+</Layout>
+
+<!-- CLIENT SCRIPT WITH POKEMON DATA -->
+<script define:vars={{ pokemonList }}>
+  // Type styling map
+  const typeBadgeClasses = {
+    "ohnivý": "bg-rose-50 text-rose-700 border-rose-200",
+    "vodný": "bg-sky-50 text-sky-700 border-sky-200",
+    "trávový": "bg-emerald-50 text-emerald-700 border-emerald-200",
+    "elektrický": "bg-amber-50 text-amber-700 border-amber-200",
+    "jedovatý": "bg-purple-50 text-purple-700 border-purple-200",
+    "psychický": "bg-pink-50 text-pink-700 border-pink-200",
+    "hmyzí": "bg-lime-50 text-lime-700 border-lime-200",
+    "zemný": "bg-amber-100/70 text-amber-800 border-amber-300",
+    "kamenný": "bg-stone-100 text-stone-700 border-stone-300",
+    "bojový": "bg-orange-50 text-orange-800 border-orange-200",
+    "duchovný": "bg-indigo-50 text-indigo-700 border-indigo-200",
+    "ľadový": "bg-cyan-50 text-cyan-700 border-cyan-200",
+    "dračí": "bg-violet-50 text-violet-800 border-violet-200",
+    "vílí": "bg-rose-50 text-rose-700 border-rose-200",
+    "normálny": "bg-slate-100 text-slate-700 border-slate-200"
+  };
+
+  // Web Audio Synth for sound feedback
+  let audioCtx = null;
+  let soundEnabled = true;
+
+  function initAudio() {
+    if (!audioCtx) {
+      const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+      if (AudioContextClass) {
+        audioCtx = new AudioContextClass();
+      }
+    }
+    if (audioCtx && audioCtx.state === 'suspended') {
+      audioCtx.resume();
+    }
+  }
+
+  function playSound(type) {
+    if (!soundEnabled) return;
+    try {
+      initAudio();
+      if (!audioCtx) return;
+
+      const now = audioCtx.currentTime;
+      const osc = audioCtx.createOscillator();
+      const gain = audioCtx.createGain();
+      osc.connect(gain);
+      gain.connect(audioCtx.destination);
+
+      if (type === 'correct') {
+        // Cheerful double chime
+        osc.type = 'triangle';
+        osc.frequency.setValueAtTime(523.25, now); // C5
+        osc.frequency.exponentialRampToValueAtTime(659.25, now + 0.1); // E5
+        osc.frequency.exponentialRampToValueAtTime(783.99, now + 0.2); // G5
+        gain.gain.setValueAtTime(0.15, now);
+        gain.gain.exponentialRampToValueAtTime(0.001, now + 0.35);
+        osc.start(now);
+        osc.stop(now + 0.35);
+      } else if (type === 'wrong') {
+        // Descending low buzz
+        osc.type = 'sawtooth';
+        osc.frequency.setValueAtTime(260, now);
+        osc.frequency.exponentialRampToValueAtTime(130, now + 0.3);
+        gain.gain.setValueAtTime(0.2, now);
+        gain.gain.exponentialRampToValueAtTime(0.001, now + 0.35);
+        osc.start(now);
+        osc.stop(now + 0.35);
+      }
+    } catch (e) {
+      console.warn("Audio playback failed", e);
+    }
+  }
+
+  // Rank Titles
+  function getTrainerRank(score) {
+    if (score < 3) return "Začiatočník v Pallet Town 🐣";
+    if (score < 8) return "Tréner s Poké Ballom 🎒";
+    if (score < 15) return "Zberateľ Odznakov 🏅";
+    if (score < 25) return "Štadiónový Šampión ⚡";
+    if (score < 40) return "Člen Elitnej Štvorky 🏆";
+    return "Legendárny Pokémon Majster 👑";
+  }
+
+  // Mask Pokémon name from flavor text
+  function maskDescription(description, name) {
+    if (!description) return "";
+    // Replace the exact Pokémon name, case-insensitive
+    const escaped = name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const regex = new RegExp(escaped, 'gi');
+    let masked = description.replace(regex, "???");
+    
+    // Also mask parts of evolution names if obvious
+    return masked;
+  }
+
+  // Shuffle helper
+  function shuffleArray(arr) {
+    const copy = [...arr];
+    for (let i = copy.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [copy[i], copy[j]] = [copy[j], copy[i]];
+    }
+    return copy;
+  }
+
+  // GAME STATE
+  let currentScore = 0;
+  let highScore = 0;
+  let remainingIndices = [];
+  let currentPokemon = null;
+  let isAnswered = false;
+  let silhouetteMode = false;
+
+  // DOM Elements
+  const currentScoreEl = document.getElementById("current-score");
+  const highScoreEl = document.getElementById("high-score");
+  const streakIndicatorEl = document.getElementById("streak-indicator");
+  const remainingCountEl = document.getElementById("remaining-count");
+  const pokemonImgEl = document.getElementById("pokemon-img");
+  const pokemonTypesEl = document.getElementById("pokemon-types");
+  const pokemonLoreEl = document.getElementById("pokemon-lore");
+  const statHpEl = document.getElementById("clue-stats-hp");
+  const statAtkEl = document.getElementById("stat-atk");
+  const statDefEl = document.getElementById("stat-def");
+  const statSpdEl = document.getElementById("stat-spd");
+  const optionsGridEl = document.getElementById("options-grid");
+  const resultBadgeEl = document.getElementById("result-badge");
+  const resultBadgeTextEl = document.getElementById("result-badge-text");
+
+  // Game over / victory elements
+  const quizCardEl = document.getElementById("quiz-card");
+  const gameOverCardEl = document.getElementById("game-over-card");
+  const victoryCardEl = document.getElementById("victory-card");
+  const gameoverPokemonImgEl = document.getElementById("gameover-pokemon-img");
+  const gameoverPokemonNumberEl = document.getElementById("gameover-pokemon-number");
+  const gameoverPokemonNameEl = document.getElementById("gameover-pokemon-name");
+  const gameoverPokemonTypesEl = document.getElementById("gameover-pokemon-types");
+  const gameoverFinalScoreEl = document.getElementById("gameover-final-score");
+  const gameoverNewRecordEl = document.getElementById("gameover-new-record");
+  const gameoverRankTitleEl = document.getElementById("gameover-rank-title");
+  const restartBtn = document.getElementById("restart-btn");
+  const shareBtn = document.getElementById("share-btn");
+  const shareToastEl = document.getElementById("share-toast");
+  const victoryRestartBtn = document.getElementById("victory-restart-btn");
+
+  // Controls
+  const toggleSilhouetteBtn = document.getElementById("toggle-silhouette-btn");
+  const silhouetteLabelEl = document.getElementById("silhouette-label");
+  const toggleSoundBtn = document.getElementById("toggle-sound-btn");
+  const soundIconEl = document.getElementById("sound-icon");
+
+  // Load High Score from localStorage
+  try {
+    const savedHighScore = localStorage.getItem("pokemon_quiz_highscore");
+    if (savedHighScore) {
+      highScore = parseInt(savedHighScore, 10) || 0;
+      highScoreEl.textContent = highScore.toString();
+    }
+  } catch (e) {
+    console.warn("LocalStorage access error", e);
+  }
+
+  // Toggle silhouette mode
+  toggleSilhouetteBtn?.addEventListener("click", () => {
+    silhouetteMode = !silhouetteMode;
+    applySilhouetteStyle();
+    if (silhouetteMode) {
+      silhouetteLabelEl.textContent = "Silueta: Zapnutá";
+      toggleSilhouetteBtn.classList.remove("bg-slate-100", "text-slate-700");
+      toggleSilhouetteBtn.classList.add("bg-slate-900", "text-white");
+    } else {
+      silhouetteLabelEl.textContent = "Silueta: Vypnutá";
+      toggleSilhouetteBtn.classList.remove("bg-slate-900", "text-white");
+      toggleSilhouetteBtn.classList.add("bg-slate-100", "text-slate-700");
+    }
+  });
+
+  function applySilhouetteStyle() {
+    if (!pokemonImgEl) return;
+    if (silhouetteMode && !isAnswered) {
+      pokemonImgEl.style.filter = "brightness(0) drop-shadow(0 10px 8px rgba(0,0,0,0.3))";
+    } else {
+      pokemonImgEl.style.filter = "none";
+    }
+  }
+
+  // Toggle sound
+  toggleSoundBtn?.addEventListener("click", () => {
+    soundEnabled = !soundEnabled;
+    soundIconEl.textContent = soundEnabled ? "🔊" : "🔇";
+    if (soundEnabled) initAudio();
+  });
+
+  // Start / Restart game
+  function startGame() {
+    currentScore = 0;
+    currentScoreEl.textContent = "0";
+    isAnswered = false;
+
+    // Reset deck: 0 to 150 indices shuffled
+    remainingIndices = shuffleArray(pokemonList.map((_, idx) => idx));
+
+    // Show quiz card, hide game over & victory
+    quizCardEl.classList.remove("hidden");
+    gameOverCardEl.classList.add("hidden");
+    victoryCardEl.classList.add("hidden");
+    shareToastEl.classList.add("hidden");
+
+    loadNextQuestion();
+  }
+
+  // Load next question
+  function loadNextQuestion() {
+    if (remainingIndices.length === 0) {
+      // Completed all 151!
+      showVictory();
+      return;
+    }
+
+    isAnswered = false;
+    resultBadgeEl.classList.add("hidden");
+
+    // Pick next Pokemon from randomized pool
+    const currentIndex = remainingIndices.pop();
+    currentPokemon = pokemonList[currentIndex];
+
+    // Update UI headers
+    streakIndicatorEl.textContent = `Kolo ${currentScore + 1}`;
+    remainingCountEl.textContent = `Zostáva ${remainingIndices.length + 1} Pokémonov`;
+
+    // Render Image
+    pokemonImgEl.src = currentPokemon.image;
+    pokemonImgEl.alt = "Pokémon na uhádnutie";
+    applySilhouetteStyle();
+
+    // Render Types
+    pokemonTypesEl.innerHTML = "";
+    currentPokemon.typesSk.forEach((type) => {
+      const span = document.createElement("span");
+      const badgeClass = typeBadgeClasses[type.toLowerCase()] || "bg-slate-100 text-slate-700 border-slate-200";
+      span.className = `px-2.5 py-0.5 rounded-lg text-[10px] font-bold uppercase tracking-wider border ${badgeClass}`;
+      span.textContent = type;
+      pokemonTypesEl.appendChild(span);
+    });
+
+    // Render Clues
+    const maskedLore = maskDescription(currentPokemon.description, currentPokemon.name);
+    pokemonLoreEl.textContent = `„${maskedLore}“`;
+    statHpEl.textContent = `HP: ${currentPokemon.stats.HP}`;
+    statAtkEl.textContent = currentPokemon.stats.Attack.toString();
+    statDefEl.textContent = currentPokemon.stats.Defense.toString();
+    statSpdEl.textContent = currentPokemon.stats.Speed.toString();
+
+    // Generate 4 options: 1 correct + 3 wrong distractors
+    const otherPokemon = pokemonList.filter((p) => p.id !== currentPokemon.id);
+    const shuffledOthers = shuffleArray(otherPokemon);
+    const distractors = shuffledOthers.slice(0, 3).map((p) => p.name);
+
+    const options = shuffleArray([currentPokemon.name, ...distractors]);
+
+    // Render Options
+    optionsGridEl.innerHTML = "";
+    options.forEach((name, idx) => {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "option-btn group relative flex items-center justify-between p-3.5 sm:p-4 rounded-2xl border-2 border-slate-200/90 bg-white hover:border-slate-400 hover:bg-slate-50/80 transition-all text-left shadow-xs cursor-pointer";
+      btn.dataset.name = name;
+      btn.dataset.index = (idx + 1).toString();
+
+      btn.innerHTML = `
+        <div class="flex items-center gap-3">
+          <span class="w-6 h-6 rounded-lg bg-slate-100 text-slate-500 group-hover:bg-slate-200 group-hover:text-slate-800 flex items-center justify-center text-xs font-bold transition">
+            ${idx + 1}
+          </span>
+          <span class="font-display font-bold text-base sm:text-lg text-slate-900">
+            ${name}
+          </span>
+        </div>
+        <span class="status-icon opacity-0 transition-opacity text-lg"></span>
+      `;
+
+      btn.addEventListener("click", () => handleAnswer(name, btn));
+      optionsGridEl.appendChild(btn);
+    });
+  }
+
+  // Handle Answer
+  function handleAnswer(selectedName, clickedBtn) {
+    if (isAnswered) return;
+    isAnswered = true;
+
+    // Immediately remove silhouette to reveal Pokémon
+    if (pokemonImgEl) {
+      pokemonImgEl.style.filter = "none";
+    }
+
+    const isCorrect = selectedName === currentPokemon.name;
+    const allOptionButtons = optionsGridEl.querySelectorAll(".option-btn");
+
+    if (isCorrect) {
+      // CORRECT ANSWER
+      playSound('correct');
+
+      // Highlight clicked button in Emerald
+      clickedBtn.classList.remove("border-slate-200/90", "bg-white", "hover:border-slate-400", "hover:bg-slate-50/80");
+      clickedBtn.classList.add("border-emerald-500", "bg-emerald-50", "text-emerald-900", "ring-2", "ring-emerald-400");
+      const icon = clickedBtn.querySelector(".status-icon");
+      if (icon) {
+        icon.textContent = "✓";
+        icon.classList.remove("opacity-0");
+        icon.classList.add("text-emerald-600", "font-bold");
+      }
+
+      // Small badge over image
+      resultBadgeTextEl.textContent = "✓";
+      resultBadgeEl.classList.remove("hidden");
+      resultBadgeEl.classList.add("flex");
+
+      // Score + 1
+      currentScore++;
+      currentScoreEl.textContent = currentScore.toString();
+
+      // Check high score
+      if (currentScore > highScore) {
+        highScore = currentScore;
+        highScoreEl.textContent = highScore.toString();
+        try {
+          localStorage.setItem("pokemon_quiz_highscore", highScore.toString());
+        } catch (e) {}
+      }
+
+      // Next question after short delay
+      setTimeout(() => {
+        loadNextQuestion();
+      }, 750);
+
+    } else {
+      // INCORRECT ANSWER — GAME OVER
+      playSound('wrong');
+
+      // Highlight wrong clicked button in Red
+      clickedBtn.classList.remove("border-slate-200/90", "bg-white", "hover:border-slate-400", "hover:bg-slate-50/80");
+      clickedBtn.classList.add("border-rose-500", "bg-rose-50", "text-rose-900", "ring-2", "ring-rose-400");
+      const wrongIcon = clickedBtn.querySelector(".status-icon");
+      if (wrongIcon) {
+        wrongIcon.textContent = "✗";
+        wrongIcon.classList.remove("opacity-0");
+        wrongIcon.classList.add("text-rose-600", "font-bold");
+      }
+
+      // Highlight the correct one in Green
+      allOptionButtons.forEach((btn) => {
+        if (btn.dataset.name === currentPokemon.name) {
+          btn.classList.remove("border-slate-200/90", "bg-white");
+          btn.classList.add("border-emerald-500", "bg-emerald-50/70", "ring-2", "ring-emerald-300");
+          const okIcon = btn.querySelector(".status-icon");
+          if (okIcon) {
+            okIcon.textContent = "✓";
+            okIcon.classList.remove("opacity-0");
+            okIcon.classList.add("text-emerald-600", "font-bold");
+          }
+        }
+      });
+
+      resultBadgeTextEl.textContent = "✗";
+      resultBadgeEl.classList.remove("hidden");
+      resultBadgeEl.classList.add("flex");
+
+      // Show Game Over card after 900ms
+      setTimeout(() => {
+        showGameOver();
+      }, 900);
+    }
+  }
+
+  // Show Game Over
+  function showGameOver() {
+    quizCardEl.classList.add("hidden");
+    gameOverCardEl.classList.remove("hidden");
+
+    // Populate revealed pokemon details
+    gameoverPokemonImgEl.src = currentPokemon.image;
+    gameoverPokemonNumberEl.textContent = currentPokemon.number;
+    gameoverPokemonNameEl.textContent = currentPokemon.name;
+    gameoverPokemonTypesEl.textContent = `Typ: ${currentPokemon.typesSk.join(", ")}`;
+
+    // Score details
+    gameoverFinalScoreEl.textContent = currentScore.toString();
+    gameoverRankTitleEl.textContent = getTrainerRank(currentScore);
+
+    if (currentScore > 0 && currentScore >= highScore) {
+      gameoverNewRecordEl.classList.remove("hidden");
+    } else {
+      gameoverNewRecordEl.classList.add("hidden");
+    }
+
+    // Scroll smoothly to game over container
+    gameOverCardEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+
+  // Show Victory
+  function showVictory() {
+    quizCardEl.classList.add("hidden");
+    gameOverCardEl.classList.add("hidden");
+    victoryCardEl.classList.remove("hidden");
+  }
+
+  // Restart Button listeners
+  restartBtn?.addEventListener("click", startGame);
+  victoryRestartBtn?.addEventListener("click", startGame);
+
+  // Share button
+  shareBtn?.addEventListener("click", () => {
+    const text = `🎮 Môj výsledok v Pokémon kvíze na pokemongo.sk: ${currentScore} bodov v rade (${getTrainerRank(currentScore)})! Dokážeš viac?`;
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(text).then(() => {
+        shareToastEl.classList.remove("hidden");
+        setTimeout(() => shareToastEl.classList.add("hidden"), 3000);
+      });
+    } else if (navigator.share) {
+      navigator.share({
+        title: "Kto je ten Pokémon? — pokemongo.sk",
+        text: text,
+        url: window.location.href
+      });
+    }
+  });
+
+  // Keyboard Navigation: keys 1, 2, 3, 4 and Space / Enter for restart
+  window.addEventListener("keydown", (e) => {
+    // If game over is active, Space or Enter restarts
+    if (!gameOverCardEl.classList.contains("hidden")) {
+      if (e.key === "Enter" || e.key === " " || e.key === "Spacebar") {
+        e.preventDefault();
+        startGame();
+      }
+      return;
+    }
+
+    if (isAnswered) return;
+
+    if (["1", "2", "3", "4"].includes(e.key)) {
+      const idx = parseInt(e.key, 10);
+      const targetBtn = optionsGridEl.querySelector(`[data-index="${idx}"]`);
+      if (targetBtn) {
+        targetBtn.click();
+      }
+    }
+  });
+
+  // Start on load
+  startGame();
+</script>
