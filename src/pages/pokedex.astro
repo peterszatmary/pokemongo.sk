@@ -2,7 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
-import pokemonList from "../data/pokedex151.json";
+import pokemonList from "../data/pokedex.json";
 
 // Type color helper for badges
 const getTypeBadgeClasses = (type: string) => {
@@ -46,16 +46,35 @@ const getTypeBadgeClasses = (type: string) => {
     case "dragon":
     case "dračí":
       return "bg-violet-50 text-violet-800 border-violet-200";
+    case "steel":
+    case "oceľový":
+      return "bg-slate-100 text-slate-800 border-slate-300";
+    case "dark":
+    case "temný":
+      return "bg-neutral-800 text-neutral-100 border-neutral-700";
     case "fairy":
     case "vílí":
-      return "bg-rose-50 text-rose-700 border-rose-200";
+      return "bg-pink-100/70 text-pink-800 border-pink-300";
     default:
       return "bg-slate-100 text-slate-700 border-slate-200";
   }
 };
 
+const generations = [
+  { id: "all", label: "Všetky (1 025)", shortLabel: "Všetky", count: 1025 },
+  { id: "1", label: "Gen 1: Kanto (#001 – #151)", shortLabel: "Gen 1: Kanto", count: 151 },
+  { id: "2", label: "Gen 2: Johto (#152 – #251)", shortLabel: "Gen 2: Johto", count: 100 },
+  { id: "3", label: "Gen 3: Hoenn (#252 – #386)", shortLabel: "Gen 3: Hoenn", count: 135 },
+  { id: "4", label: "Gen 4: Sinnoh (#387 – #493)", shortLabel: "Gen 4: Sinnoh", count: 107 },
+  { id: "5", label: "Gen 5: Unova (#494 – #649)", shortLabel: "Gen 5: Unova", count: 156 },
+  { id: "6", label: "Gen 6: Kalos (#650 – #721)", shortLabel: "Gen 6: Kalos", count: 72 },
+  { id: "7", label: "Gen 7: Alola (#722 – #809)", shortLabel: "Gen 7: Alola", count: 88 },
+  { id: "8", label: "Gen 8: Galar (#810 – #905)", shortLabel: "Gen 8: Galar", count: 96 },
+  { id: "9", label: "Gen 9: Paldea (#906 – #1025)", shortLabel: "Gen 9: Paldea", count: 120 },
+];
+
 const allTypes = [
-  "Všetky",
+  "Všetky typy",
   "Trávový",
   "Ohnivý",
   "Vodný",
@@ -69,7 +88,11 @@ const allTypes = [
   "Hmyzí",
   "Duchovný",
   "Ľadový",
-  "Dračí"
+  "Dračí",
+  "Oceľový",
+  "Temný",
+  "Vílí",
+  "Normálny"
 ];
 
 const structuredData = [
@@ -86,7 +109,7 @@ const structuredData = [
       {
         "@type": "ListItem",
         "position": 2,
-        "name": "Pokédex (151 Pokémonov)",
+        "name": "Pokédex (1 025 Pokémonov)",
         "item": "https://pokemongo.sk/pokedex/"
       }
     ]
@@ -94,23 +117,16 @@ const structuredData = [
   {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    "name": "Pokédex: Prvých 151 Pokémonov (Kanto región)",
-    "description": "Zoznam všetkých 151 pôvodných Pokémonov prvej generácie s obrázkami, popismi a štatistikami.",
-    "numberOfItems": 151,
-    "itemListElement": pokemonList.map((p, idx) => ({
-      "@type": "ListItem",
-      "position": idx + 1,
-      "name": `${p.name} (${p.number})`,
-      "image": p.image,
-      "description": p.description
-    }))
+    "name": "Pokédex: Kompletný zoznam 1 025 Pokémonov (Gen 1 – Gen 9)",
+    "description": "Zoznam všetkých 1 025 Pokémonov národného Pokédexu s oficiálnymi obrázkami, typmi, popismi a bojovými štatistikami.",
+    "numberOfItems": 1025
   }
 ];
 ---
 
 <Layout
-  title="Pokédex: Prvých 151 Pokémonov (Kanto región) | pokemongo.sk"
-  description="Oficiálny Pokédex prvých 151 Pokémonov prvej generácie. Obrázky, popisy, slovenské typy a štatistiky od Bulbasaura (#001) po Mewa (#151)."
+  title="Pokédex: Všetkých 1 025 Pokémonov (Gen 1 – Gen 9) | pokemongo.sk"
+  description="Kompletný národný Pokédex všetkých 1 025 Pokémonov od Kanto až po Paldea. Filtrovanie podľa 9 generácií, 18 typov a okamžité vyhľadávanie."
   jsonLd={structuredData}
 >
   <Navbar slot="navbar" />
@@ -118,20 +134,29 @@ const structuredData = [
   <section class="py-12 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     
     <!-- Hero Header -->
-    <header class="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
-      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-rose-50 text-rose-700 border border-rose-200 mb-4 shadow-sm">
+    <header class="text-center max-w-3xl mx-auto mb-10 sm:mb-14">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-rose-50 text-rose-700 border border-rose-200 mb-4 shadow-xs">
         <span>📖</span>
-        <span>Kanto Región • Generácia I</span>
+        <span>Národný Pokédex • 1 025 Pokémonov • 9 Generácií</span>
       </div>
       <h1 class="font-display text-4xl sm:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight">
-        Pokédex: Prvých 151 Pokémonov
+        Kompletný Pokédex
       </h1>
       <p class="text-base sm:text-xl text-slate-600 mt-4 leading-relaxed">
-        Kompletný zoznam legendárnej prvej generácie. Prehľadávajte podľa mena, čísla alebo filtrujte podľa typu.
+        Prehľadávajte všetkých 1 025 Pokémonov od Bulbasaura (#001) až po Pecharunta (#1025). Filtrujte podľa generácie, typu alebo okamžite vyhľadávajte.
       </p>
+
+      <div class="mt-6 flex flex-wrap items-center justify-center gap-3 text-xs font-semibold">
+        <a
+          href="/hra"
+          class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-slate-900 text-white hover:bg-slate-800 transition shadow-sm"
+        >
+          <span>🎮</span> Zahraj si kvíz: Kto je ten Pokémon? →
+        </a>
+      </div>
     </header>
 
-    <!-- Controls: Search & Filter -->
+    <!-- Controls: Search & Generation & Type Filters -->
     <div class="mb-10 bg-white border border-slate-200/90 rounded-3xl p-6 sm:p-8 shadow-sm space-y-6">
       
       <!-- Search Input -->
@@ -144,9 +169,35 @@ const structuredData = [
         <input
           type="text"
           id="pokedex-search"
-          placeholder="Hľadať Pokémona podľa mena alebo čísla (napr. Pikachu, Charizard, #025)..."
-          class="w-full pl-12 pr-4 py-3.5 bg-slate-50 border border-slate-200 rounded-2xl text-slate-900 placeholder-slate-400 focus:bg-white focus:outline-none focus:border-rose-500 focus:ring-1 focus:ring-rose-500 transition text-sm sm:text-base"
+          placeholder="Hľadať podľa mena, čísla alebo regiónu (napr. Pikachu, #025, Lucario, Charizard)..."
+          class="w-full pl-12 pr-4 py-3.5 bg-slate-50 border border-slate-200 rounded-2xl text-slate-900 placeholder-slate-400 focus:bg-white focus:outline-none focus:border-rose-500 focus:ring-1 focus:ring-rose-500 transition text-sm sm:text-base shadow-inner"
         />
+      </div>
+
+      <!-- Generation Filter Tabs -->
+      <div>
+        <div class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3 text-center sm:text-left flex items-center justify-between">
+          <span>Generácia & Región:</span>
+          <span class="text-[11px] font-normal text-slate-400 hidden sm:inline">Vyberte región pre zobrazenie generácie</span>
+        </div>
+        <div class="flex flex-wrap gap-1.5 sm:gap-2 justify-center sm:justify-start" id="gen-filters">
+          {
+            generations.map((gen) => (
+              <button
+                type="button"
+                data-gen={gen.id}
+                class={`gen-btn px-3 py-1.5 rounded-xl text-xs font-semibold transition-all border ${
+                  gen.id === "all"
+                    ? "bg-slate-900 text-white border-slate-900 shadow-sm"
+                    : "bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100 hover:text-slate-900"
+                }`}
+              >
+                <span class="sm:hidden">{gen.shortLabel}</span>
+                <span class="hidden sm:inline">{gen.label}</span>
+              </button>
+            ))
+          }
+        </div>
       </div>
 
       <!-- Type Filters -->
@@ -154,15 +205,15 @@ const structuredData = [
         <div class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3 text-center sm:text-left">
           Filtrovať podľa typu:
         </div>
-        <div class="flex flex-wrap gap-2 justify-center sm:justify-start" id="type-filters">
+        <div class="flex flex-wrap gap-1.5 sm:gap-2 justify-center sm:justify-start" id="type-filters">
           {
             allTypes.map((type) => (
               <button
                 type="button"
-                data-type={type}
-                class={`filter-btn px-3.5 py-1.5 rounded-xl text-xs font-semibold transition-all border ${
-                  type === "Všetky"
-                    ? "bg-slate-900 text-white border-slate-900 shadow-sm"
+                data-type={type === "Všetky typy" ? "all" : type}
+                class={`type-filter-btn px-3 py-1 rounded-xl text-xs font-semibold transition-all border ${
+                  type === "Všetky typy"
+                    ? "bg-rose-600 text-white border-rose-600 shadow-xs"
                     : "bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100 hover:text-slate-900"
                 }`}
               >
@@ -173,21 +224,21 @@ const structuredData = [
         </div>
       </div>
 
-      <!-- Counter & Status -->
+      <!-- Counter & Reset Button -->
       <div class="flex items-center justify-between text-xs sm:text-sm font-semibold text-slate-500 border-t border-slate-100 pt-4">
-        <span id="counter-text">Zobrazuje sa 151 zo 151 Pokémonov</span>
+        <span id="counter-text">Zobrazuje sa 1 025 z 1 025 Pokémonov</span>
         <button
           type="button"
           id="reset-filter-btn"
-          class="text-rose-600 hover:text-rose-700 hover:underline hidden"
+          class="text-rose-600 hover:text-rose-700 hover:underline hidden cursor-pointer"
         >
-          Resetovať filter
+          Resetovať všetky filtre
         </button>
       </div>
 
     </div>
 
-    <!-- Pokémon Grid -->
+    <!-- Pokémon Grid (All 1025 rendered with native lazy-loading) -->
     <div
       id="pokemon-grid"
       class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
@@ -195,24 +246,30 @@ const structuredData = [
       {
         pokemonList.map((pokemon) => {
           const typesSkJoined = pokemon.typesSk.join(" ");
-          const searchData = `${pokemon.name.toLowerCase()} ${pokemon.number.toLowerCase()} ${pokemon.id} ${typesSkJoined.toLowerCase()} ${pokemon.description.toLowerCase()}`;
+          const searchData = `${pokemon.name.toLowerCase()} ${pokemon.number.toLowerCase()} ${pokemon.id} ${pokemon.region.toLowerCase()} ${typesSkJoined.toLowerCase()} ${pokemon.description.toLowerCase()}`;
 
           return (
             <div
               class="pokemon-card group bg-white border border-slate-200/90 rounded-3xl p-5 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between"
               data-search={searchData}
               data-types={typesSkJoined}
+              data-gen={pokemon.generation.toString()}
             >
               <div>
-                <!-- Card Header: Number & Types -->
+                <!-- Card Header: Number, Region & Types -->
                 <div class="flex items-center justify-between mb-3">
-                  <span class="font-display font-bold text-xs text-slate-400 group-hover:text-slate-600 transition">
-                    {pokemon.number}
-                  </span>
-                  <div class="flex gap-1.5">
+                  <div class="flex items-center gap-1.5">
+                    <span class="font-display font-bold text-xs text-slate-400 group-hover:text-slate-600 transition">
+                      {pokemon.number}
+                    </span>
+                    <span class="px-2 py-0.5 rounded-md text-[10px] font-bold bg-slate-100 text-slate-500">
+                      {pokemon.region}
+                    </span>
+                  </div>
+                  <div class="flex gap-1">
                     {pokemon.typesSk.map((typeSk) => (
                       <span
-                        class={`px-2.5 py-0.5 rounded-lg text-[10px] font-bold uppercase tracking-wider border ${getTypeBadgeClasses(typeSk)}`}
+                        class={`px-2 py-0.5 rounded-lg text-[10px] font-bold uppercase tracking-wider border ${getTypeBadgeClasses(typeSk)}`}
                       >
                         {typeSk}
                       </span>
@@ -231,10 +288,17 @@ const structuredData = [
                   />
                 </div>
 
-                <!-- Pokémon Name -->
-                <h3 class="font-display text-xl font-bold text-slate-900 mb-2 group-hover:text-rose-600 transition">
-                  {pokemon.name}
-                </h3>
+                <!-- Pokémon Name & Genus -->
+                <div class="mb-2">
+                  <h3 class="font-display text-xl font-bold text-slate-900 group-hover:text-rose-600 transition leading-tight">
+                    {pokemon.name}
+                  </h3>
+                  {pokemon.genus && (
+                    <span class="text-[11px] text-slate-400 font-medium">
+                      {pokemon.genus}
+                    </span>
+                  )}
+                </div>
 
                 <!-- Description -->
                 <p class="text-xs text-slate-500 leading-relaxed line-clamp-3 mb-4">
@@ -263,14 +327,14 @@ const structuredData = [
       <div class="text-4xl mb-3">🔍</div>
       <h3 class="font-display text-xl font-bold text-slate-900 mb-2">Žiaden Pokémon sa nenašiel</h3>
       <p class="text-sm text-slate-500 max-w-md mx-auto mb-4">
-        Skúste upraviť hľadaný výraz alebo kliknite na resetovanie filtra.
+        Skúste upraviť hľadaný výraz alebo resetovať zvolenú generáciu a typ.
       </p>
       <button
         type="button"
         id="empty-reset-btn"
-        class="px-5 py-2.5 rounded-xl font-semibold text-xs text-white bg-slate-900 hover:bg-slate-800 transition"
+        class="px-5 py-2.5 rounded-xl font-semibold text-xs text-white bg-slate-900 hover:bg-slate-800 transition cursor-pointer"
       >
-        Zobraziť všetkých 151 Pokémonov
+        Zobraziť všetkých 1 025 Pokémonov
       </button>
     </div>
 
@@ -280,7 +344,7 @@ const structuredData = [
         Chcete vybudovať najväčšiu Pokémon databázu a komunitu v SR?
       </h3>
       <p class="text-sm sm:text-base text-slate-600 max-w-2xl mx-auto leading-relaxed">
-        Tento Pokédex je len ukážkou možností. Doména <strong>pokemongo.sk</strong> je na predaj a môže byť vaším centrom pre e-shop s kartami, sprievodcu a najnavštevovanejší portál na Slovensku.
+        Tento Pokédex s 1 025 Pokémonmi je živou ukážkou potenciálu. Doména <strong>pokemongo.sk</strong> je na predaj a môže byť vaším centrom pre e-shop s kartami, sprievodcu a najnavštevovanejší portál na Slovensku.
       </p>
       <div class="pt-2">
         <a
@@ -302,11 +366,13 @@ const structuredData = [
   const cards = document.querySelectorAll(".pokemon-card") as NodeListOf<HTMLElement>;
   const counterText = document.getElementById("counter-text");
   const noResults = document.getElementById("no-results");
-  const filterBtns = document.querySelectorAll(".filter-btn") as NodeListOf<HTMLButtonElement>;
+  const genBtns = document.querySelectorAll(".gen-btn") as NodeListOf<HTMLButtonElement>;
+  const typeBtns = document.querySelectorAll(".type-filter-btn") as NodeListOf<HTMLButtonElement>;
   const resetBtn = document.getElementById("reset-filter-btn");
   const emptyResetBtn = document.getElementById("empty-reset-btn");
 
-  let activeType = "Všetky";
+  let activeGen = "all";
+  let activeType = "all";
   let searchQuery = "";
 
   function applyFilters() {
@@ -315,11 +381,14 @@ const structuredData = [
     cards.forEach((card) => {
       const searchData = card.getAttribute("data-search") || "";
       const typesData = card.getAttribute("data-types") || "";
+      const genData = card.getAttribute("data-gen") || "";
 
+      // If user is searching by text, search across ALL generations unless specifically filtered
       const matchesSearch = !searchQuery || searchData.includes(searchQuery);
-      const matchesType = activeType === "Všetky" || typesData.includes(activeType);
+      const matchesGen = activeGen === "all" || genData === activeGen;
+      const matchesType = activeType === "all" || typesData.includes(activeType);
 
-      if (matchesSearch && matchesType) {
+      if (matchesSearch && matchesGen && matchesType) {
         card.style.display = "flex";
         visibleCount++;
       } else {
@@ -328,29 +397,41 @@ const structuredData = [
     });
 
     if (counterText) {
-      counterText.textContent = `Zobrazuje sa ${visibleCount} zo 151 Pokémonov`;
+      counterText.textContent = `Zobrazuje sa ${visibleCount} z 1 025 Pokémonov`;
     }
 
     if (noResults) {
       noResults.classList.toggle("hidden", visibleCount > 0);
     }
 
-    const isFiltered = activeType !== "Všetky" || searchQuery !== "";
+    const isFiltered = activeGen !== "all" || activeType !== "all" || searchQuery !== "";
     if (resetBtn) {
       resetBtn.classList.toggle("hidden", !isFiltered);
     }
   }
 
   function resetAll() {
-    activeType = "Všetky";
+    activeGen = "all";
+    activeType = "all";
     searchQuery = "";
     if (searchInput) searchInput.value = "";
 
-    filterBtns.forEach((btn) => {
-      const isDefault = btn.getAttribute("data-type") === "Všetky";
-      btn.className = `filter-btn px-3.5 py-1.5 rounded-xl text-xs font-semibold transition-all border ${
+    // Reset Gen buttons
+    genBtns.forEach((btn) => {
+      const isDefault = btn.getAttribute("data-gen") === "all";
+      btn.className = `gen-btn px-3 py-1.5 rounded-xl text-xs font-semibold transition-all border ${
         isDefault
           ? "bg-slate-900 text-white border-slate-900 shadow-sm"
+          : "bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100 hover:text-slate-900"
+      }`;
+    });
+
+    // Reset Type buttons
+    typeBtns.forEach((btn) => {
+      const isDefault = btn.getAttribute("data-type") === "all";
+      btn.className = `type-filter-btn px-3 py-1 rounded-xl text-xs font-semibold transition-all border ${
+        isDefault
+          ? "bg-rose-600 text-white border-rose-600 shadow-xs"
           : "bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100 hover:text-slate-900"
       }`;
     });
@@ -365,15 +446,34 @@ const structuredData = [
     });
   }
 
-  filterBtns.forEach((btn) => {
+  // Generation button click
+  genBtns.forEach((btn) => {
     btn.addEventListener("click", () => {
-      activeType = btn.getAttribute("data-type") || "Všetky";
+      activeGen = btn.getAttribute("data-gen") || "all";
 
-      filterBtns.forEach((b) => {
+      genBtns.forEach((b) => {
         const isSelected = b === btn;
-        b.className = `filter-btn px-3.5 py-1.5 rounded-xl text-xs font-semibold transition-all border ${
+        b.className = `gen-btn px-3 py-1.5 rounded-xl text-xs font-semibold transition-all border ${
           isSelected
             ? "bg-slate-900 text-white border-slate-900 shadow-sm"
+            : "bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100 hover:text-slate-900"
+        }`;
+      });
+
+      applyFilters();
+    });
+  });
+
+  // Type button click
+  typeBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      activeType = btn.getAttribute("data-type") || "all";
+
+      typeBtns.forEach((b) => {
+        const isSelected = b === btn;
+        b.className = `type-filter-btn px-3 py-1 rounded-xl text-xs font-semibold transition-all border ${
+          isSelected
+            ? "bg-rose-600 text-white border-rose-600 shadow-xs"
             : "bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100 hover:text-slate-900"
         }`;
       });

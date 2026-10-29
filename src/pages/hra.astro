@@ -2,7 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
-import pokemonList from "../data/pokedex151.json";
+import pokemonList from "../data/pokedex.json";
 
 const structuredData = [
   {
@@ -26,16 +26,16 @@ const structuredData = [
   {
     "@context": "https://schema.org",
     "@type": "Game",
-    "name": "Kto je ten Pokémon? — Kvízová minihra (151 Pokémonov)",
-    "description": "Uhádni Pokémona podľa obrázka a indícií. Dokážeš správne identifikovať všetkých 151 pôvodných Pokémonov prvej generácie bez jedinej chyby?",
+    "name": "Kto je ten Pokémon? — Kvízová minihra (1 025 Pokémonov)",
+    "description": "Uhádni Pokémona podľa obrázka a indícií. Dokážeš správne identifikovať Pokémonov z Kanto regiónu alebo celého národného Pokédexu bez jedinej chyby?",
     "inLanguage": "sk-SK"
   }
 ];
 ---
 
 <Layout
-  title="Kto je ten Pokémon? Kvíz Hra (151 Pokémonov) | pokemongo.sk"
-  description="Uhádni Pokémona podľa obrázka, typov a štatistík! Zábavná kvízová hra so 151 pôvodnými Pokémonmi z Kanto regiónu. Jedna chyba a končíš — aké skóre dosiahneš?"
+  title="Kto je ten Pokémon? Kvíz Hra (1 025 Pokémonov) | pokemongo.sk"
+  description="Uhádni Pokémona podľa obrázka, typov a štatistík! Zábavná kvízová hra s výberom medzi klasickým Kanto regiónom (151) alebo všetkými 1 025 Pokémonmi."
   jsonLd={structuredData}
 >
   <Navbar slot="navbar" />
@@ -45,7 +45,7 @@ const structuredData = [
     <!-- Header -->
     <header class="text-center mb-8">
       <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-rose-50 text-rose-700 border border-rose-200 mb-3 shadow-xs">
-        <span>🎮</span> Interaktívny Kvíz (151 Pokémonov)
+        <span>🎮</span> Interaktívny Kvíz (1 025 Pokémonov)
       </div>
       <h1 class="font-display text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight mb-3">
         Kto je ten Pokémon?
@@ -82,13 +82,31 @@ const structuredData = [
         </div>
       </div>
 
-      <!-- Controls & Toggles -->
-      <div class="flex items-center gap-2 sm:gap-3 ml-auto">
+      <!-- Mode Selector & Controls -->
+      <div class="flex flex-wrap items-center gap-2 sm:gap-3 ml-auto">
+        <!-- Game Mode Switcher (Kanto 151 vs All 1025) -->
+        <div class="inline-flex p-1 rounded-xl bg-slate-100 border border-slate-200">
+          <button
+            type="button"
+            id="mode-kanto-btn"
+            class="px-2.5 sm:px-3 py-1 rounded-lg text-xs font-bold transition bg-white text-slate-900 shadow-xs cursor-pointer"
+          >
+            Kanto (151)
+          </button>
+          <button
+            type="button"
+            id="mode-all-btn"
+            class="px-2.5 sm:px-3 py-1 rounded-lg text-xs font-bold transition text-slate-600 hover:text-slate-900 cursor-pointer"
+          >
+            Všetkých 1 025
+          </button>
+        </div>
+
         <!-- Silhouette mode toggle -->
         <button
           type="button"
           id="toggle-silhouette-btn"
-          class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold border transition bg-slate-100 text-slate-700 border-slate-200 hover:bg-slate-200"
+          class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold border transition bg-slate-100 text-slate-700 border-slate-200 hover:bg-slate-200 cursor-pointer"
           title="Prepnúť režim siluety (ako v TV seriáli)"
         >
           <span id="silhouette-icon">👤</span>
@@ -99,7 +117,7 @@ const structuredData = [
         <button
           type="button"
           id="toggle-sound-btn"
-          class="p-2 rounded-xl text-xs font-semibold border transition bg-slate-100 text-slate-700 border-slate-200 hover:bg-slate-200"
+          class="p-2 rounded-xl text-xs font-semibold border transition bg-slate-100 text-slate-700 border-slate-200 hover:bg-slate-200 cursor-pointer"
           title="Zvukové efekty"
           aria-label="Zapnúť/vypnúť zvuk"
         >
@@ -283,27 +301,27 @@ const structuredData = [
         </div>
       </div>
 
-      <!-- VICTORY SCREEN (If someone completes all 151!) -->
-      <div
-        id="victory-card"
-        class="hidden bg-white border border-amber-300 rounded-3xl p-6 sm:p-10 shadow-xl text-center"
-      >
-        <div class="text-5xl mb-3">👑</div>
-        <h2 class="font-display text-3xl sm:text-5xl font-black text-amber-600 mb-2">
-          Absolútny Pokémon Majster!
-        </h2>
-        <p class="text-base text-slate-700 max-w-lg mx-auto mb-6">
-          Neuveriteľné! Uhádol si všetkých 151 pôvodných Pokémonov prvej generácie bez jedinej chyby!
-        </p>
-        <div class="font-display text-6xl font-black text-slate-900 mb-6">151 / 151</div>
-        <button
-          type="button"
-          id="victory-restart-btn"
-          class="px-8 py-3.5 rounded-xl font-bold text-sm text-white bg-slate-900 hover:bg-slate-800 transition"
+        <!-- VICTORY SCREEN (If someone completes the full pool!) -->
+        <div
+          id="victory-card"
+          class="hidden bg-white border border-amber-300 rounded-3xl p-6 sm:p-10 shadow-xl text-center"
         >
-          Hrať znova od začiatku
-        </button>
-      </div>
+          <div class="text-5xl mb-3">👑</div>
+          <h2 class="font-display text-3xl sm:text-5xl font-black text-amber-600 mb-2">
+            Absolútny Pokémon Majster!
+          </h2>
+          <p class="text-base text-slate-700 max-w-lg mx-auto mb-6">
+            Neuveriteľné! Uhádol si všetkých Pokémonov bez jedinej chyby!
+          </p>
+          <div id="victory-score" class="font-display text-6xl font-black text-slate-900 mb-6">151 / 151</div>
+          <button
+            type="button"
+            id="victory-restart-btn"
+            class="px-8 py-3.5 rounded-xl font-bold text-sm text-white bg-slate-900 hover:bg-slate-800 transition cursor-pointer"
+          >
+            Hrať znova od začiatku
+          </button>
+        </div>
 
     </div>
 
@@ -372,7 +390,9 @@ const structuredData = [
     "duchovný": "bg-indigo-50 text-indigo-700 border-indigo-200",
     "ľadový": "bg-cyan-50 text-cyan-700 border-cyan-200",
     "dračí": "bg-violet-50 text-violet-800 border-violet-200",
-    "vílí": "bg-rose-50 text-rose-700 border-rose-200",
+    "oceľový": "bg-slate-100 text-slate-800 border-slate-300",
+    "temný": "bg-neutral-800 text-neutral-100 border-neutral-700",
+    "vílí": "bg-pink-100/70 text-pink-800 border-pink-300",
     "normálny": "bg-slate-100 text-slate-700 border-slate-200"
   };
 
@@ -462,12 +482,19 @@ const structuredData = [
   }
 
   // GAME STATE
+  let gameMode = "kanto"; // "kanto" (151) or "all" (1025)
   let currentScore = 0;
   let highScore = 0;
   let remainingIndices = [];
   let currentPokemon = null;
   let isAnswered = false;
   let silhouetteMode = false;
+
+  function getActivePool() {
+    return gameMode === "kanto"
+      ? pokemonList.filter((p) => p.id <= 151)
+      : pokemonList;
+  }
 
   // DOM Elements
   const currentScoreEl = document.getElementById("current-score");
@@ -477,6 +504,7 @@ const structuredData = [
   const pokemonImgEl = document.getElementById("pokemon-img");
   const pokemonTypesEl = document.getElementById("pokemon-types");
   const pokemonLoreEl = document.getElementById("pokemon-lore");
+  const pokemonGenEl = document.getElementById("pokemon-generation");
   const statHpEl = document.getElementById("clue-stats-hp");
   const statAtkEl = document.getElementById("stat-atk");
   const statDefEl = document.getElementById("stat-def");
@@ -501,22 +529,48 @@ const structuredData = [
   const shareToastEl = document.getElementById("share-toast");
   const victoryRestartBtn = document.getElementById("victory-restart-btn");
 
-  // Controls
+  // Controls & Mode buttons
+  const modeKantoBtn = document.getElementById("mode-kanto-btn");
+  const modeAllBtn = document.getElementById("mode-all-btn");
   const toggleSilhouetteBtn = document.getElementById("toggle-silhouette-btn");
   const silhouetteLabelEl = document.getElementById("silhouette-label");
   const toggleSoundBtn = document.getElementById("toggle-sound-btn");
   const soundIconEl = document.getElementById("sound-icon");
 
-  // Load High Score from localStorage
-  try {
-    const savedHighScore = localStorage.getItem("pokemon_quiz_highscore");
-    if (savedHighScore) {
-      highScore = parseInt(savedHighScore, 10) || 0;
-      highScoreEl.textContent = highScore.toString();
+  function loadHighScoreForCurrentMode() {
+    try {
+      const savedHighScore = localStorage.getItem(`pokemon_quiz_highscore_${gameMode}`);
+      highScore = savedHighScore ? parseInt(savedHighScore, 10) || 0 : 0;
+      if (highScoreEl) highScoreEl.textContent = highScore.toString();
+    } catch (e) {
+      console.warn("LocalStorage access error", e);
     }
-  } catch (e) {
-    console.warn("LocalStorage access error", e);
   }
+
+  function saveHighScoreForCurrentMode() {
+    try {
+      localStorage.setItem(`pokemon_quiz_highscore_${gameMode}`, highScore.toString());
+    } catch (e) {}
+  }
+
+  // Mode Switchers
+  modeKantoBtn?.addEventListener("click", () => {
+    if (gameMode === "kanto") return;
+    gameMode = "kanto";
+    modeKantoBtn.className = "px-2.5 sm:px-3 py-1 rounded-lg text-xs font-bold transition bg-white text-slate-900 shadow-xs cursor-pointer";
+    modeAllBtn.className = "px-2.5 sm:px-3 py-1 rounded-lg text-xs font-bold transition text-slate-600 hover:text-slate-900 cursor-pointer";
+    loadHighScoreForCurrentMode();
+    startGame();
+  });
+
+  modeAllBtn?.addEventListener("click", () => {
+    if (gameMode === "all") return;
+    gameMode = "all";
+    modeAllBtn.className = "px-2.5 sm:px-3 py-1 rounded-lg text-xs font-bold transition bg-white text-slate-900 shadow-xs cursor-pointer";
+    modeKantoBtn.className = "px-2.5 sm:px-3 py-1 rounded-lg text-xs font-bold transition text-slate-600 hover:text-slate-900 cursor-pointer";
+    loadHighScoreForCurrentMode();
+    startGame();
+  });
 
   // Toggle silhouette mode
   toggleSilhouetteBtn?.addEventListener("click", () => {
@@ -555,8 +609,9 @@ const structuredData = [
     currentScoreEl.textContent = "0";
     isAnswered = false;
 
-    // Reset deck: 0 to 150 indices shuffled
-    remainingIndices = shuffleArray(pokemonList.map((_, idx) => idx));
+    // Reset deck: pool indices shuffled
+    const pool = getActivePool();
+    remainingIndices = shuffleArray(pool.map((_, idx) => idx));
 
     // Show quiz card, hide game over & victory
     quizCardEl.classList.remove("hidden");
@@ -569,8 +624,9 @@ const structuredData = [
 
   // Load next question
   function loadNextQuestion() {
+    const pool = getActivePool();
     if (remainingIndices.length === 0) {
-      // Completed all 151!
+      // Completed all in pool!
       showVictory();
       return;
     }
@@ -580,11 +636,15 @@ const structuredData = [
 
     // Pick next Pokemon from randomized pool
     const currentIndex = remainingIndices.pop();
-    currentPokemon = pokemonList[currentIndex];
+    currentPokemon = pool[currentIndex];
 
     // Update UI headers
     streakIndicatorEl.textContent = `Kolo ${currentScore + 1}`;
-    remainingCountEl.textContent = `Zostáva ${remainingIndices.length + 1} Pokémonov`;
+    remainingCountEl.textContent = `Zostáva ${remainingIndices.length + 1} z ${pool.length} Pokémonov`;
+
+    if (pokemonGenEl) {
+      pokemonGenEl.textContent = `${currentPokemon.region} región • ${currentPokemon.generation}. Generácia`;
+    }
 
     // Render Image
     pokemonImgEl.src = currentPokemon.image;
@@ -609,8 +669,8 @@ const structuredData = [
     statDefEl.textContent = currentPokemon.stats.Defense.toString();
     statSpdEl.textContent = currentPokemon.stats.Speed.toString();
 
-    // Generate 4 options: 1 correct + 3 wrong distractors
-    const otherPokemon = pokemonList.filter((p) => p.id !== currentPokemon.id);
+    // Generate 4 options: 1 correct + 3 wrong distractors from current pool
+    const otherPokemon = pool.filter((p) => p.id !== currentPokemon.id);
     const shuffledOthers = shuffleArray(otherPokemon);
     const distractors = shuffledOthers.slice(0, 3).map((p) => p.name);
 
@@ -624,6 +684,23 @@ const structuredData = [
       btn.className = "option-btn group relative flex items-center justify-between p-3.5 sm:p-4 rounded-2xl border-2 border-slate-200/90 bg-white hover:border-slate-400 hover:bg-slate-50/80 transition-all text-left shadow-xs cursor-pointer";
       btn.dataset.name = name;
       btn.dataset.index = (idx + 1).toString();
+
+      btn.innerHTML = `
+        <div class="flex items-center gap-3">
+          <span class="w-6 h-6 rounded-lg bg-slate-100 text-slate-500 group-hover:bg-slate-200 group-hover:text-slate-800 flex items-center justify-center text-xs font-bold transition">
+            ${idx + 1}
+          </span>
+          <span class="font-display font-bold text-base sm:text-lg text-slate-900">
+            ${name}
+          </span>
+        </div>
+        <span class="status-icon opacity-0 transition-opacity text-lg"></span>
+      `;
+
+      btn.addEventListener("click", () => handleAnswer(name, btn));
+      optionsGridEl.appendChild(btn);
+    });
+  }
 
       btn.innerHTML = `
         <div class="flex items-center gap-3">
@@ -682,9 +759,7 @@ const structuredData = [
       if (currentScore > highScore) {
         highScore = currentScore;
         highScoreEl.textContent = highScore.toString();
-        try {
-          localStorage.setItem("pokemon_quiz_highscore", highScore.toString());
-        } catch (e) {}
+        saveHighScoreForCurrentMode();
       }
 
       // Next question after short delay
@@ -761,6 +836,11 @@ const structuredData = [
     quizCardEl.classList.add("hidden");
     gameOverCardEl.classList.add("hidden");
     victoryCardEl.classList.remove("hidden");
+    const pool = getActivePool();
+    const victoryScoreEl = document.getElementById("victory-score");
+    if (victoryScoreEl) {
+      victoryScoreEl.textContent = `${pool.length} / ${pool.length}`;
+    }
   }
 
   // Restart Button listeners
@@ -769,7 +849,8 @@ const structuredData = [
 
   // Share button
   shareBtn?.addEventListener("click", () => {
-    const text = `🎮 Môj výsledok v Pokémon kvíze na pokemongo.sk: ${currentScore} bodov v rade (${getTrainerRank(currentScore)})! Dokážeš viac?`;
+    const modeName = gameMode === "kanto" ? "Kanto 151" : "všetkých 1 025";
+    const text = `🎮 Môj výsledok v Pokémon kvíze (${modeName}) na pokemongo.sk: ${currentScore} bodov v rade (${getTrainerRank(currentScore)})! Dokážeš viac?`;
     if (navigator.clipboard) {
       navigator.clipboard.writeText(text).then(() => {
         shareToastEl.classList.remove("hidden");
@@ -806,6 +887,7 @@ const structuredData = [
     }
   });
 
-  // Start on load
+  // Initial load
+  loadHighScoreForCurrentMode();
   startGame();
 </script>
